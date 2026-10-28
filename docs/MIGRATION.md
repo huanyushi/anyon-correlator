@@ -19,4 +19,4 @@ Julia 的 Project.toml 和 Manifest.toml 从原仓库 `julia-env/` 复制，保�
 
 在新仓库中使用 `julia --startup-file=no --project=julia-env` 成功加载 TensorKit、PEPSKit、MPSKit、KrylovKit、JSON、JLD2 和 Zygote，运行版本为 Julia 1.12.6。本次检查验证环境加载和迁移完整性，没有重跑数值测试或研究计算。
 
-历史报告和旧计划保留原文。复用其中的命令时，删除 `tracks/peps/solutions/anyon-correlator/` 路径前缀；旧文档中的 `.venv/bin/python` 指原仓库环境，需根据具体绘图脚本的依赖另行选择解释器。新仓库的全部原始研究数据纳入版本管理，Python 缓存等可再生文件由 `.gitignore` 忽略。
+首次迁移后，在推送 GitHub 前进一步更新研究报告和计划中的运行路径，删除旧仓库路径前缀，将 Python 命令统一写为 `python3`，并在 README 说明依赖要求。计划中关于 Manifest 被忽略和两层 AGENTS.md 的说明也已改为独立仓库约定。历史 `results/` 记录仍逐字节保留。新仓库的全部原始研究数据纳入版本管理，Python 缓存等可再生文件由 `.gitignore` 忽略。

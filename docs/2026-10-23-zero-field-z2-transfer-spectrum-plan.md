@@ -14,7 +14,7 @@
 
 ## Global Constraints
 
-- 先读仓库根 `AGENTS.md` 和子项目 `tracks/peps/solutions/anyon-correlator/AGENTS.md`；其中的资源、历史数据和科研写作要求继续适用。
+- 先读独立仓库根 `AGENTS.md`；其中的资源、历史数据和科研写作要求继续适用。
 - 本轮严格取 $h_x=h_z=0$、$J_e=J_m=1$，采用 Pauli convention；无限方晶格，物理自旋位于边上，$d=2$、$D=2$，能量按边自旋报告。
 - 始终只有一组共享的 V/P/λ；保留 V 的 90°循环旋转、P 的端点交换以及横竖边共用 P 的约束。
 - 使用原生 TensorKit 对称空间完成更新中的关键收缩、分解和规范变换；不采用“完整 dense 更新后再投影末态”的替代路线。
@@ -130,11 +130,11 @@ $$
 
 以下路径相对仓库根；先阅读与当前任务有关的部分，不重跑历史程序：
 
-- `tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/{README.md,REPORT.md,strict.jl,strict_run.jl,strict_tests.jl}`：现有共享参数与空间对称流程，尤其检查 `restore_shared!` 和完整 sweep 的失败回滚。
-- `tracks/peps/solutions/anyon-correlator/simple-update/split/{core.jl,loop.jl,measure.jl}`：star、闭环拟合、λ 计数、开放外腿稳定子残差和独立物理算符；dense 内核可作小型测试对照，不能直接充当新方案的无约束更新器。
-- `tracks/peps/solutions/anyon-correlator/model/tc_peps.jl`：解析张量、物理基底与 Pauli 约定。
-- `tracks/peps/solutions/anyon-correlator/simple-update/loop/{vumps_core.jl,vumps_tests.jl,VUMPS_REPORT.md}`：显式 double layer、普通 row MPO、正反向边界与伴随检查；其两行排布不照搬为本轮的物理周期。
-- `tracks/peps/solutions/anyon-correlator/tests/runtests.jl`：通过独立模块隔离测试命名空间。
+- `simple-update/one-site-su/{README.md,REPORT.md,strict.jl,strict_run.jl,strict_tests.jl}`：现有共享参数与空间对称流程，尤其检查 `restore_shared!` 和完整 sweep 的失败回滚。
+- `simple-update/split/{core.jl,loop.jl,measure.jl}`：star、闭环拟合、λ 计数、开放外腿稳定子残差和独立物理算符；dense 内核可作小型测试对照，不能直接充当新方案的无约束更新器。
+- `model/tc_peps.jl`：解析张量、物理基底与 Pauli 约定。
+- `simple-update/loop/{vumps_core.jl,vumps_tests.jl,VUMPS_REPORT.md}`：显式 double layer、普通 row MPO、正反向边界与伴随检查；其两行排布不照搬为本轮的物理周期。
+- `tests/runtests.jl`：通过独立模块隔离测试命名空间。
 - `skills/using-pepskit/references/pepskit-api.md`、`skills/using-mpskit/references/mpskit-api.md`：包接口地图；精确调用以当前安装版本源码为准。
 
 本计划编写时静态核对到以下事实，但尚未做本项目端到端调用验证：
@@ -150,7 +150,7 @@ $$
 
 ## 3. 文件职责与模块接口
 
-下文的短路径均相对 `tracks/peps/solutions/anyon-correlator/`。这些是未来新增路径，当前只创建本计划文件。
+下文的短路径均相对独立仓库根目录。本文保留计划编写时的任务安排，实际完成情况见同目录的进展记录。
 
 - `simple-update/one-site-z2-su/core.jl`：模块 `OneSiteZ2SU` 的入口，组织下列更新文件。
 - `simple-update/one-site-z2-su/tensors.jl`：仅一组 V/P/λ 的 `Z2State`、空间、初始化、空间投影、诊断与有约定的数组对照。
@@ -184,7 +184,7 @@ $$
 
 本计划给出测试名、断言和命令，不预先写出数值算法函数体。每项按“添加测试 → 确认预期失败 → 最小实现 → 通过测试 → 记录实际结果”推进。失败应来自待实现的功能，而非依赖缺失或任意异常。每项形成可独立审查的改动；只有用户授权提交时才创建相应的本地 commit，不自动 push。
 
-所有命令从仓库根执行，Julia 使用 `--startup-file=no -O1 --project=julia-env`，BLAS 和 Julia 均单线程。若在新 worktree 执行，先确认本地被忽略的 Manifest、已有环境和参考数据的可用性，不通过自动重解析环境来填补缺失。首次导入/编译时间与实际迭代时间分别记录。
+所有命令从仓库根执行，Julia 使用 `--startup-file=no -O1 --project=julia-env`，BLAS 和 Julia 均单线程。Manifest 和参考数据已纳入独立仓库的 Git；若在新 worktree 执行，先确认已有软件包缓存可用，不通过自动重解析环境来填补缺失。首次导入/编译时间与实际迭代时间分别记录。
 
 测试入口接受 `--group=<name>`，省略时运行该目录全部轻量检查；未知 group 报错。新增代码之后才运行下面的未来命令，不在当前写计划 session 中执行它们。
 
@@ -208,8 +208,8 @@ $$
 - [ ] **Step 6 — 运行两组测试。** 下列命令均须退出 0，所有目标测试通过；一次完整轻量 sweep 可以从随机对称态开始执行。完成后报告任务 1 的检查结果，默认先停在这里，正式长计算留到任务 2 确认设置后。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl --group=tensors
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl --group=updates
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env simple-update/one-site-z2-su/tests.jl --group=tensors
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env simple-update/one-site-z2-su/tests.jl --group=updates
 ```
 
 **交付：**真正以原生对称张量运行的局部更新，不是只完成数据结构定义，也不要求本任务跑完完整基态优化。
@@ -228,13 +228,13 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 - [ ] **Step 6 — 在全新输出目录执行并验收。** 保存 `initial.json`、`latest.json`、`final.json`、`trajectory.jsonl`、`settings.json` 和 `summary.json`。成功须满足第 4 节物理与环境标准，记录实际局部残差。没有通过时保留失败原因和张量，不自动替换成解析初态或扩大成多 seed 扫描。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl --group=runner
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env simple-update/one-site-z2-su/tests.jl --group=runner
 ```
 
 未来 runner 的示例调用（新目录、正式运行前仍需确认预算）：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/run.jl --seed=5 --steps=700 --dt=0.05 --als-sweeps=12 --budget=600 --out=tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/results/zero-z2-seed5
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env simple-update/one-site-z2-su/run.jl --seed=5 --steps=700 --dt=0.05 --als-sweeps=12 --budget=600 --out=simple-update/one-site-z2-su/results/zero-z2-seed5
 ```
 
 **交付：**通过验收的数值末态及证据。任务 3 以后正式物理结果必须读取该末态；解析测试可以独立使用解析参考。
@@ -251,7 +251,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 - [ ] **Step 4 — 运行网络测试。** 所有差值符合 $10^{-12}$ 量级检查，步长等于 1，局部 double-layer 空间维数为 4。将实际推导与约定写入新目录 README，不只记录函数名。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/transfer-spectrum/tests.jl --group=network
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env transfer-spectrum/tests.jl --group=network
 ```
 
 **交付：**从数值态构造的无限 MPO，及不会混淆 λ 计数、指标顺序和步长的局部定义。
@@ -268,7 +268,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 - [ ] **Step 4 — 运行边界测试，并在正式数值态上求边界。** 保存背景张量、实际 χ、Galerkin 残差、归一化和每格重叠。记录 Galerkin 残差是投影诊断，不将其单独当作完整本征方程误差的严格界。若边界是不可用于畴壁构造的对称叠加或冗余非 injective 表示，先修正表示再继续。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/transfer-spectrum/tests.jl --group=boundary
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env transfer-spectrum/tests.jl --group=boundary
 ```
 
 **交付：**两个可用于边界激发的背景、它们的关系及所需环境，不以“调用返回了 MPS”作为完成条件。
@@ -287,7 +287,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 - [ ] **Step 6 — 运行谱接口测试后，再生成正式数据。** 先取 k=−π、−π/2、0、π/2、π 的诊断点；接口无误后可取 [−π,π) 上 32 个均匀点作为零场图的初始网格。这不要求出现非平凡谱支。任何算例没有通过残差检查时，先保存失败点而非自动增加网格或改换物理态。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/transfer-spectrum/tests.jl --group=spectrum
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env transfer-spectrum/tests.jl --group=spectrum
 ```
 
 **交付：**按 (g,q,k) 分类、归一化清楚且带有效残差与状态的谱；固定点本征值在单独记录中展示，不强行塞入与背景正交的准粒子空间。
@@ -306,10 +306,10 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 - [ ] **Step 6 — 接入并运行相关回归。** 修改总测试入口时继续隔离模块命名空间；默认只跑轻量软件检查，不运行历史优化、场扫描或新生产任务。运行下面专项与总回归；检查新增说明和链接。用户允许时才将独立任务改动提交到本地仓库，不自动推送。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/transfer-spectrum/tests.jl --group=output
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/transfer-spectrum/tests.jl
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/tests/runtests.jl
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env transfer-spectrum/tests.jl --group=output
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env simple-update/one-site-z2-su/tests.jl
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env transfer-spectrum/tests.jl
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tests/runtests.jl
 ```
 
 正式 runner 接受 `--state=<已验收数值final.json>`、`--num=1`、`--nk=32`、`--budget=600`、`--out=<全新目录>`；图命令接受 `--input=<spectrum.csv>`、`--out=<图目录>`。不要在计划中预先伪造一个已存在的新末态路径。实现后在 README 与最终交付消息中给出实际可运行的一行命令。
@@ -323,8 +323,8 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 新 session 可直接使用以下指令：
 
 ```text
-请阅读 AGENTS.md、tracks/peps/solutions/anyon-correlator/AGENTS.md，以及
-tracks/peps/solutions/anyon-correlator/docs/2026-10-23-zero-field-z2-transfer-spectrum-plan.md。
+请阅读仓库根 AGENTS.md，以及
+docs/2026-10-23-zero-field-z2-transfer-spectrum-plan.md。
 按已确认的六项方案执行，不重新选择研究路线。先完成任务1：用 TensorKit 原生 Z2
 对称张量实现保持单组 V/P/lambda、1-site 平移和 C4 旋转约束的 loop/cluster
 simple update，并运行该任务的轻量检查。暂不运行完整基态或转移谱生产计算。

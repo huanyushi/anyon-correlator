@@ -566,7 +566,7 @@ Loop exact control 的局部 ALS squared fit residual 约为 3.56×10⁻²⁹。
 
 ### 12.1 文件对应关系
 
-本文相对路径均以 `tracks/peps/solutions/anyon-correlator/simple-update/split/` 为基准。
+本文相对路径均以 `simple-update/split/` 为基准。
 
 | 文件 | 作用 |
 |---|---|
@@ -587,7 +587,7 @@ Loop exact control 的局部 ALS squared fit residual 约为 3.56×10⁻²⁹。
 从 repository root 运行，使用已安装的 `julia-env`：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/split/reproduce.jl
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/split/reproduce.jl
 ```
 
 该命令已在本次审查中完整跑通，会重建并覆盖上述生成结果。它依次运行 path、loop、冻结态检查和旧代码 replay，最后对成功随机态、exact control 和旧能量锚点进行 assertions。
@@ -595,13 +595,13 @@ OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon
 实现检查：
 
 ```bash
-julia --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/split/tests.jl
+julia --project=julia-env simple-update/split/tests.jl
 ```
 
 仅重新生成图片，无需重新计算物理态：
 
 ```bash
-.venv/bin/python tracks/peps/solutions/anyon-correlator/simple-update/split/plot.py
+python3 simple-update/split/plot.py
 ```
 
 SVG 为本文引用的矢量图；同名 PNG 为本地预览。`results/` 遵循仓库的生成数据忽略规则，二进制 checkpoints 也不作为源代码提交；重新 checkout 后可通过复现脚本重建。报告中的数值表和 SVG 保存了主要证据。

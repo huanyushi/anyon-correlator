@@ -502,12 +502,12 @@ portable-state 的 summary/checkpoint hashes 均相符。
 从 repository root 执行：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/tests.jl
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/gradient_tests.jl
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/boundary_adapter_test.jl
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/failure_control_test.jl
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/diagnose.jl tracks/peps/solutions/anyon-correlator/ad/split/results/analytic-anchor-suite/z/final.jld2 tracks/peps/solutions/anyon-correlator/ad/split/results/new-z-diagnostic 8
-.venv/bin/python tracks/peps/solutions/anyon-correlator/ad/split/analyze.py
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/tests.jl
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/gradient_tests.jl
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/boundary_adapter_test.jl
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/failure_control_test.jl
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/diagnose.jl ad/split/results/analytic-anchor-suite/z/final.jld2 ad/split/results/new-z-diagnostic 8
+python3 ad/split/analyze.py
 ```
 
 输出目录需为空；`diagnose.jl` 的 source checkpoint 必须已存在。耗时记录与
@@ -516,7 +516,7 @@ OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/pe
 **不依赖历史结果的主复现命令**，从 h=0 解析参数独立启动每个场点：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/ad/split/run.jl suite --out=tracks/peps/solutions/anyon-correlator/ad/split/results/reproduce-unrolled --uniform=true --exact=true --gradient=unrolled --unroll=20 --ctm-tol=1e-11 --ctm-maxiter=1000 --chi=8 --chi-check=16 --seed=19 --maxsteps=400 --budget=3600
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env ad/split/run.jl suite --out=ad/split/results/reproduce-unrolled --uniform=true --exact=true --gradient=unrolled --unroll=20 --ctm-tol=1e-11 --ctm-maxiter=1000 --chi=8 --chi-check=16 --seed=19 --maxsteps=400 --budget=3600
 ```
 
 该形状的命令已经实际跑通；首次编译不计入每点 optimizer budget，整批另行

@@ -359,7 +359,7 @@ e*=−3/4
 完整单进程复现命令（从仓库根目录）：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/research/su-stagnation/dynamics/reproduce.jl
+OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env research/su-stagnation/dynamics/reproduce.jl
 ```
 
 该入口复用安装栈，在独立 namespaces 中运行 tests、pilot、followup、branch check、legacy check，然后重新生成分析。缺失旧 binary checkpoint 时，在本新目录重放 175 sweeps 创建参考；不依赖手工提供历史 binary。
@@ -385,5 +385,5 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 仅重新检查和绘图：
 
 ```bash
-.venv/bin/python tracks/peps/solutions/anyon-correlator/research/su-stagnation/dynamics/analyze.py
+python3 research/su-stagnation/dynamics/analyze.py
 ```

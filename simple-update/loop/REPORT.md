@@ -231,13 +231,13 @@ D=4 的 update-only pilot 较快，但实际 CTMRG 比预估昂贵。`max-second
 
 ```bash
 # 三个 D=2 点
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/reproduce.jl d2
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/reproduce.jl d2
 # 等追加 τ 的 dt/ALS 对照
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/reproduce.jl stability
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/reproduce.jl stability
 # 三个 D=3 点，分别作为有界任务
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/reproduce.jl d3-z
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/reproduce.jl d3-x
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/reproduce.jl d3-xz
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/reproduce.jl d3-z
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/reproduce.jl d3-x
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/reproduce.jl d3-xz
 ```
 
 上述入口使用最终等价优化核心。原 D=2 dense-ALS 结果另由 `qr-recheck` 从头复现，保存于 `results/d2-*-qr/`。`d3-xz` 的简化复现入口 final χ=8/12；本次历史主运行还测了 χ=20，额外结果保留在对应 JSON 中。
@@ -245,9 +245,9 @@ OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon
 诊断脚本：
 
 ```bash
-julia --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/tests.jl
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/d3_refine.jl
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/cylinder_audit.jl
+julia --project=julia-env simple-update/loop/tests.jl
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/d3_refine.jl
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/cylinder_audit.jl
 ```
 
 `sequential_audit.jl` 和 `contraction_audit.jl` 重现 frozen-state 的增长顺序/环境初始化检查，当前脚本列表还包含 D=4 checkpoint。只有在该 checkpoint 已生成时才能执行完整列表。
@@ -255,13 +255,13 @@ OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon
 历史 D=4 命令如下，**不是建议在本地直接进行更长生产运行**：
 
 ```bash
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/run.jl --D=4 --hx=0.1 --hz=0.1 --resume=tracks/peps/solutions/anyon-correlator/simple-update/loop/results/d3-xz/state.jls --schedule=0.02:60,0.005:60 --chi=12 --final-chis=8,12 --every=30 --out=tracks/peps/solutions/anyon-correlator/simple-update/loop/results/d4-xz --max-seconds=420
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/run.jl --D=4 --hx=0.1 --hz=0.1 --resume=simple-update/loop/results/d3-xz/state.jls --schedule=0.02:60,0.005:60 --chi=12 --final-chis=8,12 --every=30 --out=simple-update/loop/results/d4-xz --max-seconds=420
 ```
 
 读取现有数据并生成本文图表：
 
 ```bash
-.venv/bin/python tracks/peps/solutions/anyon-correlator/simple-update/loop/analyze.py
+python3 simple-update/loop/analyze.py
 ```
 
 ### 8.2 证据位置与字段

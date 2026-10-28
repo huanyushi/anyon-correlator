@@ -56,6 +56,8 @@ python3 scripts/summarize_results.py
 
 AD 的弱场重算命令见 [ad/split/README.md](ad/split/README.md)。首次 Julia 编译显著慢于后续调用；重算前仍需估计墙时和内存。
 
-迁移说明见 [docs/MIGRATION.md](docs/MIGRATION.md)。各级 README 的运行命令已使用独立仓库路径。历史报告、旧计划和运行记录保留原文；其中的命令如需复用，应删除 `tracks/peps/solutions/anyon-correlator/` 前缀。历史文档中的 `.venv/bin/python` 指旧仓库的 Python 环境，并未随本项目迁移。
+迁移说明见 [docs/MIGRATION.md](docs/MIGRATION.md)。README、研究报告和计划中的运行命令均使用独立仓库路径；历史运行目录中的程序副本、日志、参数和哈希保留原样。
+
+Python 数据汇总脚本需要 Python 3.11 或更新版本；`transfer-spectrum/plot.py` 使用标准库生成 SVG。其他绘图脚本按实际导入需要 NumPy、Matplotlib，运行前请确认所用 `python3` 环境具备对应依赖。原 quantum.harness 的 Python 虚拟环境未随项目迁移。
 
 整体后续安排见 [PLAN.md](PLAN.md)。本项目源自 challenge #50，但当前计划不再受当时的限时提交流程约束。

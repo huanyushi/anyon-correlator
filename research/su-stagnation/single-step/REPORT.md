@@ -208,9 +208,9 @@ SU 的目标是让开放局部误差小，但真实物理误差由 Cε 决定。
 所有命令从仓库根目录执行。输出写入本目录；重复运行会重建本审计结果。
 
 ```bash
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/research/su-stagnation/single-step/audit.jl
-OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/research/su-stagnation/single-step/stages.jl
-.venv/bin/python tracks/peps/solutions/anyon-correlator/research/su-stagnation/single-step/analyze.py
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env research/su-stagnation/single-step/audit.jl
+OPENBLAS_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env research/su-stagnation/single-step/stages.jl
+python3 research/su-stagnation/single-step/analyze.py
 ```
 
 - `audit.jl`：重放、逐门 finite audit、identity control、无限 CTMRG。

@@ -167,16 +167,16 @@ Seeds 1、2 的 norm/cell 则约为 **0.002107982698852**。Seed17 的 norm 增�
 
 ```bash
 # 解析 exact control
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/vumps_run.jl --state=exact --chi=4
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/vumps_run.jl --state=exact --chi=4
 
 # D=3 主核对：可直接使用 portable snapshot
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/vumps_run.jl --state=d3-xz --chi=16 --seed=2 --tol=1e-9 --maxiter=100 --balanced=true --portable=true --budget=300
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/vumps_run.jl --state=d3-xz --chi=16 --seed=2 --tol=1e-9 --maxiter=100 --balanced=true --portable=true --budget=300
 
 # D=4 有界核对；达标与否由输出判断
-OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/vumps_run.jl --state=d4-xz --chi=16 --seed=1 --tol=1e-9 --maxiter=200 --balanced=true --portable=true --budget=300
+OPENBLAS_NUM_THREADS=1 julia -O1 --project=julia-env simple-update/loop/vumps_run.jl --state=d4-xz --chi=16 --seed=1 --tol=1e-9 --maxiter=200 --balanced=true --portable=true --budget=300
 
 # 局部 contraction / gauge 检查
-julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-update/loop/vumps_tests.jl
+julia -O1 --project=julia-env simple-update/loop/vumps_tests.jl
 ```
 
 本次 χ=16 的历史流程是先运行 120 轮，再从边界 checkpoint 追加；χ=24 则从它扩大 boundary dimension。用 `--resume-boundaries=<boundaries.jls>` 和 `--tag=<suffix>` 可以保留追加计算的独立记录。扩大 boundary 时只改变初始边界猜测，physical tensors 仍被冻结。
@@ -185,7 +185,7 @@ julia -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/simple-upda
 
 ```bash
 # 使用已收集的完整结果重新生成表格和本报告图片
-.venv/bin/python tracks/peps/solutions/anyon-correlator/simple-update/loop/vumps_analyze.py
+python3 simple-update/loop/vumps_analyze.py
 ```
 
 脚本会核对结果引用的 physical checkpoint hash，并在摘要中保留失败标记。原始 `results/` 被仓库忽略；portable physical snapshots、摘要和 SVG 是可保存的研究记录。
