@@ -1,0 +1,73 @@
+非对称起点恢复：D=2 χ=16 hₓ=0.0 h_z=0.1，使用主导 norm 分支
+主导 norm=0.003906338189373798，e=-1.002507128542818，开始验证 fixed-point 导数
+主导分支 FD：random_17 ε=0.0001 AD=0.0015612450015046327 FD=0.0015612384141050484
+主导分支 FD：random_17 ε=1.0e-5 AD=0.0015612450015046327 FD=0.0015612347303850525
+主导分支 FD：random_31 ε=0.0001 AD=-0.0005576231459271137 FD=-0.0005576313300004188
+主导分支 FD：random_31 ε=1.0e-5 AD=-0.0005576231459271137 FD=-0.0005576214934244206
+主导分支 FD：negative_gradient ε=0.0001 AD=-0.014621536863471948 FD=-0.014621539050629906
+主导分支 FD：negative_gradient ε=1.0e-5 AD=-0.014621536863471948 FD=-0.014621526378544301
+AD step=0 e=-1.002507128543 |g|=1.462e-02 mx=-0.0018499 mz=0.0504785 residual=5.69e-12 wall=71.0s
+AD step=1 e=-1.002511090143 |g|=1.195e-02 mx=0.0018287 mz=0.0505584 residual=1.02e-11 wall=1074.8s
+AD 求导失败，停止使用此梯度：AD adjoint did not converge; returned vector is rejected:
+┌ Warning: 2 x 2 Schur block at position 1 and 2 detected, complex eigenvalues with imaginary part 1.0550317119675114 will be ignored by setting T[i+1,i] = -0.950419374416724 to zero.
+└ @ KrylovKit /home/huanyushi/.julia/packages/KrylovKit/bEE7W/src/eigsolve/arnoldi.jl:305
+┌ Warning: Fixed-point gradient computation using Arnoldi failed:
+│ 	auxiliary component should be finite but was 2.551404382778724e-14 + 0.0im
+│ 	possibly the Jacobian does not have a unique eigenvalue 1
+└ @ PEPSKit /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:353
+┌ Warning: GMRES linsolve stopped without converging after 30 iterations:
+│ * norm of residual = 9.50e+05
+│ * number of operations = 624
+└ @ KrylovKit /home/huanyushi/.julia/packages/KrylovKit/bEE7W/src/linsolve/gmres.jl:136
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+│   info = ConvergenceInfo: no converged values after 30 iterations and 624 applications of the linear map;
+norms of residuals are given by 9.50e+05.
+└ @ PEPSKit /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:336
+
+ERROR: LoadError: dominant norm has insufficient independent initializations; [(seed = 2026, normcell = 0.003906326594809633, energy = -1.0025158517253), (seed = 17, normcell = 0.00390632659480963, energy = -1.0025158517253), (seed = 1, normcell = 0.003906326594809634, energy = -1.0025158517253), (seed = 2, normcell = 0.003906326594809637, energy = -1.0025158517253), (seed = 3, normcell = 0.003906326594809631, energy = -1.0025158517253), (seed = 42, normcell = 0.0039063279196280614, energy = -1.0025156003947766), (seed = 71, normcell = 0.003906326594809638, energy = -1.0025158517253001), (seed = 7, normcell = 0.003906327919628065, energy = -1.0025156003947764)]
+Stacktrace:
+  [1] dominant_contract(x::Vector{Float64}, D::Int64, H::LocalOperator{Any, ComplexSpace}; chi::Int64, tol::Float64, maxiter::Int64, seed::Int64, seeds::NTuple{8, Int64}, minimum_members::Int64, initial_env::Nothing)
+    @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:75
+  [2] dominant_contract
+    @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:48 [inlined]
+  [3] dominant_audit(x::Vector{Float64}, D::Int64, hx::Float64, hz::Float64; chi::Int64, chi_check::Int64, tol::Float64, maxiter::Int64, gradnorm::Float64, status::String)
+    @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:93
+  [4] optimize(x::Vector{Float64}, D::Int64, hx::Float64, hz::Float64; chi::Int64, chi_check::Int64, maxsteps::Int64, budget::Int64, tol::Float64, ctm_maxiter::Int64, gradient_method::Symbol, unroll_steps::Int64, gradient_provider::typeof(energy_gradient), contraction_provider::typeof(dominant_contract), audit_provider::typeof(dominant_audit), carry_env::Bool, outdir::String)
+    @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/optimize.jl:146
+  [5] noisy_recovery(out::String; chi::Int64, tol::Float64, budget::Int64)
+    @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/noisy_recover.jl:40
+  [6] noisy_recovery(out::String)
+    @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/noisy_recover.jl:4
+  [7] top-level scope
+    @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/noisy_recover.jl:51
+  [8] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+  [9] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [10] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/noisy_recover.jl:48
+Command exited with non-zero status 1
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/noisy_recover.jl tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/noisy-recovery03"
+	User time (seconds): 3092.90
+	System time (seconds): 15.78
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 51:49.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3799588
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 8222405
+	Voluntary context switches: 20
+	Involuntary context switches: 9606
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

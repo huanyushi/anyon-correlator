@@ -1,0 +1,58 @@
+继续有限场优化：xz，hₓ=0.1 h_z=0.1，D=2 χ=8 N=20
+probe objective ready energy=-1.0050340781978915 residual=8.574014965937226e-12 wall=99.67s; starting two-stage AD
+probe first energy=-1.0050340781978915 gradnorm=0.00355440969386444 objective=99.67s gradient=522.89s
+FD direction=1 eps=0.0001 ad=0.0004792123071905751 fd=0.00047920408641211054 passed=true
+FD direction=1 eps=1.0e-5 ad=0.0004792123071905751 fd=0.00047920889478803014 passed=true
+FD direction=2 eps=0.0001 ad=3.335363887442272e-5 fd=3.33427452314794e-5 passed=true
+FD direction=2 eps=1.0e-5 ad=3.335363887442272e-5 fd=3.3346736483252926e-5 passed=true
+FD direction=3 eps=0.0001 ad=-0.0035544096938644404 fd=-0.003554514096393291 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.0035544096938644404 fd=-0.00355441831523251 passed=true
+AD step=0 e=-1.005034078198 |g|=3.554e-03 mx=0.0504938 mz=0.0504770 residual=8.57e-12 wall=8.7s
+AD step=1 e=-1.005034416410 |g|=2.560e-03 mx=0.0506422 mz=0.0504879 residual=9.01e-12 wall=56.0s
+AD step=2 e=-1.005034819356 |g|=4.383e-04 mx=0.0507659 mz=0.0505409 residual=7.74e-12 wall=66.2s
+AD step=3 e=-1.005034826342 |g|=2.481e-04 mx=0.0508712 mz=0.0505595 residual=9.68e-12 wall=75.3s
+AD step=4 e=-1.005034828191 |g|=7.791e-05 mx=0.0508365 mz=0.0505607 residual=9.30e-12 wall=89.3s
+AD step=5 e=-1.005034828613 |g|=3.895e-05 mx=0.0508285 mz=0.0505656 residual=8.15e-12 wall=100.9s
+AD step=6 e=-1.005034828791 |g|=1.030e-05 mx=0.0508289 mz=0.0505716 residual=9.05e-12 wall=114.7s
+AD step=7 e=-1.005034828796 |g|=4.074e-07 mx=0.0508308 mz=0.0505716 residual=6.85e-12 wall=123.4s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+probe objective ready energy=-1.005034828795574 residual=6.854056991695271e-12 wall=3.3s; starting two-stage AD
+probe first energy=-1.005034828795574 gradnorm=7.505820607670595e-7 objective=3.3s gradient=4.11s
+FD direction=1 eps=0.0001 ad=-1.0056363361945291e-7 fd=2.276401289691421e-8 passed=true
+FD direction=1 eps=1.0e-5 ad=-1.0056363361945291e-7 fd=2.7555735471196382e-8 passed=true
+FD direction=2 eps=0.0001 ad=4.568440866205638e-8 fd=6.217248937900877e-10 passed=true
+FD direction=2 eps=1.0e-5 ad=4.568440866205638e-8 fd=4.563016631209393e-9 passed=true
+FD direction=3 eps=0.0001 ad=-7.505820607670597e-7 fd=-2.8794078232863285e-7 passed=true
+FD direction=3 eps=1.0e-5 ad=-7.505820607670597e-7 fd=-2.8390623185714503e-7 passed=true
+最终物理方向 FD：X ε=0.0001 passed=true
+最终物理方向 FD：X ε=1.0e-5 passed=true
+最终物理方向 FD：Z ε=0.0001 passed=true
+最终物理方向 FD：Z ε=1.0e-5 passed=true
+xz 最终验收：true，原因=String[]
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/repair.jl tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/unrolled-repair02 3600 xz"
+	User time (seconds): 894.50
+	System time (seconds): 5.07
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:59.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3827604
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 17
+	Minor (reclaiming a frame) page faults: 2600572
+	Voluntary context switches: 40
+	Involuntary context switches: 2384
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

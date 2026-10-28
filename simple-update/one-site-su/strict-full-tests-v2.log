@@ -1,0 +1,120 @@
+SUITE ModelChecks model/tests.jl
+[PASS] G1 operator construction (incidence, involutions, commutation, [A,ΣX]=0) — all operator checks passed
+[PASS] G2 h=0 anchor: E₀ = −8, degeneracy 4, gap 4 — E₀ = -8.000000000000, degeneracy 4, gap 4.000000
+[PASS] G3 all 4 ground states stabilized: ⟨Aₛ⟩ = ⟨B_p⟩ = 1 — max |⟨A⟩−1| = 6.66e-16, max |⟨B⟩−1| = 4.44e-16
+[PASS] G4 self-duality E₀(hₓ,h_z) = E₀(h_z,hₓ) — |Δ| = 7.11e-15, 1.24e-14
+[PASS] G5 E₀ monotonically decreasing along (hₓ,0), h ≤ 0.5 — E₀(h) = -8.0000, -8.0406, -8.1691, -8.4026, -9.2263
+[PASS] G6a large field (5,0): E₀/N ∈ (−5.65, −5.5) [= −hₓ − Jₑ/2 window] — E₀/N = -5.512547
+[PASS] G6b large field (5,5): E₀/N ∈ (−√50 − 0.6, −√50) — E₀/N = -7.353759, −√50 = -7.071068
+Test Summary:                       | Pass  Total  Time
+M1 — toric-code Hamiltonian, 2×2 ED |    7      7  0.8s
+[PASS] T1 V/P contraction == closed-form rank-6 tensor
+[PASS] T2 exact tensor: intertwiner, 32 nonzero entries, norm √8, read-back 64/64
+[PASS] T3 Hamiltonian: 4+4 terms, Pauli ops square to I, incidence matches M1
+[PASS] T4 Pauli gate closed form == dense exp
+[PASS] T5 SU circuit: 8 three-site MPO gates on NN paths
+[PASS] T6 su_iter preserves Z₂-graded spaces
+[PASS] T7 normalization: E_cell = −8, per composite site = −2, per edge spin = −1
+Test Summary:                            | Pass  Total     Time
+M2 — exact tensor, Hamiltonian, SU gates |   49     49  3m28.0s
+SUITE MergedADChecks ad/merged/tests.jl
+Test Summary:         | Pass  Total  Time
+M2 tied dense-AD core |   11     11  1.2s
+[     0.8 s] Armijo alpha=0.3000 rejected: test non-convergence
+Test Summary:                  | Pass  Total  Time
+M2 tied dense-AD mode ceilings |   27     27  0.4s
+SUITE SplitSUChecks simple-update/split/tests.jl
+Test Summary:                 | Pass  Total  Time
+four-spin imaginary-time gate |    2      2  0.8s
+Test Summary:                | Pass  Total  Time
+closed-loop metric and gauge |    3      3  4.9s
+Test Summary:                | Pass  Total  Time
+weighted path reconstruction |    4      4  1.0s
+Test Summary:               | Pass  Total  Time
+TT split without truncation |    2      2  0.2s
+SUITE LoopChecks simple-update/loop/tests.jl
+Test Summary:                           | Pass  Total  Time
+field gate sign, axis and normalization |    6      6  1.3s
+Test Summary:                                             | Pass  Total  Time
+QR-compressed ALS is the same local least-squares problem |    7      7  2.5s
+Test Summary:                     | Pass  Total  Time
+D-dependent closed-ring regauging |   10     10  0.1s
+Test Summary:                             | Pass  Total  Time
+published series and physical derivatives |   11     11  0.2s
+SUITE StrictOneSiteChecks simple-update/one-site-su/strict_tests.jl
+Test Summary:                             | Pass  Total  Time
+strict single-state implementation exists |    1      1  0.0s
+Test Summary:                          | Pass  Total  Time
+strict numerical runner is implemented |    1      1  0.3s
+Test Summary:                                                          | Pass  Total  Time
+checkpoint stores exactly one V/P/lambda and failed audits stay failed |   10     10  2.9s
+Test Summary:                                               | Pass  Total  Time
+only three arrays persist and spatial constraints are exact |    7      7  0.3s
+Test Summary:                                                  | Pass  Total  Time
+virtual gauge and lambda compensation preserve a weighted star |    1      1  0.5s
+Test Summary:                                               | Pass  Total  Time
+original updates commit one symmetric state at each substep |   15     15  3.0s
+Test Summary:                                                   | Pass  Total  Time
+aligning a pure virtual gauge must not erase vertex information |    3      3  0.2s
+Test Summary:                                      | Pass  Total  Time
+reflection ambiguity of P must be resolved using V |    9      9  0.0s
+Test Summary:                                              | Pass  Total  Time
+a failed plaquette must not leave an uncounted star update |    2      2  0.0s
+SUITE BoundaryChecks simple-update/loop/vumps_tests.jl
+Test Summary:                  | Pass  Total  Time
+two-row column map and adjoint |    3      3  5.3s
+Test Summary:                                            | Pass  Total  Time
+measurement bond-gauge preserves a periodic wavefunction |    1      1  5.0s
+SUITE SplitADChecks ad/split/tests.jl
+Test Summary:                                    | Pass  Total  Time
+independent Pauli action and field normalization |   10     10  2.2s
+Test Summary:                                  | Pass  Total  Time
+safeguarded L-BFGS on an independent quadratic |    6      6  0.4s
+Test Summary:                                                | Pass  Total  Time
+a passed derivative probe cannot authorize a different setup |    6      6  0.4s
+Test Summary:                                    | Pass  Total  Time
+exact-state contraction verdict checks all sites |    4      4  0.6s
+Test Summary:                                   | Pass  Total  Time
+final acceptance rejects false physical success |   10     10  1.0s
+Test Summary:                                         | Pass  Total   Time
+uniform sharing differentiates the same split network |    2      2  50.6s
+Test Summary:                                              | Pass  Total   Time
+split-network blocking preserves the weighted wavefunction |   16     16  15.1s
+SUITE GradientChecks ad/split/gradient_tests.jl
+Test Summary:                                                | Pass  Total  Time
+a finite vector from a failed adjoint solve must be rejected |    5      5  0.2s
+Test Summary:                                 | Pass  Total  Time
+norm dominance is not minimum measured energy |    3      3  0.1s
+Test Summary:                                             | Pass  Total  Time
+generic perturbations actually break the virtual symmetry |    8      8  0.6s
+Test Summary:                                           | Pass  Total  Time
+derivative validation binds the method and finite graph |    3      3  0.2s
+Test Summary:                                  | Pass  Total  Time
+unrolled AD rejects undefined iteration graphs |    2      2  0.1s
+SUITE AdapterChecks ad/split/boundary_adapter_test.jl
+Test Summary:                                            | Pass  Total  Time
+independent boundary adapter preserves the measured PEPS |    5      5  0.9s
+SUITE FailureChecks ad/split/failure_control_test.jl
+AD 求导失败，停止使用此梯度：AD adjoint did not converge; returned vector is rejected:
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+└ @ Main.FailureChecks /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/ad/split/failure_control_test.jl:11
+
+audit chi=4 seed=2026 status=converged
+audit chi=4 seed=1 status=converged
+audit chi=4 seed=2 status=converged
+audit chi=8 seed=2026 status=converged
+FINAL status=gradient_failed accepted=false reasons=["optimizer_not_stationary"]
+Test Summary:                                         | Pass  Total     Time
+correct observables do not excuse a failed derivative |    7      7  2m02.1s
+AD 求导失败，停止使用此梯度：deliberate adjoint failure
+FINAL status=gradient_failed accepted=false reasons=["audit_failed"]
+Test Summary:                                                           | Pass  Total  Time
+an inconclusive final audit still preserves an explicit failure summary |    4      4  0.8s
+SUITE SavedStateChecks tests/state_loading_tests.jl
+Test Summary:                                             | Pass  Total  Time
+retained loop states preserve binary and portable numbers |   93     93  0.2s
+Test Summary:                                  | Pass  Total  Time
+retained split-SU zero-field state still loads |    3      3  0.0s
+Test Summary:                                             | Pass  Total  Time
+AD portable parameters refer to unchanged accepted states |    9      9  0.1s
+ALL_RETAINED_TESTS_COMPLETE

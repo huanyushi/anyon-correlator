@@ -1,0 +1,101 @@
+SUITE point=zero hx=0.0 hz=0.0 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=98.74s; starting two-stage AD
+probe first energy=-0.9999999999999999 gradnorm=3.4086013465988515e-17 objective=98.74s gradient=577.67s
+FD direction=1 eps=0.0001 ad=-3.3575938553501615e-18 fd=-5.185851748024106e-9 passed=true
+FD direction=1 eps=1.0e-5 ad=-3.3575938553501615e-18 fd=-5.551115123125782e-11 passed=true
+FD direction=2 eps=0.0001 ad=4.609882165576347e-18 fd=-3.1885605267234496e-9 passed=true
+FD direction=2 eps=1.0e-5 ad=4.609882165576347e-18 fd=-4.4408920985006255e-11 passed=true
+AD step=0 e=-1.000000000000 |g|=3.409e-17 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=3.5s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+SUITE point=z hx=0.0 hz=0.1 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=0.39s; starting two-stage AD
+probe first energy=-0.9999999999999999 gradnorm=0.1414213562373095 objective=0.39s gradient=12.99s
+FD direction=1 eps=0.0001 ad=-0.03774099438349293 fd=-0.03774099956999066 passed=true
+FD direction=1 eps=1.0e-5 ad=-0.03774099438349293 fd=-0.03774099442965806 passed=true
+FD direction=2 eps=0.0001 ad=0.012872274194130458 fd=0.012872271261121782 passed=true
+FD direction=2 eps=1.0e-5 ad=0.012872274194130458 fd=0.012872274163244766 passed=true
+FD direction=3 eps=0.0001 ad=-0.1414213562373095 fd=-0.14142136118611148 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.1414213562373095 fd=-0.1414213562589417 passed=true
+AD step=0 e=-1.000000000000 |g|=1.414e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=3.1s
+AD step=1 e=-1.000076904449 |g|=1.397e-01 mx=0.0000000 mz=0.1017764 residual=7.96e-12 wall=9.7s
+AD step=2 e=-1.002515858500 |g|=2.178e-04 mx=0.0000000 mz=0.0505605 residual=9.53e-13 wall=13.2s
+AD step=3 e=-1.002515864507 |g|=1.566e-06 mx=0.0000000 mz=0.0506389 residual=9.29e-13 wall=16.9s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+SUITE point=x hx=0.1 hz=0.0 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=0.32s; starting two-stage AD
+probe first energy=-0.9999999999999999 gradnorm=0.28284271247461906 objective=0.32s gradient=2.77s
+FD direction=1 eps=0.0001 ad=0.024520212126079646 fd=0.0245202073018147 passed=true
+FD direction=1 eps=1.0e-5 ad=0.024520212126079646 fd=0.024520212082990153 passed=true
+FD direction=2 eps=0.0001 ad=0.032497963573229455 fd=0.032497960813504534 passed=true
+FD direction=2 eps=1.0e-5 ad=0.032497963573229455 fd=0.032497963547983844 passed=true
+FD direction=3 eps=0.0001 ad=-0.28284271247461906 fd=-0.2828427426743163 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.28284271247461906 fd=-0.2828427127676836 passed=true
+AD step=0 e=-1.000000000000 |g|=2.828e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=3.1s
+AD step=1 e=-1.001455974973 |g|=1.833e-01 mx=0.0176850 mz=0.0000000 residual=9.82e-12 wall=59.9s
+AD step=2 e=-1.001923166954 |g|=1.375e-01 mx=0.0259538 mz=0.0000000 residual=3.15e-12 wall=86.5s
+AD step=3 e=-1.002520276725 |g|=5.944e-03 mx=0.0513103 mz=0.0000000 residual=9.70e-12 wall=96.7s
+AD step=4 e=-1.002521796323 |g|=2.661e-03 mx=0.0508371 mz=0.0000000 residual=6.36e-12 wall=103.4s
+AD step=5 e=-1.002522261630 |g|=3.826e-04 mx=0.0508534 mz=0.0000000 residual=9.94e-12 wall=107.8s
+AD step=6 e=-1.002522261666 |g|=3.821e-04 mx=0.0508535 mz=0.0000000 residual=8.61e-12 wall=236.4s
+AD step=7 e=-1.002522272489 |g|=1.897e-04 mx=0.0508785 mz=-0.0000000 residual=7.69e-12 wall=258.0s
+AD step=8 e=-1.002522276337 |g|=3.936e-06 mx=0.0508997 mz=-0.0000000 residual=9.89e-12 wall=261.2s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+SUITE point=xz hx=0.1 hz=0.1 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=1.69s; starting two-stage AD
+probe first energy=-0.9999999999999999 gradnorm=0.316227766016838 objective=1.69s gradient=1.22s
+FD direction=1 eps=0.0001 ad=-0.013220782257413289 fd=-0.013220787081213992 passed=true
+FD direction=1 eps=1.0e-5 ad=-0.013220782257413289 fd=-0.01322078229115675 passed=true
+FD direction=2 eps=0.0001 ad=0.0453702377673599 fd=0.04537023526540729 passed=true
+FD direction=2 eps=1.0e-5 ad=0.0453702377673599 fd=0.04537023775008641 passed=true
+FD direction=3 eps=0.0001 ad=-0.3162277660168382 fd=-0.3162277869284136 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.3162277660168382 fd=-0.3162277662338564 passed=true
+AD step=0 e=-1.000000000000 |g|=3.162e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=3.2s
+AD step=1 e=-1.002894198291 |g|=1.591e-01 mx=0.0316642 mz=0.0079057 residual=4.55e-12 wall=39.4s
+AD step=2 e=-1.003042852175 |g|=1.510e-01 mx=0.0332462 mz=0.0090184 residual=4.26e-12 wall=91.1s
+AD step=3 e=-1.004874430147 |g|=5.110e-02 mx=0.0583823 mz=0.0402815 residual=8.73e-12 wall=94.6s
+AD step=4 e=-1.005015486159 |g|=2.034e-02 mx=0.0541574 mz=0.0478030 residual=9.79e-12 wall=113.6s
+AD step=5 e=-1.005034677303 |g|=1.342e-03 mx=0.0509510 mz=0.0506564 residual=8.64e-12 wall=129.4s
+AD step=6 e=-1.005034740803 |g|=9.357e-04 mx=0.0508868 mz=0.0506224 residual=7.08e-12 wall=161.3s
+AD step=7 e=-1.005034825168 |g|=2.293e-04 mx=0.0507968 mz=0.0505625 residual=9.92e-12 wall=173.0s
+AD step=8 e=-1.005034828699 |g|=4.763e-05 mx=0.0508224 mz=0.0505680 residual=9.81e-12 wall=188.3s
+AD step=9 e=-1.005034828795 |g|=2.437e-06 mx=0.0508308 mz=0.0505716 residual=8.52e-12 wall=194.1s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/run.jl suite --out=tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/fresh-unrolled-suite01 --uniform=true --exact=true --gradient=unrolled --unroll=20 --ctm-tol=1e-11 --ctm-maxiter=1000 --chi=8 --chi-check=16 --seed=19 --maxsteps=400 --budget=3600"
+	User time (seconds): 1332.45
+	System time (seconds): 6.29
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 22:19.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3797712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 53
+	Minor (reclaiming a frame) page faults: 3524614
+	Voluntary context switches: 318
+	Involuntary context switches: 4316
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

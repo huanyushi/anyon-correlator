@@ -1,0 +1,60 @@
+冻结态诊断开始：D=2 χ=8 hₓ=0.0 h_z=0.1，参数数目=40
+参考收缩完成：e=-1.0025158585004035，residual=6.804627032159309e-13
+检查原 fixed-point AD（非收敛解将拒绝）
+原 fixed-point AD 状态：valid
+fresh FD：random_17 ε=0.001 slope=-5.8918232404003845e-5 seed_spread=1.686651824428509e-6
+fresh FD：random_17 ε=0.0001 slope=nothing seed_spread=nothing
+fresh FD：random_17 ε=1.0e-5 slope=nothing seed_spread=nothing
+fresh FD：random_31 ε=0.001 slope=1.982045327864057e-5 seed_spread=3.928773480543768e-6
+fresh FD：random_31 ε=0.0001 slope=nothing seed_spread=nothing
+fresh FD：random_31 ε=1.0e-5 slope=nothing seed_spread=nothing
+fresh FD：physical_Z ε=0.001 slope=-0.00021762144253312243 seed_spread=2.220446049250313e-16
+fresh FD：physical_Z ε=0.0001 slope=-0.0002176120361685463 seed_spread=2.220446049250313e-16
+fresh FD：physical_Z ε=1.0e-5 slope=-0.00021761193957914313 seed_spread=2.220446049250313e-16
+开始展开 AD：N=10
+展开 FD：N=10 random_17 ε=0.0001 AD=-5.844844058645071e-5 FD=-5.8431193217245436e-5
+展开 FD：N=10 random_17 ε=1.0e-5 AD=-5.844844058645071e-5 FD=-5.8426319338167325e-5
+展开 FD：N=10 random_31 ε=0.0001 AD=2.0158084009158743e-5 FD=2.0148018808896495e-5
+展开 FD：N=10 random_31 ε=1.0e-5 AD=2.0158084009158743e-5 FD=2.0151302848603336e-5
+展开 FD：N=10 physical_Z ε=0.0001 AD=-0.00021770622927365526 FD=-0.0002176120361685463
+展开 FD：N=10 physical_Z ε=1.0e-5 AD=-0.00021770622927365526 FD=-0.00021761192847691288
+展开 AD 完成：N=10 |g|=0.00021798221641532745 Δg=nothing wall=6.1s
+开始展开 AD：N=20
+展开 FD：N=20 random_17 ε=0.0001 AD=-5.838212384549518e-5 FD=-5.8431193217245436e-5
+展开 FD：N=20 random_17 ε=1.0e-5 AD=-5.838212384549518e-5 FD=-5.842633044039757e-5
+展开 FD：N=20 random_31 ε=0.0001 AD=2.013463759083639e-5 FD=2.014801991911952e-5
+展开 FD：N=20 random_31 ε=1.0e-5 AD=2.013463759083639e-5 FD=2.0151280644142844e-5
+展开 FD：N=20 physical_Z ε=0.0001 AD=-0.00021746678618280666 FD=-0.00021761203505832327
+展开 FD：N=20 physical_Z ε=1.0e-5 AD=-0.00021746678618280666 FD=-0.00021761195068137337
+展开 AD 完成：N=20 |g|=0.00021774247813871256 Δg=2.415876783509866e-7 wall=2.6s
+开始展开 AD：N=40
+展开 FD：N=40 random_17 ε=0.0001 AD=-5.841657212291838e-5 FD=-5.843119432746846e-5
+展开 FD：N=40 random_17 ε=1.0e-5 AD=-5.841657212291838e-5 FD=-5.8426319338167325e-5
+展开 FD：N=40 random_31 ε=0.0001 AD=2.0148399681476864e-5 FD=2.014801991911952e-5
+展开 FD：N=40 random_31 ε=1.0e-5 AD=2.0148399681476864e-5 FD=2.015129174637309e-5
+展开 FD：N=40 physical_Z ε=0.0001 AD=-0.00021757031127578845 FD=-0.0002176120361685463
+展开 FD：N=40 physical_Z ε=1.0e-5 AD=-0.00021757031127578845 FD=-0.00021761193957914313
+展开 AD 完成：N=40 |g|=0.0002178461223055229 Δg=1.4237719786768706e-7 wall=3.8s
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/diagnose.jl tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/analytic-anchor-suite/z/final.jld2 tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/diagnostic-z-unrolled02 8"
+	User time (seconds): 852.10
+	System time (seconds): 4.97
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:17.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3382240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 2373960
+	Voluntary context switches: 16
+	Involuntary context switches: 2134
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

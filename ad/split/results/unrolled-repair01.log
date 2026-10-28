@@ -1,0 +1,87 @@
+继续有限场优化：z，hₓ=0.0 h_z=0.1，D=2 χ=8 N=20
+probe objective ready energy=-1.0025158585004035 residual=6.804627032159309e-13 wall=92.57s; starting two-stage AD
+probe first energy=-1.002515858500403 gradnorm=0.00021774247813871256 objective=92.57s gradient=505.32s
+FD direction=1 eps=0.0001 ad=-5.838212384549518e-5 fd=-5.8431193217245436e-5 passed=true
+FD direction=1 eps=1.0e-5 ad=-5.838212384549518e-5 fd=-5.842633044039757e-5 passed=true
+FD direction=2 eps=0.0001 ad=2.013463759083639e-5 fd=2.014801991911952e-5 passed=true
+FD direction=2 eps=1.0e-5 ad=2.013463759083639e-5 fd=2.0151280644142844e-5 passed=true
+FD direction=3 eps=0.0001 ad=-0.00021774247813871253 fd=-0.00021788647885934154 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.00021774247813871253 fd=-0.00021788777448961125 passed=true
+AD step=0 e=-1.002515858500 |g|=2.177e-04 mx=-0.0000000 mz=0.0505605 residual=6.80e-13 wall=3.8s
+AD step=1 e=-1.002515858803 |g|=2.125e-04 mx=-0.0000000 mz=0.0507165 residual=6.93e-13 wall=6.9s
+AD step=2 e=-1.002515864507 |g|=3.013e-07 mx=0.0000000 mz=0.0506394 residual=6.58e-13 wall=10.5s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+probe objective ready energy=-1.0025158645074383 residual=6.584512945343105e-13 wall=0.31s; starting two-stage AD
+probe first energy=-1.0025158645074383 gradnorm=1.536229486199933e-7 objective=0.31s gradient=3.63s
+FD direction=1 eps=0.0001 ad=-4.227860516465871e-8 fd=-4.8332449154031565e-8 passed=true
+FD direction=1 eps=1.0e-5 ad=-4.227860516465871e-8 fd=-4.344302695358237e-8 passed=true
+FD direction=2 eps=0.0001 ad=1.560322586575307e-8 fd=1.255440196246127e-8 passed=true
+FD direction=2 eps=1.0e-5 ad=1.560322586575307e-8 fd=1.580957587066223e-8 passed=true
+FD direction=3 eps=0.0001 ad=-1.536229486199933e-7 fd=-1.5657475316288583e-7 passed=true
+FD direction=3 eps=1.0e-5 ad=-1.536229486199933e-7 fd=-1.5686341114928837e-7 passed=true
+最终物理方向 FD：Z ε=0.0001 passed=true
+最终物理方向 FD：Z ε=1.0e-5 passed=true
+z 最终验收：true，原因=String[]
+继续有限场优化：xz，hₓ=0.1 h_z=0.1，D=2 χ=8 N=20
+probe objective ready energy=-1.0050340781978915 residual=8.574014965937226e-12 wall=4.51s; starting two-stage AD
+probe first energy=-1.0050340781978915 gradnorm=0.00355440969386444 objective=4.51s gradient=1.29s
+FD direction=1 eps=0.0001 ad=0.0004792123071905751 fd=0.00047920408641211054 passed=true
+FD direction=1 eps=1.0e-5 ad=0.0004792123071905751 fd=0.00047920889478803014 passed=true
+FD direction=2 eps=0.0001 ad=3.335363887442272e-5 fd=3.33427452314794e-5 passed=true
+FD direction=2 eps=1.0e-5 ad=3.335363887442272e-5 fd=3.3346736483252926e-5 passed=true
+FD direction=3 eps=0.0001 ad=-0.0035544096938644404 fd=-0.003554514096393291 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.0035544096938644404 fd=-0.00355441831523251 passed=true
+继续有限场优化：x，hₓ=0.1 h_z=0.0，D=2 χ=8 N=20
+probe objective ready energy=-1.0025222763379713 residual=9.985928715277226e-12 wall=0.67s; starting two-stage AD
+probe first energy=-1.0025222763379713 gradnorm=3.594015821391108e-8 objective=0.67s gradient=2.48s
+FD direction=1 eps=0.0001 ad=-3.2708135534702908e-9 fd=-8.393286066166183e-9 passed=true
+FD direction=1 eps=1.0e-5 ad=-3.2708135534702908e-9 fd=-3.3306690738754692e-9 passed=true
+FD direction=2 eps=0.0001 ad=2.8369216693617557e-9 fd=-1.0436096431476471e-9 passed=true
+FD direction=2 eps=1.0e-5 ad=2.8369216693617557e-9 fd=2.8088642523016456e-9 passed=true
+FD direction=3 eps=0.0001 ad=-3.5940158213911084e-8 fd=-6.579958800045915e-8 passed=true
+FD direction=3 eps=1.0e-5 ad=-3.5940158213911084e-8 fd=-3.618216837253385e-8 passed=true
+AD step=0 e=-1.002522276338 |g|=3.594e-08 mx=0.0508993 mz=0.0000000 residual=9.99e-12 wall=3.3s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+probe objective ready energy=-1.0025222763379713 residual=9.985928715277226e-12 wall=0.67s; starting two-stage AD
+probe first energy=-1.0025222763379715 gradnorm=3.580387179030781e-8 objective=0.67s gradient=3.37s
+FD direction=1 eps=0.0001 ad=-3.261255496473202e-9 fd=-8.391065620116933e-9 passed=true
+FD direction=1 eps=1.0e-5 ad=-3.261255496473202e-9 fd=-3.3306690738754692e-9 passed=true
+FD direction=2 eps=0.0001 ad=2.813625173450695e-9 fd=-1.0436096431476471e-9 passed=true
+FD direction=2 eps=1.0e-5 ad=2.813625173450695e-9 fd=2.8310687127941488e-9 passed=true
+FD direction=3 eps=0.0001 ad=-3.58038717903078e-8 fd=-6.61193322315512e-8 passed=true
+FD direction=3 eps=1.0e-5 ad=-3.58038717903078e-8 fd=-3.61932706027801e-8 passed=true
+最终物理方向 FD：X ε=0.0001 passed=true
+最终物理方向 FD：X ε=1.0e-5 passed=true
+x 最终验收：true，原因=String[]
+Command exited with non-zero status 1
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/repair.jl tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/unrolled-repair01 3600"
+	User time (seconds): 783.35
+	System time (seconds): 4.47
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:07.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4092844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 10
+	Minor (reclaiming a frame) page faults: 2209573
+	Voluntary context switches: 30
+	Involuntary context switches: 2064
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

@@ -1,0 +1,7 @@
+{
+  "completed_updates": 700,
+  "max_symmetry_residual": 1.9229626863835638e-16,
+  "max_pure_gauge_residual": 4.2110568700678305e-16,
+  "max_sharing_change": 0.0018561607240603407,
+  "missing_or_duplicate_steps": false
+}

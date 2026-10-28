@@ -1,0 +1,32 @@
+ERROR: LoadError: Some tests did not pass: 2 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:37
+Test Summary:                             | Pass  Total  Time
+strict single-state implementation exists |    1      1  0.0s
+Test Summary:                          | Pass  Total  Time
+strict numerical runner is implemented |    1      1  0.2s
+Test Summary:                                                          | Pass  Total  Time
+checkpoint stores exactly one V/P/lambda and failed audits stay failed |   10     10  3.7s
+Test Summary:                                               | Pass  Total  Time
+only three arrays persist and spatial constraints are exact |    7      7  0.2s
+Test Summary:                                                  | Pass  Total  Time
+virtual gauge and lambda compensation preserve a weighted star |    1      1  0.9s
+Test Summary:                                               | Pass  Total  Time
+original updates commit one symmetric state at each substep |   15     15  5.0s
+Test Summary:                                                   | Pass  Total  Time
+aligning a pure virtual gauge must not erase vertex information |    3      3  0.2s
+reflection ambiguity of P must be resolved using V: Test Failed at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:96
+  Expression: T.relative(st.V, old.V) < 1.0e-8
+   Evaluated: 0.4553464468969194 < 1.0e-8
+
+Stacktrace:
+ [1] top-level scope
+   @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:88
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:1777 [inlined]
+ [3] macro expansion
+   @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:96 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+Test Summary:                                      | Pass  Fail  Total  Time
+reflection ambiguity of P must be resolved using V |    2     1      3  1.0s
+RNG of the outermost testset: Xoshiro(0x8503fb03cba19645, 0x3863dbb08b13b6e9, 0xaf0a3fd5a1b1abac, 0x6c9b364a592e7c78, 0x91a1494a059a7ca4)

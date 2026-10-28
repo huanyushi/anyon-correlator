@@ -1,0 +1,277 @@
+SUITE point=zero hx=0.0 hz=0.0 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=107.77s; starting two-stage AD
+
+======================================================================================
+Information request received. A stacktrace will print followed by a 1.0 second profile
+======================================================================================
+
+cmd: /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/bin/julia 216811 running 1 of 1
+
+signal (10): User defined signal 1
+jl_egal_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:1885 [inlined]
+compare_svec at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/builtins.c:93
+jl_egal__unboxed_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:1877 [inlined]
+jl_egal_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:1887 [inlined]
+literal_val_id at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:144 [inlined]
+jl_encode_as_indexed_root at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:176
+jl_encode_value_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:546
+jl_encode_value_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:211 [inlined]
+jl_encode_memory_slice at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:213
+jl_encode_value_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:493
+jl_encode_value_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:1030 [inlined]
+ijl_compress_ir at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/ircode.c:1070
+maybe_compress_codeinfo at ./../usr/share/julia/Compiler/src/typeinfer.jl:313 [inlined]
+finish! at ./../usr/share/julia/Compiler/src/typeinfer.jl:130
+jfptr_finishNOT._80056.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:205
+jfptr_finish_nocycle_82210.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4521
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1256
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1439 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1448
+jfptr_typeinf_ext_toplevel_80206.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_type_infer at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:466
+jl_compile_method_internal at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:3516
+_jl_invoke at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4006 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4214
+_callable_pullback_generator at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:93
+unknown function (ip: 0x7ce86ac9c7f5) at (unknown file)
+jl_call_staged at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/method.c:662
+ijl_code_for_staged at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/method.c:735
+call_get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:103 [inlined]
+get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:88
+jfptr_get_staged_6039.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+tojlinvoke85040.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+j_get_staged_77400.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+method_for_inference_heuristics at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:788
+edge_matches_sv at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:746
+abstract_call_method at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:631
+infercalls at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:167
+abstract_call_gf_by_type at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:338
+abstract_call_unknown at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2890
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2900
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2896 [inlined]
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3056
+abstract_eval_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3074 [inlined]
+abstract_eval_statement_expr at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3403
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3849 [inlined]
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3806 [inlined]
+typeinf_local at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4356
+jfptr_typeinf_local_82127.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4514
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1256
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1439 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1448
+jfptr_typeinf_ext_toplevel_80206.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_type_infer at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:466
+jl_compile_method_internal at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:3516
+_jl_invoke at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4006 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4214
+split_parameters at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/network.jl:39 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x7ce86991df02) at (unknown file)
+blocked_arrays at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/network.jl:66 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x7ce86a47510e) at (unknown file)
+make_peps at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/network.jl:82 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x7ce86a44ae72) at (unknown file)
+#32 at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:33 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+#pullback##0 at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface.jl:100
+unknown function (ip: 0x7ce86a411290) at (unknown file)
+gradient at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface.jl:157
+#energy_gradient#26 at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:31
+energy_gradient at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:21
+unknown function (ip: 0x7ce8814501c4) at (unknown file)
+#derivative_probe#103 at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:130
+derivative_probe at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/objective.jl:123
+unknown function (ip: 0x7ce8e07ed2e1) at (unknown file)
+main at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/run.jl:76
+main at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/automatic-differentiate/run.jl:13
+unknown function (ip: 0x7ce8e073f41f) at (unknown file)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+do_call at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:123
+eval_value at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:243
+eval_stmt_value at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:194 [inlined]
+eval_body at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:707
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:898
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1035
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:975
+ijl_toplevel_eval at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1047
+ijl_toplevel_eval_in at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1092
+eval at ./boot.jl:489
+include_string at ./loading.jl:2874
+_include at ./loading.jl:2934
+include at ./Base.jl:306
+exec_options at ./client.jl:317
+_start at ./client.jl:550
+jfptr__start_63319.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+true_main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:971
+jl_repl_entrypoint at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:1139
+main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/cli/loader_exe.c:58
+unknown function (ip: 0x7ce917e2a600) at /usr/lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /usr/lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+unknown function (ip: (nil)) at (unknown file)
+
+==============================================================
+Profile collected. A report will print at the next yield point
+==============================================================
+
+probe first energy=-0.9999999999999997 gradnorm=4.145415113081847e-17 objective=107.77s gradient=619.9s
+FD direction=1 eps=0.0001 ad=9.481105587868949e-18 fd=-5.186961971048731e-9 passed=true
+FD direction=1 eps=1.0e-5 ad=9.481105587868949e-18 fd=-3.3306690738754696e-11 passed=true
+FD direction=2 eps=0.0001 ad=-2.0290572694261465e-18 fd=-3.1874503036988244e-9 passed=true
+FD direction=2 eps=1.0e-5 ad=-2.0290572694261465e-18 fd=-3.3306690738754696e-11 passed=true
+AD step=0 e=-1.000000000000 |g|=4.145e-17 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=1.3s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+SUITE point=z hx=0.0 hz=0.1 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=0.44s; starting two-stage AD
+probe first energy=-0.9999999999999998 gradnorm=0.14142135623730948 objective=0.44s gradient=11.81s
+FD direction=1 eps=0.0001 ad=-0.037740994383492925 fd=-0.037740999570545775 passed=true
+FD direction=1 eps=1.0e-5 ad=-0.037740994383492925 fd=-0.03774099444076029 passed=true
+FD direction=2 eps=0.0001 ad=0.01287227419413045 fd=0.012872271263342228 passed=true
+FD direction=2 eps=1.0e-5 ad=0.01287227419413045 fd=0.012872274168795881 passed=true
+FD direction=3 eps=0.0001 ad=-0.14142135623730945 fd=-0.1414213611872217 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.14142135623730945 fd=-0.14142135627559504 passed=true
+AD step=0 e=-1.000000000000 |g|=1.414e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=1.0s
+AD step=1 e=-1.000076904449 |g|=1.397e-01 mx=0.0000000 mz=0.1017764 residual=2.55e-10 wall=3.8s
+AD step=2 e=-1.002515858500 |g|=3.850e+05 mx=-0.0000000 mz=0.0505605 residual=9.71e-10 wall=43.6s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=armijo_failed accepted=false reasons=["optimizer_not_stationary"]
+SUITE point=x hx=0.1 hz=0.0 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=0.3s; starting two-stage AD
+probe first energy=-0.9999999999999998 gradnorm=0.28284271247461906 objective=0.3s gradient=0.4s
+FD direction=1 eps=0.0001 ad=0.024520212126079653 fd=0.02452020730125959 passed=true
+FD direction=1 eps=1.0e-5 ad=0.024520212126079653 fd=0.024520212088541268 passed=true
+FD direction=2 eps=0.0001 ad=0.03249796357322944 fd=0.03249796081516987 passed=true
+FD direction=2 eps=1.0e-5 ad=0.03249796357322944 fd=0.03249796354243273 passed=true
+FD direction=3 eps=0.0001 ad=-0.282842712474619 fd=-0.2828427426732061 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.282842712474619 fd=-0.2828427127787858 passed=true
+AD step=0 e=-1.000000000000 |g|=2.828e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=0.9s
+AD step=1 e=-1.002110915679 |g|=1.130e-01 mx=0.0711850 mz=0.0000000 residual=4.36e-10 wall=7.1s
+AD step=2 e=-1.002514460849 |g|=8.257e-03 mx=0.0507052 mz=0.0000000 residual=8.30e-10 wall=8.8s
+AD step=3 e=-1.002518124479 |g|=5.887e-03 mx=0.0506449 mz=0.0000000 residual=3.99e-10 wall=10.3s
+AD step=4 e=-1.002519123512 |g|=5.144e-03 mx=0.0506750 mz=0.0000000 residual=2.17e-10 wall=27.5s
+AD step=5 e=-1.002521492720 |g|=2.540e-03 mx=0.0507876 mz=0.0000000 residual=3.95e-11 wall=34.4s
+AD step=6 e=-1.002522275160 |g|=1.343e-04 mx=0.0508989 mz=0.0000000 residual=1.17e-11 wall=38.1s
+AD step=7 e=-1.002522276058 |g|=6.644e-05 mx=0.0508996 mz=-0.0000000 residual=3.16e-11 wall=39.9s
+AD step=8 e=-1.002522276268 |g|=3.322e-05 mx=0.0508995 mz=0.0000000 residual=1.72e-11 wall=46.8s
+AD step=9 e=-1.002522276284 |g|=2.907e-05 mx=0.0508994 mz=0.0000000 residual=2.00e-11 wall=63.4s
+AD step=10 e=-1.002522276338 |g|=3.582e-08 mx=0.0508993 mz=-0.0000000 residual=2.73e-11 wall=67.2s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=stationary accepted=true reasons=String[]
+SUITE point=xz hx=0.1 hz=0.1 D=2 chi=8 uniform=true
+probe objective ready energy=-1.0000000000000002 residual=4.440892098500626e-16 wall=2.0s; starting two-stage AD
+probe first energy=-0.9999999999999998 gradnorm=0.31622776601683794 objective=2.0s gradient=0.38s
+FD direction=1 eps=0.0001 ad=-0.013220782257413285 fd=-0.013220787081769103 passed=true
+FD direction=1 eps=1.0e-5 ad=-0.013220782257413285 fd=-0.01322078231336121 passed=true
+FD direction=2 eps=0.0001 ad=0.0453702377673599 fd=0.04537023526485218 passed=true
+FD direction=2 eps=1.0e-5 ad=0.0453702377673599 fd=0.045370237733433065 passed=true
+FD direction=3 eps=0.0001 ad=-0.31622776601683816 fd=-0.31622778692785847 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.31622776601683816 fd=-0.3162277662338564 passed=true
+AD step=0 e=-1.000000000000 |g|=3.162e-01 mx=0.0000000 mz=0.0000000 residual=4.44e-16 wall=1.0s
+AD step=1 e=-1.003684293874 |g|=1.204e-01 mx=0.0635776 mz=0.0158113 residual=2.64e-10 wall=11.0s
+AD step=2 e=-1.004392255833 |g|=7.707e-02 mx=0.0568933 mz=0.0258132 residual=1.30e-10 wall=13.4s
+AD step=3 e=-1.005034078198 |g|=2.053e+05 mx=0.0504938 mz=0.0504770 residual=3.13e-11 wall=52.7s
+audit chi=8 seed=2026 status=converged
+audit chi=8 seed=1 status=converged
+audit chi=8 seed=2 status=converged
+audit chi=16 seed=2026 status=converged
+FINAL status=armijo_failed accepted=false reasons=["optimizer_not_stationary", "energy_benchmark"]
+┌ Warning: Fixed-point gradient computation using Arnoldi failed:
+│ 	auxiliary component should be finite but was 6.573275842917071e-14 + 0.0im
+│ 	possibly the Jacobian does not have a unique eigenvalue 1
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:353
+[ Info: Falling back to linear solver for fixed-point gradient computation.
+┌ Warning: GMRES linsolve stopped without converging after 30 iterations:
+│ * norm of residual = 1.71e+06
+│ * number of operations = 569
+└ @ KrylovKit ~/.julia/packages/KrylovKit/bEE7W/src/linsolve/gmres.jl:136
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+│   info =
+│    ConvergenceInfo: no converged values after 30 iterations and 569 applications of the linear map;
+│    norms of residuals are given by 1.71e+06.
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:336
+┌ Warning: Fixed-point gradient computation using Arnoldi failed:
+│ 	auxiliary component should be finite but was -1.489233968945084e-14 + 0.0im
+│ 	possibly the Jacobian does not have a unique eigenvalue 1
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:353
+[ Info: Falling back to linear solver for fixed-point gradient computation.
+┌ Warning: GMRES linsolve stopped without converging after 30 iterations:
+│ * norm of residual = 4.66e+01
+│ * number of operations = 373
+└ @ KrylovKit ~/.julia/packages/KrylovKit/bEE7W/src/linsolve/gmres.jl:136
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+│   info =
+│    ConvergenceInfo: no converged values after 30 iterations and 373 applications of the linear map;
+│    norms of residuals are given by 4.66e+01.
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:336
+┌ Warning: Fixed-point gradient computation using Arnoldi failed:
+│ 	auxiliary component should be finite but was 9.242820770076473e-13 + 0.0im
+│ 	possibly the Jacobian does not have a unique eigenvalue 1
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:353
+[ Info: Falling back to linear solver for fixed-point gradient computation.
+┌ Warning: GMRES linsolve stopped without converging after 30 iterations:
+│ * norm of residual = 6.47e+05
+│ * number of operations = 600
+└ @ KrylovKit ~/.julia/packages/KrylovKit/bEE7W/src/linsolve/gmres.jl:136
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+│   info =
+│    ConvergenceInfo: no converged values after 30 iterations and 600 applications of the linear map;
+│    norms of residuals are given by 6.47e+05.
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:336
+┌ Warning: 2 x 2 Schur block at position 1 and 2 detected, complex eigenvalues with imaginary part 1.0851134288462863 will be ignored by setting T[i+1,i] = 1.7055795941579106 to zero.
+└ @ KrylovKit ~/.julia/packages/KrylovKit/bEE7W/src/eigsolve/arnoldi.jl:305
+┌ Warning: Fixed-point gradient computation using Arnoldi failed:
+│ 	auxiliary component should be finite but was -7.293419039958729e-16 + 0.0im
+│ 	possibly the Jacobian does not have a unique eigenvalue 1
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:353
+[ Info: Falling back to linear solver for fixed-point gradient computation.
+┌ Warning: GMRES linsolve stopped without converging after 30 iterations:
+│ * norm of residual = 3.15e+05
+│ * number of operations = 649
+└ @ KrylovKit ~/.julia/packages/KrylovKit/bEE7W/src/linsolve/gmres.jl:136
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+│   info =
+│    ConvergenceInfo: no converged values after 30 iterations and 649 applications of the linear map;
+│    norms of residuals are given by 3.15e+05.
+└ @ PEPSKit ~/.julia/packages/PEPSKit/rBPLa/src/algorithms/optimization/fixed_point_differentiation.jl:336
+Command exited with non-zero status 1
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/run.jl suite --out=tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/analytic-anchor-suite --uniform=true --exact=true --chi=8 --chi-check=16 --seed=19 --maxsteps=400 --budget=240"
+	User time (seconds): 1106.56
+	System time (seconds): 4.55
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 18:31.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3316168
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 46
+	Minor (reclaiming a frame) page faults: 2321296
+	Voluntary context switches: 305
+	Involuntary context switches: 2821
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

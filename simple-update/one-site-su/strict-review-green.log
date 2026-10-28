@@ -1,0 +1,18 @@
+Test Summary:                             | Pass  Total  Time
+strict single-state implementation exists |    1      1  0.0s
+Test Summary:                          | Pass  Total  Time
+strict numerical runner is implemented |    1      1  0.2s
+Test Summary:                                                          | Pass  Total  Time
+checkpoint stores exactly one V/P/lambda and failed audits stay failed |   10     10  3.8s
+Test Summary:                                               | Pass  Total  Time
+only three arrays persist and spatial constraints are exact |    7      7  0.2s
+Test Summary:                                                  | Pass  Total  Time
+virtual gauge and lambda compensation preserve a weighted star |    1      1  0.9s
+Test Summary:                                               | Pass  Total  Time
+original updates commit one symmetric state at each substep |   15     15  5.2s
+Test Summary:                                                   | Pass  Total  Time
+aligning a pure virtual gauge must not erase vertex information |    3      3  0.2s
+Test Summary:                                      | Pass  Total  Time
+reflection ambiguity of P must be resolved using V |    3      3  0.0s
+Test Summary:                                              | Pass  Total  Time
+a failed plaquette must not leave an uncounted star update |    2      2  0.0s

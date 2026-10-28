@@ -1,0 +1,14 @@
+{
+  "record_type": "external-timeout recovery note, not original worker summary",
+  "status": "budget",
+  "passed": false,
+  "completed_step": 700,
+  "checkpoint": "latest.json",
+  "checkpoint_sha256": "9cf7fb925d9857e92b766b168631e276bd9ce8d76146aadd619e24841bbab7d1",
+  "last_recorded_local_residuals": {
+    "star": 2.900000242422863e-15,
+    "plaquette": 1.4142135623730951
+  },
+  "completed_measurements": 0,
+  "reason": "outer shell 600-second timeout during first CTMRG measurement; final audit is a separate zero-update segment"
+}

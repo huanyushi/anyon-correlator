@@ -1,0 +1,30 @@
+START strict single V/P/lambda seed=5 D=2 h=0; no virtual Z2; steps=700 dt=0.05
+MEASURE seed=5 step=0 chi=8 e=+0.016097379977 max|stab-1|=1.161e+00 CTM=9.57e-11/true
+STEP 40 A/B residual=(9.197e-01,1.410e+00) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.33e-06 wall=119.9s
+STEP 80 A/B residual=(5.596e-01,4.890e-02) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=7.30e-09 wall=120.5s
+MEASURE seed=5 step=100 chi=8 e=-0.981563061427 max|stab-1|=3.683e-02 CTM=9.07e-11/true
+STEP 120 A/B residual=(1.310e-01,7.053e-03) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=5.35e-13 wall=122.0s
+STEP 160 A/B residual=(3.182e-02,2.642e-03) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.13e-14 wall=122.4s
+STEP 200 A/B residual=(7.991e-03,7.205e-04) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=6.26e-17 wall=122.8s
+MEASURE seed=5 step=200 chi=8 e=-1.000015834752 max|stab-1|=3.193e-05 CTM=1.46e-11/true
+STEP 240 A/B residual=(2.023e-03,1.851e-04) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=2.72e-19 wall=123.6s
+STEP 280 A/B residual=(5.132e-04,4.706e-05) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.13e-21 wall=124.9s
+MEASURE seed=5 step=300 chi=8 e=-1.000000016562 max|stab-1|=3.340e-08 CTM=3.26e-12/true
+STEP 320 A/B residual=(1.302e-04,1.194e-05) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=4.68e-24 wall=125.5s
+STEP 360 A/B residual=(3.303e-05,3.030e-06) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.94e-26 wall=125.8s
+STEP 400 A/B residual=(8.380e-06,7.687e-07) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=8.43e-29 wall=126.1s
+MEASURE seed=5 step=400 chi=8 e=-1.000000000017 max|stab-1|=3.511e-11 CTM=3.33e-16/true
+STEP 440 A/B residual=(2.126e-06,1.950e-07) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.67e-30 wall=126.6s
+STEP 480 A/B residual=(5.394e-07,4.948e-08) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=3.48e-30 wall=126.9s
+MEASURE seed=5 step=500 chi=8 e=-1.000000000000 max|stab-1|=3.730e-14 CTM=3.33e-16/true
+STEP 520 A/B residual=(1.368e-07,1.255e-08) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=2.18e-30 wall=127.5s
+STEP 560 A/B residual=(3.472e-08,3.185e-09) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=3.35e-29 wall=127.8s
+STEP 600 A/B residual=(8.808e-09,8.080e-10) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=1.03e-29 wall=128.1s
+MEASURE seed=5 step=600 chi=8 e=-1.000000000000 max|stab-1|=8.882e-16 CTM=3.33e-16/true
+STEP 640 A/B residual=(2.235e-09,2.050e-10) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=2.76e-29 wall=128.7s
+STEP 680 A/B residual=(5.670e-10,5.202e-11) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=5.97e-30 wall=129.0s
+STEP 700 A/B residual=(2.856e-10,2.620e-11) symmetry=0.0e+00 gauge=5.2e-13 ALS fit=7.13e-30 wall=129.2s
+MEASURE seed=5 step=700 chi=8 e=-1.000000000000 max|stab-1|=4.441e-16 CTM=4.44e-16/true
+MEASURE seed=5 step=700 chi=8 e=-1.000000000000 max|stab-1|=4.441e-16 CTM=4.44e-16/true
+MEASURE seed=5 step=700 chi=16 e=-1.000000000000 max|stab-1|=4.441e-16 CTM=4.44e-16/true
+END status=finished passed=true strict_one_site=true max_symmetry=0.0 process=172.80709099769592s

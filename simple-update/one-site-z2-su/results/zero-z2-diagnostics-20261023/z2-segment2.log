@@ -1,0 +1,17 @@
+START seed=5 start_step=300 additional_steps=300 dt=0.05; native virtual Z2, one V/P/lambda; budget=600.0 seconds
+STEP 301 A/B=(5.636e-13,1.414e+00) fit=2.490e-03 wall=177.3s update=122.5s
+STEP 320 A/B=(8.286e-14,1.414e+00) fit=2.490e-03 wall=190.4s update=135.3s
+STEP 360 A/B=(4.724e-15,1.414e+00) fit=2.490e-03 wall=217.2s update=162.0s
+STEP 400 A/B=(1.337e-15,1.414e+00) fit=2.490e-03 wall=243.8s update=188.6s
+MEASURE step=400 chi=8 e=-0.500000000000 stab_error=1.000e+00 CTM=7.133e-11 converged=true
+STEP 440 A/B=(6.042e-16,1.414e+00) fit=2.490e-03 wall=382.6s update=218.0s
+STEP 480 A/B=(2.526e-15,1.414e+00) fit=2.490e-03 wall=411.7s update=247.1s
+MEASURE step=500 chi=8 e=-0.500000000000 stab_error=1.000e+00 CTM=7.133e-11 converged=true
+STEP 520 A/B=(2.322e-15,1.414e+00) fit=2.490e-03 wall=441.0s update=275.5s
+STEP 560 A/B=(4.283e-15,1.414e+00) fit=2.490e-03 wall=469.5s update=304.0s
+STEP 600 A/B=(3.738e-15,1.414e+00) fit=2.490e-03 wall=497.2s update=331.6s
+MEASURE step=600 chi=8 e=-0.500000000000 stab_error=1.000e+00 CTM=7.133e-11 converged=true
+MEASURE step=600 chi=8 e=-0.500000000000 stab_error=1.000e+00 CTM=7.133e-11 converged=true
+MEASURE step=600 chi=16 e=-0.500000000000 stab_error=1.000e+00 CTM=4.633e-02 converged=false
+END status=finished passed=false
+SUPERVISOR status=finished

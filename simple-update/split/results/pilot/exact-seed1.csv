@@ -1,0 +1,3 @@
+init,seed,step,tau,dt,energy_per_spin,discard_star,discard_plaquette,weight_delta,chi,ctm_residual,ctm_converged,ctm_iterations,elapsed_before_measure,ctm_seconds,A11,B11,A12,B12,A21,B21,A22,B22
+exact,1,0,0,0,-1,0,0,0,8,4.44089e-16,true,-1,0.136632,94.583306,1,0.9999999999999999,1.000000000000001,1,0.9999999999999998,1,0.9999999999999999,1
+exact,1,8,0.4,0.05,-1,7.35061e-32,0.00248963,1.33227e-15,8,4.44089e-16,true,-1,116.629720,0.380397,1,0.9999999999999999,0.9999999999999998,1,1,1,1,1

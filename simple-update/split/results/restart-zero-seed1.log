@@ -1,0 +1,6 @@
+START random seed=1 D=2 d=2 χ=8 plaquette=loop path_rotation=true Julia=1.12.6
+[random seed=1] step=0 τ=0.000 dt=0 e=-0.021562445187 max|stab−1|=1.064e+00 CTM=7.19e-10 (true, 102.73s) local_error(A/B)=0.00e+00/0.00e+00
+[random seed=1] step=40 τ=2.000 dt=0.05 e=-0.724649797666 max|stab−1|=9.800e-01 CTM=8.41e-10 (true, 1.71s) local_error(A/B)=4.48e-12/2.28e-03
+[random seed=1] step=80 τ=4.000 dt=0.05 e=-1.000000106218 max|stab−1|=1.318e-06 CTM=4.84e-12 (true, 0.45s) local_error(A/B)=7.74e-29/1.05e-15
+[random seed=1] step=120 τ=6.000 dt=0.05 e=-1.000000000087 max|stab−1|=4.421e-10 CTM=1.19e-11 (true, 0.32s) local_error(A/B)=1.14e-31/2.88e-29
+END random status=ground_state_at_chi8 SU seconds=8.04641604423523 wall=133.12114310264587

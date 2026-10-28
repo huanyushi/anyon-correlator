@@ -1,0 +1,8 @@
+julia = "1.12.6"
+steps = 120
+su_seconds = 8.04641604423523
+status = "ground_state_at_chi8"
+pepskit = "0.8.0"
+tensorkit = "0.16.5"
+tau = 5.999999999999987
+wall_seconds = 132.712975025177

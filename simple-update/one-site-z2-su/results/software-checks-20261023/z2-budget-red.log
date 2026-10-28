@@ -1,0 +1,30 @@
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl:8
+test_budget_terminates_worker: Error During Test at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl:9
+  Got exception outside of a @test
+  UndefVarError: `supervise` not defined in `Main.OneSiteZ2SU`
+  Suggestion: check for spelling errors or missing imports.
+  Stacktrace:
+    [1] getproperty
+      @ ./Base_compiler.jl:47 [inlined]
+    [2] (::var"#5#6")(dir::String)
+      @ Main ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl:13
+    [3] mktempdir(fn::var"#5#6", parent::String; prefix::String)
+      @ Base.Filesystem ./file.jl:936
+    [4] mktempdir(fn::Function, parent::String)
+      @ Base.Filesystem ./file.jl:932
+    [5] top-level scope
+      @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl:10
+    [6] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:1777 [inlined]
+    [7] macro expansion
+      @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-z2-su/tests.jl:10 [inlined]
+    [8] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+    [9] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [10] _start()
+      @ Base ./client.jl:550
+Test Summary:                 | Error  Total   Time
+test_budget_terminates_worker |     1      1  17.0s
+RNG of the outermost testset: Random.Xoshiro(0xe7bba3f9773401d5, 0x48099c1868ca15e0, 0x37c70c1ade808016, 0x5a4b17afee95ba04, 0x4ec95a98902cd9ff)

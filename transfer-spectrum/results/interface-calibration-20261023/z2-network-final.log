@@ -1,0 +1,10 @@
+Test Summary:                  | Pass  Total   Time
+test_composite_lambda_counting |    3      3  17.3s
+Test Summary:                | Pass  Total  Time
+test_double_layer_direct_sum |    1      1  0.1s
+Test Summary:               | Pass  Total  Time
+test_fused_symmetry_actions |    9      9  0.5s
+Test Summary:         | Pass  Total  Time
+test_transfer_adjoint |    1      1  0.3s
+Test Summary:                             | Pass  Total  Time
+test_exact_reference_fixedpoint_structure |    3      3  1.3s

@@ -1,0 +1,74 @@
+[     0.0 s] continuing checkpoint step=69 for at most 31 steps at D=2 chi=8
+[    98.2 s] random-continue init: E_cell=-7.9936463586, CTMRG iters=1, residual=3.98e-10
+[   560.9 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.5319904991340991)
+[   561.9 s] random-continue step 70: E_cell=-7.9955397615, gradnorm=1.456e-01, alpha=0.1500, CTMRG iters=1, residual=4.17e-07
+[   563.2 s] random-continue step 70 stabilizers: mean(A)=0.999382, mean(B)=0.999503
+[   566.1 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7237713860761283)
+[   566.7 s] Armijo alpha=0.0750 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=2.892774687707617e-6)
+[   567.3 s] Armijo alpha=0.0375 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7339250250403481)
+[   567.9 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6991278611435301)
+[   568.5 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.5911698973861385)
+[   569.1 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6337002644489632)
+[   569.9 s] random-continue step 71: E_cell=-7.9958315849, gradnorm=1.267e-01, alpha=0.0023, CTMRG iters=1, residual=8.38e-07
+[   569.9 s] random-continue step 71 stabilizers: mean(A)=0.999423, mean(B)=0.999535
+[   571.6 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6936186812357154)
+[   572.2 s] Armijo alpha=0.0750 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=1.920723444212091e-6)
+[   572.8 s] Armijo alpha=0.0375 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7532656608463385)
+[   573.4 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6958545204116935)
+[   574.0 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6958488018964611)
+[   574.7 s] random-continue step 72: E_cell=-7.9963848937, gradnorm=1.224e-01, alpha=0.0047, CTMRG iters=1, residual=4.40e-07
+[   574.7 s] random-continue step 72 stabilizers: mean(A)=0.999501, mean(B)=0.999595
+[   578.1 s] random-continue step 73: E_cell=-7.9997418527, gradnorm=1.137e-01, alpha=0.0750, CTMRG iters=1, residual=5.23e-07
+[   578.1 s] random-continue step 73 stabilizers: mean(A)=0.999972, mean(B)=0.999963
+[   579.0 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7081766456912101)
+[   579.6 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.5710607909396614)
+[   580.6 s] Armijo alpha=0.0375 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7269667784980963)
+[   581.2 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7514713461092325)
+[   581.8 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7220082181780273)
+[   582.3 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6577576309129565)
+[   583.0 s] random-continue step 74: E_cell=-7.9998015316, gradnorm=2.752e-02, alpha=0.0023, CTMRG iters=1, residual=5.85e-08
+[   583.0 s] random-continue step 74 stabilizers: mean(A)=0.999980, mean(B)=0.999970
+[   585.0 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.2498659757882221)
+[   585.6 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.5733927608567753)
+[   586.4 s] Armijo alpha=0.0375 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.5845080689070753)
+[   587.0 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6078457926303609)
+[   587.5 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7017170328817921)
+[   588.1 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7217444911040745)
+[   588.7 s] Armijo alpha=0.0023 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.687771288867013)
+[   589.3 s] Armijo alpha=0.0012 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.1620001019893821)
+[   590.0 s] random-continue step 75: E_cell=-7.9998149643, gradnorm=2.343e-02, alpha=0.0006, CTMRG iters=1, residual=1.01e-07
+[   590.0 s] random-continue step 75 stabilizers: mean(A)=0.999982, mean(B)=0.999972
+[   591.1 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6206410882307245)
+[   591.7 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6300991297086398)
+[   593.1 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6977017301384448)
+[   593.7 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6710121634163433)
+[   594.3 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7176231983372354)
+[   594.9 s] Armijo alpha=0.0023 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7126244107663824)
+[   595.5 s] Armijo alpha=0.0012 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6868676502381001)
+[   596.1 s] Armijo alpha=0.0006 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.1591809876026789)
+[   596.9 s] random-continue step 76: E_cell=-7.9998214605, gradnorm=2.242e-02, alpha=0.0003, CTMRG iters=1, residual=4.03e-09
+[   596.9 s] random-continue step 76 stabilizers: mean(A)=0.999983, mean(B)=0.999973
+[   599.1 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=1.2169131040566865e-6)
+[   599.6 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7201749184557216)
+[   600.8 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6981167844429009)
+[   601.4 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6097675972795744)
+[   602.0 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7149938875350905)
+[   602.6 s] Armijo alpha=0.0023 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7169144899830856)
+[   603.2 s] Armijo alpha=0.0012 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6637603363663528)
+[   603.7 s] Armijo alpha=0.0006 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6416828465088321)
+[   604.4 s] Armijo alpha=0.0003 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.08720661179152289)
+[   605.1 s] random-continue step 77: E_cell=-7.9998246538, gradnorm=2.192e-02, alpha=0.0001, CTMRG iters=1, residual=1.87e-07
+[   605.1 s] random-continue step 77 stabilizers: mean(A)=0.999983, mean(B)=0.999973
+[   606.2 s] Armijo alpha=0.3000 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6114829073040322)
+[   606.8 s] Armijo alpha=0.1500 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.740188793130069)
+[   608.3 s] Armijo alpha=0.0187 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.679714598849363)
+[   608.8 s] Armijo alpha=0.0094 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6071720853719297)
+[   609.4 s] Armijo alpha=0.0047 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7135382568586279)
+[   610.0 s] Armijo alpha=0.0023 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7179919871553111)
+[   610.6 s] Armijo alpha=0.0012 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6731197321146839)
+[   611.2 s] Armijo alpha=0.0006 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.6330956396438006)
+[   611.8 s] Armijo alpha=0.0003 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.7615708869153492)
+[   612.4 s] Armijo alpha=0.0001 rejected: CTMRG did not converge at chi=8 after 1 iterations (residual=0.04093072599968677)
+[   612.5 s] random-continue attempt 9: Armijo failed, projected gradnorm=2.168e-02
+[   613.4 s] continuation final step 77: E_cell=-7.999824653797, mean(A)=0.999983, mean(B)=0.999973, residual=1.87e-07
+[   613.4 s] VERDICT: random continuation FAILED

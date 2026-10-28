@@ -1,0 +1,23 @@
+[     0.0 s] continuing checkpoint step=77 for at most 23 steps at D=2 chi=8
+[    98.5 s] random-continue init: E_cell=-7.9998246538, CTMRG iters=1, residual=1.87e-07
+[   566.7 s] random-continue step 78: E_cell=-7.9999326968, gradnorm=2.168e-02, alpha=0.0187, CTMRG iters=1, residual=3.62e-10
+[   568.2 s] random-continue step 78 stabilizers: mean(A)=0.999993, mean(B)=0.999990
+[   570.8 s] random-continue step 79: E_cell=-7.9999844830, gradnorm=1.354e-02, alpha=0.0094, CTMRG iters=1, residual=7.47e-12
+[   570.8 s] random-continue step 79 stabilizers: mean(A)=0.999999, mean(B)=0.999997
+[   572.4 s] random-continue step 80: E_cell=-7.9999938463, gradnorm=5.027e-03, alpha=0.0047, CTMRG iters=1, residual=5.64e-11
+[   572.4 s] random-continue step 80 stabilizers: mean(A)=1.000000, mean(B)=0.999999
+[   575.0 s] random-continue step 81: E_cell=-7.9999939936, gradnorm=3.461e-03, alpha=0.0047, CTMRG iters=1, residual=6.84e-10
+[   575.0 s] random-continue step 81 stabilizers: mean(A)=0.999999, mean(B)=0.999999
+[   576.3 s] random-continue step 82: E_cell=-7.9999951449, gradnorm=4.569e-03, alpha=0.0047, CTMRG iters=1, residual=1.31e-10
+[   576.3 s] random-continue step 82 stabilizers: mean(A)=0.999999, mean(B)=0.999999
+[   578.9 s] random-continue step 83: E_cell=-7.9999998905, gradnorm=4.215e-03, alpha=0.0023, CTMRG iters=1, residual=1.75e-10
+[   578.9 s] random-continue step 83 stabilizers: mean(A)=1.000000, mean(B)=1.000000
+[   580.6 s] random-continue step 84: E_cell=-7.9999999489, gradnorm=3.560e-04, alpha=0.0006, CTMRG iters=1, residual=1.06e-09
+[   580.6 s] random-continue step 84 stabilizers: mean(A)=1.000000, mean(B)=1.000000
+[   583.5 s] random-continue step 85: E_cell=-7.9999999920, gradnorm=4.152e-04, alpha=0.0003, CTMRG iters=1, residual=2.64e-09
+[   583.5 s] random-continue step 85 stabilizers: mean(A)=1.000000, mean(B)=1.000000
+[   585.4 s] random-continue step 86: E_cell=-7.9999999951, gradnorm=1.440e-04, alpha=0.0001, CTMRG iters=1, residual=2.82e-09
+[   585.4 s] random-continue step 86 stabilizers: mean(A)=1.000000, mean(B)=1.000000
+[   587.4 s] random-continue attempt 10: Armijo failed, projected gradnorm=1.255e-04
+[   588.1 s] continuation final step 86: E_cell=-8.000000001560, mean(A)=1.000000, mean(B)=1.000000, residual=7.42e-09
+[   588.1 s] VERDICT: random continuation FAILED

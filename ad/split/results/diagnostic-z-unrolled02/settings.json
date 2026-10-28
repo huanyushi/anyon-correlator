@@ -1,0 +1,1 @@
+{"checkpoint":"tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/analytic-anchor-suite/z/final.jld2","checkpoint_sha256":"dc9e49eff2f492456217bfeb55d5d7f3e6fa70202e89a7866dbb5cf2d03b9b28","D":2,"hx":0.0,"hz":0.1,"chi":8,"counts":[10,20,40],"tol":1.0e-11,"parameter_count":40,"virtual_z2_constraint":false,"julia":"1.12.6"}

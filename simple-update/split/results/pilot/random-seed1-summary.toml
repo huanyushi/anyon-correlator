@@ -1,0 +1,8 @@
+julia = "1.12.6"
+steps = 40
+su_seconds = 0.13215422630310059
+status = "finished_schedule"
+pepskit = "0.8.0"
+tensorkit = "0.16.5"
+tau = 2.000000000000001
+wall_seconds = 4.9056830406188965

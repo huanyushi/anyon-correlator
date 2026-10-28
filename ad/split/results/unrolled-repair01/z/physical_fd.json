@@ -1,0 +1,1 @@
+{"rows":[{"direction":"Z","epsilon":0.0001,"fd":-1.5003998043994216e-7,"ad":-1.4401282367146107e-7,"error":6.0271567684810854e-9,"passed":true},{"direction":"Z","epsilon":1.0e-5,"fd":-1.4994672170587364e-7,"ad":-1.4401282367146107e-7,"error":5.933898034412572e-9,"passed":true}],"passed":true}

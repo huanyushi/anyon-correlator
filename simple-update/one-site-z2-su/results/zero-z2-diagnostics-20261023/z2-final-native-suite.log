@@ -1,0 +1,34 @@
+Test Summary:                                  | Pass  Total  Time
+test_absolute_deadline_does_not_restart_budget |    3      3  2.4s
+Test Summary:                    | Pass  Total  Time
+test_supervisor_streams_progress |    2      2  0.2s
+Test Summary:                          | Pass  Total   Time
+test_resume_preserves_state_and_origin |    5      5  32.7s
+Test Summary:                 | Pass  Total  Time
+test_budget_terminates_worker |    4      4  1.2s
+Test Summary:                 | Pass  Total     Time
+test_portable_state_roundtrip |    4      4  1m14.6s
+Test Summary:               | Pass  Total  Time
+test_invalid_state_rejected |    2      2  0.9s
+Test Summary:               | Pass  Total  Time
+test_output_not_overwritten |    1      1  0.1s
+Test Summary:                  | Pass  Total     Time
+test_failed_audit_stays_failed |    5      5  1m19.3s
+Test Summary:                         | Pass  Total  Time
+test_native_spaces_and_initialization |   11     11  0.1s
+Test Summary:          | Pass  Total  Time
+test_array_conventions |   29     29  0.6s
+Test Summary:               | Pass  Total   Time
+test_charge_preserving_star |    4      4  49.6s
+Test Summary:             | Pass  Total     Time
+test_constrained_ring_fit |    4      4  1m19.7s
+Test Summary:                   | Pass  Total  Time
+test_degenerate_gauge_alignment |    4      4  1.8s
+Test Summary:                   | Pass  Total  Time
+test_zero_support_pseudoinverse |    1      1  0.1s
+Test Summary:                             | Pass  Total  Time
+test_exact_reference_update_is_fixedpoint |    2      2  1.4s
+Test Summary:                    | Pass  Total  Time
+test_product_plus_als_stationary |    3      3  1.4s
+Test Summary:     | Pass  Total  Time
+test_atomic_sweep |    6      6  4.1s

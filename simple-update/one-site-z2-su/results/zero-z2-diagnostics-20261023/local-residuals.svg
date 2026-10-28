@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450">
+<rect width="800" height="450" fill="white"/>
+<text x="30" y="25" font-size="17">Seed 5: 700 updates; ground-state acceptance failed</text>
+<text x="30" y="46" font-size="12">H=-sum(A)-sum(B), d=D=2, dt=0.05, ALS=12; same state across all segments</text>
+<path d="M75 60V365H715" stroke="black" fill="none"/>
+<text x="10" y="74.52147239263803" font-size="12">1e+00</text>
+<text x="10" y="129.7361963190184" font-size="12">1e-03</text>
+<text x="10" y="184.95092024539878" font-size="12">1e-06</text>
+<text x="10" y="240.16564417177915" font-size="12">1e-09</text>
+<text x="10" y="295.38036809815947" font-size="12">1e-12</text>
+<text x="10" y="350.5950920245399" font-size="12">1e-15</text>
+<text x="65.0" y="388" font-size="12">0</text>
+<text x="156.42857142857144" y="388" font-size="12">100</text>
+<text x="247.8571428571429" y="388" font-size="12">200</text>
+<text x="339.2857142857143" y="388" font-size="12">300</text>
+<text x="430.7142857142857" y="388" font-size="12">400</text>
+<text x="522.1428571428571" y="388" font-size="12">500</text>
+<text x="613.5714285714286" y="388" font-size="12">600</text>
+<text x="705.0" y="388" font-size="12">700</text>
+<polyline points="75.914,69.104 111.571,87.446 148.143,119.371 184.714,151.343 221.286,183.316 257.857,215.288 294.429,247.261 331.000,279.229 349.286,295.182 350.200,295.964 367.571,311.288 404.143,334.184 440.714,344.271 477.286,350.623 513.857,339.189 550.429,339.862 587.000,334.967 623.571,336.055 624.486,335.824 660.143,349.013 696.714,341.371 715.000,338.085" stroke="#2563eb" stroke-width="2" fill="none"/>
+<polyline points="75.914,68.484 111.571,67.751 148.143,67.751 184.714,67.751 221.286,67.751 257.857,67.751 294.429,67.751 331.000,67.751 349.286,67.751 350.200,67.751 367.571,67.751 404.143,67.751 440.714,67.751 477.286,67.751 513.857,67.751 550.429,67.751 587.000,67.751 623.571,67.751 624.486,67.751 660.143,67.751 696.714,67.751 715.000,67.751" stroke="#dc2626" stroke-width="2" fill="none"/>
+<path d="M75 180.95092024539878H715" stroke="gray" stroke-dasharray="5 4"/>
+<text x="245" y="415" font-size="13">Cumulative update count</text>
+<text x="75" y="440" font-size="12">Blue: star residual; red: plaquette residual. Dashed: required 1e-6 acceptance threshold.</text>
+</svg>

@@ -1,0 +1,9 @@
+# Results and the Julia Manifest are intentionally versioned.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+.venv/
+.julia/
+julia-env/.CondaPkg/

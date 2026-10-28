@@ -1,0 +1,33 @@
+ERROR: LoadError: Some tests did not pass: 1 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:37
+Test Summary:                             | Pass  Total  Time
+strict single-state implementation exists |    1      1  0.0s
+Test Summary:                          | Pass  Total  Time
+strict numerical runner is implemented |    1      1  0.2s
+Test Summary:                                                          | Pass  Total  Time
+checkpoint stores exactly one V/P/lambda and failed audits stay failed |   10     10  3.8s
+Test Summary:                                               | Pass  Total  Time
+only three arrays persist and spatial constraints are exact |    7      7  0.2s
+Test Summary:                                                  | Pass  Total  Time
+virtual gauge and lambda compensation preserve a weighted star |    1      1  0.8s
+Test Summary:                                               | Pass  Total  Time
+original updates commit one symmetric state at each substep |   15     15  5.1s
+Test Summary:                                                   | Pass  Total  Time
+aligning a pure virtual gauge must not erase vertex information |    3      3  0.2s
+Test Summary:                                      | Pass  Total  Time
+reflection ambiguity of P must be resolved using V |    9      9  0.0s
+a failed plaquette must not leave an uncounted star update: Test Failed at /home/huanyushi/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:107
+  Expression: st.V == old.V && (st.P == old.P && st.lambda == old.lambda)
+
+Stacktrace:
+ [1] top-level scope
+   @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:105
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:1777 [inlined]
+ [3] macro expansion
+   @ ~/code/quantum.harness/tracks/peps/solutions/anyon-correlator/simple-update/one-site-su/strict_tests.jl:107 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+Test Summary:                                              | Pass  Fail  Total  Time
+a failed plaquette must not leave an uncounted star update |    1     1      2  0.9s
+RNG of the outermost testset: Xoshiro(0x5a1e33a0d807fc61, 0x32e126930aa8ce8f, 0x8f4bae0ded150d24, 0x7a7528925d30ba7f, 0x187029a025c0c33b)

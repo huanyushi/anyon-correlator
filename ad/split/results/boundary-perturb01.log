@@ -1,0 +1,127 @@
+冻结态 boundary-VUMPS：control χ=8 seed=1
+[VUMPS down χ=8 seed=1] iter=1 projected_error=6.505e-02 norm/cell=3.88226e-03 wall=51.2s
+[VUMPS down] final_error=1.4971924861760717e-11 normcell=0.003906351193036446
+[VUMPS up χ=8 seed=1] iter=1 projected_error=8.099e-04 norm/cell=3.90635e-03 wall=51.6s
+[VUMPS up] final_error=6.547336588418419e-11 normcell=0.0039063511930354
+boundary 结果：control χ=8 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：control χ=8 seed=2
+[VUMPS down χ=8 seed=2] iter=1 projected_error=5.456e-02 norm/cell=8.44423e-18 wall=0.0s
+[VUMPS down χ=8 seed=2] iter=11 projected_error=7.012e-02 norm/cell=2.07630e-18 wall=0.1s
+[VUMPS down χ=8 seed=2] iter=21 projected_error=5.932e-02 norm/cell=1.10466e-19 wall=0.2s
+[VUMPS down χ=8 seed=2] iter=31 projected_error=2.904e-01 norm/cell=4.91138e-20 wall=0.3s
+[VUMPS down χ=8 seed=2] iter=41 projected_error=1.338e-01 norm/cell=2.11748e-20 wall=0.3s
+[VUMPS down χ=8 seed=2] iter=51 projected_error=9.561e-02 norm/cell=7.13518e-21 wall=0.4s
+[VUMPS down χ=8 seed=2] iter=61 projected_error=1.881e-01 norm/cell=4.23298e-19 wall=0.5s
+[VUMPS down χ=8 seed=2] iter=71 projected_error=1.172e-02 norm/cell=1.40721e-19 wall=0.5s
+[VUMPS down χ=8 seed=2] iter=81 projected_error=2.292e-01 norm/cell=7.85083e-20 wall=0.6s
+[VUMPS down χ=8 seed=2] iter=91 projected_error=6.006e-01 norm/cell=1.87417e-20 wall=0.7s
+[VUMPS down χ=8 seed=2] iter=101 projected_error=5.492e-01 norm/cell=8.35577e-21 wall=0.7s
+[VUMPS down χ=8 seed=2] iter=111 projected_error=9.525e-01 norm/cell=5.56239e-19 wall=0.8s
+[VUMPS down χ=8 seed=2] iter=121 projected_error=8.643e-01 norm/cell=2.11967e-18 wall=0.9s
+[VUMPS down χ=8 seed=2] iter=131 projected_error=8.519e-01 norm/cell=4.67276e-19 wall=0.9s
+[VUMPS down χ=8 seed=2] iter=141 projected_error=9.143e-01 norm/cell=2.40638e-19 wall=1.0s
+[VUMPS down] final_error=0.8419028745969596 normcell=2.4109681494995222e-18
+[VUMPS up χ=8 seed=2] iter=1 projected_error=4.366e-02 norm/cell=1.94305e-14 wall=1.7s
+[VUMPS up χ=8 seed=2] iter=11 projected_error=6.747e-02 norm/cell=3.50546e-15 wall=1.9s
+[VUMPS up χ=8 seed=2] iter=21 projected_error=5.532e-01 norm/cell=5.02256e-19 wall=2.0s
+[VUMPS up χ=8 seed=2] iter=31 projected_error=9.998e-01 norm/cell=4.11484e-21 wall=2.1s
+[VUMPS up χ=8 seed=2] iter=41 projected_error=9.908e-01 norm/cell=9.94146e-20 wall=2.2s
+[VUMPS up χ=8 seed=2] iter=51 projected_error=9.257e-01 norm/cell=6.99734e-20 wall=2.3s
+[VUMPS up χ=8 seed=2] iter=61 projected_error=8.075e-01 norm/cell=2.49347e-18 wall=2.4s
+[VUMPS up χ=8 seed=2] iter=71 projected_error=7.967e-01 norm/cell=1.44322e-18 wall=2.5s
+[VUMPS up χ=8 seed=2] iter=81 projected_error=7.166e-01 norm/cell=1.26085e-18 wall=2.6s
+[VUMPS up χ=8 seed=2] iter=91 projected_error=6.698e-01 norm/cell=5.85605e-18 wall=2.8s
+[VUMPS up χ=8 seed=2] iter=101 projected_error=6.788e-01 norm/cell=4.16772e-18 wall=2.9s
+[VUMPS up χ=8 seed=2] iter=111 projected_error=5.746e-01 norm/cell=1.00106e-18 wall=3.0s
+[VUMPS up χ=8 seed=2] iter=121 projected_error=5.263e-01 norm/cell=9.25049e-18 wall=3.2s
+[VUMPS up χ=8 seed=2] iter=131 projected_error=4.958e-01 norm/cell=1.18483e-17 wall=3.3s
+[VUMPS up χ=8 seed=2] iter=141 projected_error=4.848e-01 norm/cell=2.49499e-18 wall=3.4s
+[VUMPS up] final_error=0.47264923144153514 normcell=2.174461553437432e-17
+boundary 结果：control χ=8 seed=2 status=rejected
+冻结态 boundary-VUMPS：control χ=16 seed=1
+[VUMPS down χ=16 seed=1] iter=1 projected_error=5.174e-02 norm/cell=3.88807e-03 wall=0.3s
+[VUMPS down] final_error=9.739122694442071e-12 normcell=0.003906351193035274
+[VUMPS up χ=16 seed=1] iter=1 projected_error=5.825e-04 norm/cell=3.90635e-03 wall=0.6s
+[VUMPS up] final_error=5.140273659219444e-10 normcell=0.003906351193030925
+boundary 结果：control χ=16 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：control χ=16 seed=2
+[VUMPS down χ=16 seed=2] iter=1 projected_error=2.570e-02 norm/cell=3.90622e-03 wall=0.2s
+[VUMPS down] final_error=2.4475389224746604e-11 normcell=0.003906351193032405
+[VUMPS up χ=16 seed=2] iter=1 projected_error=5.370e-04 norm/cell=3.90634e-03 wall=0.4s
+[VUMPS up] final_error=6.434627669619878e-10 normcell=0.003906351193000545
+boundary 结果：control χ=16 seed=2 status=converged_candidate
+冻结态 boundary-VUMPS：noise001 χ=8 seed=1
+[VUMPS down χ=8 seed=1] iter=1 projected_error=6.482e-02 norm/cell=3.88249e-03 wall=0.1s
+[VUMPS down] final_error=8.364617686926308e-11 normcell=0.0039063381893830245
+[VUMPS up χ=8 seed=1] iter=1 projected_error=8.083e-04 norm/cell=3.90633e-03 wall=0.1s
+[VUMPS up] final_error=8.793365899358745e-11 normcell=0.003906338189373786
+boundary 结果：noise001 χ=8 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：noise001 χ=8 seed=2
+[VUMPS down χ=8 seed=2] iter=1 projected_error=8.660e-01 norm/cell=7.79529e-05 wall=0.1s
+[VUMPS down] final_error=3.6900823362540387e-10 normcell=0.003906294869337994
+[VUMPS up χ=8 seed=2] iter=1 projected_error=8.787e-01 norm/cell=9.60838e-05 wall=0.2s
+[VUMPS up] final_error=3.715255873242364e-10 normcell=0.003906338189367857
+boundary 结果：noise001 χ=8 seed=2 status=rejected
+冻结态 boundary-VUMPS：noise001 χ=16 seed=1
+[VUMPS down χ=16 seed=1] iter=1 projected_error=5.098e-02 norm/cell=3.88854e-03 wall=0.1s
+[VUMPS down] final_error=1.0369016265553036e-11 normcell=0.0039062948692779945
+[VUMPS up χ=16 seed=1] iter=1 projected_error=5.723e-04 norm/cell=3.90629e-03 wall=0.4s
+[VUMPS up] final_error=7.674946084882211e-10 normcell=0.003906294869265977
+boundary 结果：noise001 χ=16 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：noise001 χ=16 seed=2
+[VUMPS down χ=16 seed=2] iter=1 projected_error=2.504e-02 norm/cell=3.90613e-03 wall=0.1s
+[VUMPS down] final_error=2.564478056062678e-11 normcell=0.003906294869273567
+[VUMPS up χ=16 seed=2] iter=1 projected_error=4.801e-04 norm/cell=3.90629e-03 wall=0.4s
+[VUMPS up] final_error=8.688071070888845e-10 normcell=0.003906294869250233
+boundary 结果：noise001 χ=16 seed=2 status=converged_candidate
+冻结态 boundary-VUMPS：noise01 χ=8 seed=1
+[VUMPS down χ=8 seed=1] iter=1 projected_error=6.067e-02 norm/cell=3.88371e-03 wall=0.0s
+[VUMPS down] final_error=1.5273249952026466e-10 normcell=0.0039051703746512648
+[VUMPS up χ=8 seed=1] iter=1 projected_error=7.615e-04 norm/cell=3.90515e-03 wall=0.1s
+[VUMPS up] final_error=1.0540670140509304e-10 normcell=0.0039051703746511477
+boundary 结果：noise01 χ=8 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：noise01 χ=8 seed=2
+[VUMPS down χ=8 seed=2] iter=1 projected_error=9.101e-01 norm/cell=2.14492e-04 wall=0.1s
+[VUMPS down] final_error=3.1163183522644756e-10 normcell=0.00390086679401656
+[VUMPS up χ=8 seed=2] iter=1 projected_error=9.443e-01 norm/cell=1.80880e-04 wall=0.2s
+[VUMPS up] final_error=1.6483533071318427e-10 normcell=0.00390086679400407
+boundary 结果：noise01 χ=8 seed=2 status=converged_candidate
+冻结态 boundary-VUMPS：noise01 χ=16 seed=1
+[VUMPS down χ=16 seed=1] iter=1 projected_error=4.375e-02 norm/cell=3.88753e-03 wall=0.2s
+[VUMPS down] final_error=1.0858925304394944e-10 normcell=0.0039008667940269863
+[VUMPS up χ=16 seed=1] iter=1 projected_error=5.434e-04 norm/cell=3.90086e-03 wall=0.4s
+[VUMPS up] final_error=3.003996854534573e-10 normcell=0.0039008667940242316
+boundary 结果：noise01 χ=16 seed=1 status=converged_candidate
+冻结态 boundary-VUMPS：noise01 χ=16 seed=2
+[VUMPS down χ=16 seed=2] iter=1 projected_error=1.953e-02 norm/cell=3.90049e-03 wall=0.1s
+[VUMPS down] final_error=1.78180159311834e-10 normcell=0.0039008667940223954
+[VUMPS up χ=16 seed=2] iter=1 projected_error=4.772e-04 norm/cell=3.90086e-03 wall=0.4s
+[VUMPS up] final_error=2.360684141615542e-10 normcell=0.003900866794026376
+boundary 结果：noise01 χ=16 seed=2 status=converged_candidate
+┌ Warning: VUMPS cancel 150:	obj = +2.345315418727e-18 +5.588049790253e-19im	err = 8.4190287460e-01	time = 1.05 sec
+└ @ MPSKit ~/.julia/packages/MPSKit/7FTCR/src/algorithms/groundstate/vumps.jl:77
+┌ Warning: VUMPS cancel 150:	obj = +2.017366877858e-17 -8.114887106405e-18im	err = 4.7264923144e-01	time = 1.80 sec
+└ @ MPSKit ~/.julia/packages/MPSKit/7FTCR/src/algorithms/groundstate/vumps.jl:77
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/boundary_check.jl tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/boundary-perturb01"
+	User time (seconds): 114.58
+	System time (seconds): 1.75
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:56.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2061784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 788748
+	Voluntary context switches: 7
+	Involuntary context switches: 309
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

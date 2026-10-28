@@ -1,0 +1,9 @@
+{
+  "step": 700,
+  "state_sha256": "97b73dc253f78302d385e8de4e6f4c9ebc015b0de664ff1a4b29b5123792a224",
+  "physical_column_overlap": 1.0,
+  "minus_amplitudes": [
+    1.0506040643160917e-15,
+    0.0
+  ]
+}

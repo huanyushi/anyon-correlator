@@ -1,0 +1,238 @@
+probe objective ready energy=-0.029944778337050747 residual=5.1896748909828486e-11 wall=100.94s; starting two-stage AD
+probe first energy=-0.02994477833706103 gradnorm=0.8757737132444535 objective=100.94s gradient=550.68s
+FD direction=1 eps=0.0001 ad=0.002704742173110883 fd=0.002704741640640468 passed=true
+FD direction=1 eps=1.0e-5 ad=0.002704742173110883 fd=0.0027047416866973757 passed=true
+FD direction=2 eps=0.0001 ad=0.09104777240244996 fd=0.0910477720156462 passed=true
+FD direction=2 eps=1.0e-5 ad=0.09104777240244996 fd=0.09104777221255465 passed=true
+FD direction=3 eps=0.0001 ad=-0.8757737132444535 fd=-0.8757736802148322 passed=true
+FD direction=3 eps=1.0e-5 ad=-0.8757737132444535 fd=-0.8757737089762351 passed=true
+EXACT e=-1.0000000000000002 max_stabilizer_error=6.661338147750939e-16 gradnorm=4.120437236905388e-17
+AD step=0 e=-0.029944778337 |g|=8.758e-01 mx=0.0054493 mz=0.1100564 residual=8.46e-10 wall=1.1s
+AD step=1 e=-0.129309246917 |g|=6.734e-01 mx=0.0090529 mz=0.0896031 residual=2.95e-10 wall=2.4s
+AD step=2 e=-0.216459659376 |g|=4.741e-01 mx=-0.0173093 mz=0.0499116 residual=7.24e-10 wall=3.1s
+AD step=3 e=-0.267399598178 |g|=2.950e-01 mx=-0.0578090 mz=0.0314082 residual=5.06e-10 wall=3.8s
+AD step=4 e=-0.306014899671 |g|=4.214e-01 mx=-0.0885368 mz=0.0314694 residual=3.85e-10 wall=4.5s
+AD step=5 e=-0.343569088550 |g|=4.840e-01 mx=-0.1074978 mz=0.0329918 residual=2.42e-10 wall=5.1s
+AD step=6 e=-0.380386983908 |g|=4.660e-01 mx=-0.1132144 mz=0.0228520 residual=1.86e-10 wall=5.8s
+AD step=7 e=-0.415745189253 |g|=4.057e-01 mx=-0.1036190 mz=0.0100646 residual=2.80e-10 wall=6.4s
+AD step=8 e=-0.447851108000 |g|=3.220e-01 mx=-0.0848807 mz=0.0035987 residual=4.07e-10 wall=7.1s
+AD step=9 e=-0.473910597416 |g|=2.196e-01 mx=-0.0500552 mz=-0.0015453 residual=2.93e-10 wall=7.9s
+AD step=10 e=-0.491417558608 |g|=1.042e-01 mx=-0.0317171 mz=-0.0033613 residual=2.66e-10 wall=9.7s
+AD step=11 e=-0.497088201606 |g|=5.691e-02 mx=0.0085174 mz=-0.0022553 residual=3.36e-10 wall=10.2s
+AD step=12 e=-0.498115558427 |g|=3.304e-02 mx=-0.0068385 mz=-0.0016022 residual=4.64e-10 wall=10.7s
+AD step=13 e=-0.498663846653 |g|=2.544e-02 mx=-0.0086593 mz=-0.0011723 residual=6.44e-11 wall=11.3s
+AD step=14 e=-0.499510072224 |g|=2.070e-02 mx=-0.0083603 mz=-0.0004641 residual=9.69e-11 wall=11.8s
+AD step=15 e=-0.499756705661 |g|=2.033e-02 mx=0.0027198 mz=-0.0002389 residual=5.68e-11 wall=12.4s
+AD step=16 e=-0.499910873141 |g|=4.912e-03 mx=-0.0006475 mz=-0.0001543 residual=3.08e-10 wall=12.9s
+AD step=17 e=-0.499943646202 |g|=2.905e-03 mx=-0.0018484 mz=-0.0001260 residual=1.89e-10 wall=13.5s
+AD step=18 e=-0.499962004642 |g|=2.721e-03 mx=-0.0022669 mz=-0.0001056 residual=3.03e-10 wall=14.0s
+AD step=19 e=-0.499978370179 |g|=2.468e-03 mx=-0.0018268 mz=-0.0000914 residual=7.10e-10 wall=14.6s
+AD step=20 e=-0.499989771811 |g|=4.320e-03 mx=-0.0015487 mz=-0.0000685 residual=1.40e-10 wall=15.1s
+AD step=21 e=-0.500001105949 |g|=1.852e-03 mx=-0.0009607 mz=-0.0000638 residual=1.39e-10 wall=15.7s
+AD step=22 e=-0.500008568666 |g|=2.395e-03 mx=-0.0008327 mz=-0.0000587 residual=1.38e-10 wall=16.2s
+AD step=23 e=-0.500025830431 |g|=3.848e-03 mx=-0.0006113 mz=-0.0000465 residual=1.38e-10 wall=18.1s
+AD step=24 e=-0.500045881809 |g|=4.778e-03 mx=-0.0010996 mz=-0.0000382 residual=1.50e-10 wall=18.6s
+AD step=25 e=-0.500048043802 |g|=6.977e-03 mx=-0.0000516 mz=-0.0000372 residual=1.87e-10 wall=19.3s
+AD step=26 e=-0.500065997739 |g|=2.489e-03 mx=-0.0012733 mz=-0.0000419 residual=3.69e-10 wall=19.8s
+AD step=27 e=-0.500071874038 |g|=1.739e-03 mx=-0.0018086 mz=-0.0000447 residual=3.94e-10 wall=20.3s
+AD step=28 e=-0.500080195034 |g|=3.169e-03 mx=-0.0022309 mz=-0.0000560 residual=4.31e-10 wall=20.8s
+AD step=29 e=-0.500099280602 |g|=6.198e-03 mx=-0.0028477 mz=-0.0000845 residual=5.23e-10 wall=21.4s
+AD step=30 e=-0.500164439789 |g|=1.539e-02 mx=-0.0043444 mz=-0.0003319 residual=1.93e-11 wall=21.9s
+AD step=31 e=-0.500231965855 |g|=4.037e-02 mx=-0.0075563 mz=-0.0018497 residual=1.23e-10 wall=22.5s
+AD step=32 e=-0.500901239631 |g|=7.717e-02 mx=-0.0108190 mz=-0.0044011 residual=6.04e-10 wall=23.1s
+AD step=33 e=-0.501206374502 |g|=1.017e-01 mx=-0.0106455 mz=-0.0065648 residual=2.03e-10 wall=23.9s
+AD step=34 e=-0.501397903099 |g|=8.512e-02 mx=-0.0066938 mz=-0.0034608 residual=4.66e-11 wall=24.5s
+AD step=35 e=-0.504071534337 |g|=1.163e-01 mx=-0.0160366 mz=-0.0109316 residual=9.25e-10 wall=25.2s
+AD step=36 e=-0.504971407011 |g|=2.107e-01 mx=-0.0316742 mz=-0.0298277 residual=8.69e-10 wall=25.9s
+AD step=37 e=-0.510348827747 |g|=1.147e-01 mx=-0.0476034 mz=-0.0214066 residual=1.58e-10 wall=27.8s
+AD step=38 e=-0.514469933365 |g|=1.241e-01 mx=-0.0428883 mz=-0.0257671 residual=1.36e-10 wall=28.4s
+AD step=39 e=-0.522636574026 |g|=1.677e-01 mx=-0.0526718 mz=-0.0463141 residual=3.40e-10 wall=29.1s
+AD step=40 e=-0.531150965254 |g|=2.198e-01 mx=-0.0606608 mz=-0.0817727 residual=1.22e-10 wall=29.7s
+AD step=41 e=-0.539902720271 |g|=2.522e-01 mx=-0.0624221 mz=-0.1272339 residual=7.84e-10 wall=30.4s
+AD step=42 e=-0.549972500726 |g|=2.597e-01 mx=-0.0575096 mz=-0.1736747 residual=4.18e-10 wall=31.0s
+AD step=43 e=-0.562711552204 |g|=2.517e-01 mx=-0.0474296 mz=-0.2294689 residual=4.28e-10 wall=31.7s
+AD step=44 e=-0.578102979226 |g|=2.341e-01 mx=-0.0303774 mz=-0.2576015 residual=5.74e-10 wall=32.4s
+AD step=45 e=-0.593569779656 |g|=1.785e-01 mx=-0.0144974 mz=-0.2887909 residual=3.68e-10 wall=33.1s
+AD step=46 e=-0.605871623875 |g|=1.661e-01 mx=-0.0082801 mz=-0.2516155 residual=1.87e-10 wall=33.8s
+AD step=47 e=-0.614414690269 |g|=1.079e-01 mx=-0.0136653 mz=-0.2803553 residual=4.19e-10 wall=34.5s
+AD step=48 e=-0.618828159680 |g|=8.181e-02 mx=-0.0218914 mz=-0.2450950 residual=5.41e-11 wall=35.2s
+AD step=49 e=-0.621658000803 |g|=9.204e-02 mx=0.0111095 mz=-0.2478417 residual=3.07e-10 wall=37.2s
+AD step=50 e=-0.623575281729 |g|=4.206e-02 mx=-0.0096157 mz=-0.2501517 residual=2.72e-10 wall=37.8s
+AD step=51 e=-0.624087970902 |g|=2.319e-02 mx=-0.0054305 mz=-0.2487384 residual=1.31e-10 wall=38.4s
+AD step=52 e=-0.624478946634 |g|=1.243e-02 mx=0.0002941 mz=-0.2496786 residual=1.47e-10 wall=39.0s
+AD step=53 e=-0.624646317757 |g|=1.197e-02 mx=0.0004903 mz=-0.2489998 residual=1.33e-10 wall=39.6s
+AD step=54 e=-0.624688639312 |g|=6.884e-03 mx=0.0016893 mz=-0.2493977 residual=5.13e-11 wall=40.4s
+AD step=55 e=-0.624709463640 |g|=5.012e-03 mx=0.0009683 mz=-0.2499801 residual=2.38e-11 wall=41.0s
+AD step=56 e=-0.624748415269 |g|=4.526e-03 mx=-0.0004202 mz=-0.2501687 residual=7.42e-10 wall=41.6s
+AD step=57 e=-0.624777889651 |g|=8.549e-03 mx=0.0000372 mz=-0.2517460 residual=2.74e-10 wall=42.2s
+AD step=58 e=-0.624806691352 |g|=5.850e-03 mx=-0.0002878 mz=-0.2494210 residual=4.07e-10 wall=42.9s
+AD step=59 e=-0.624832707468 |g|=4.619e-03 mx=-0.0003277 mz=-0.2491756 residual=7.07e-11 wall=43.5s
+AD step=60 e=-0.624867247121 |g|=5.570e-03 mx=0.0005787 mz=-0.2494608 residual=1.90e-11 wall=44.1s
+AD step=61 e=-0.624897069421 |g|=1.169e-02 mx=-0.0009781 mz=-0.2487638 residual=3.99e-10 wall=44.9s
+AD step=62 e=-0.624935290632 |g|=5.444e-03 mx=0.0008562 mz=-0.2497898 residual=5.73e-11 wall=46.6s
+AD step=63 e=-0.624954241224 |g|=3.966e-03 mx=0.0009854 mz=-0.2503220 residual=8.17e-11 wall=47.2s
+AD step=64 e=-0.624973455432 |g|=3.922e-03 mx=0.0004778 mz=-0.2502911 residual=5.66e-11 wall=47.9s
+AD step=65 e=-0.624979726734 |g|=6.950e-03 mx=-0.0001681 mz=-0.2513076 residual=3.96e-11 wall=48.5s
+AD step=66 e=-0.624990540954 |g|=2.549e-03 mx=-0.0003697 mz=-0.2504025 residual=1.05e-10 wall=49.1s
+AD step=67 e=-0.624994320130 |g|=2.127e-03 mx=-0.0003732 mz=-0.2499286 residual=6.47e-10 wall=49.7s
+AD step=68 e=-0.625000687950 |g|=2.782e-03 mx=-0.0002879 mz=-0.2497494 residual=1.56e-10 wall=50.3s
+AD step=69 e=-0.625011229052 |g|=4.908e-03 mx=0.0000528 mz=-0.2486735 residual=2.48e-10 wall=51.0s
+AD step=70 e=-0.625027140945 |g|=4.833e-03 mx=0.0004347 mz=-0.2495811 residual=5.79e-10 wall=51.6s
+AD step=71 e=-0.625053566605 |g|=5.032e-03 mx=0.0011207 mz=-0.2499873 residual=2.07e-10 wall=52.2s
+AD step=72 e=-0.625127639512 |g|=1.241e-02 mx=0.0006569 mz=-0.2510142 residual=1.44e-10 wall=52.8s
+AD step=73 e=-0.625206667831 |g|=1.652e-02 mx=0.0018696 mz=-0.2526505 residual=7.66e-10 wall=53.4s
+AD step=74 e=-0.625304684983 |g|=2.097e-02 mx=0.0027496 mz=-0.2538054 residual=6.26e-10 wall=53.9s
+AD step=75 e=-0.625475626604 |g|=2.153e-02 mx=0.0032925 mz=-0.2545956 residual=7.24e-10 wall=54.5s
+AD step=76 e=-0.625732278588 |g|=2.345e-02 mx=0.0019510 mz=-0.2548094 residual=3.20e-10 wall=56.4s
+AD step=77 e=-0.625946980116 |g|=2.609e-02 mx=0.0010891 mz=-0.2503080 residual=6.27e-10 wall=56.9s
+AD step=78 e=-0.626085844326 |g|=1.911e-02 mx=-0.0023363 mz=-0.2481959 residual=7.62e-11 wall=57.5s
+AD step=79 e=-0.626261965294 |g|=2.790e-02 mx=-0.0065552 mz=-0.2458845 residual=3.66e-10 wall=58.1s
+AD step=80 e=-0.626614667249 |g|=2.571e-02 mx=-0.0065974 mz=-0.2461247 residual=4.18e-10 wall=58.7s
+AD step=81 e=-0.629131747764 |g|=4.615e-02 mx=-0.0079043 mz=-0.2464966 residual=8.90e-10 wall=59.4s
+AD step=82 e=-0.633008261581 |g|=8.684e-02 mx=-0.0090698 mz=-0.2466199 residual=1.80e-10 wall=60.0s
+AD step=83 e=-0.639064100434 |g|=1.366e-01 mx=-0.0105911 mz=-0.2466943 residual=3.76e-10 wall=60.6s
+AD step=84 e=-0.646377708669 |g|=2.000e-01 mx=-0.0131075 mz=-0.2467543 residual=2.53e-10 wall=61.2s
+AD step=85 e=-0.650561951852 |g|=2.972e-01 mx=-0.0178220 mz=-0.2449439 residual=6.83e-10 wall=61.9s
+AD step=86 e=-0.651115471717 |g|=3.333e-01 mx=-0.0131309 mz=-0.2479677 residual=7.36e-10 wall=62.5s
+AD step=87 e=-0.661364987145 |g|=3.615e-01 mx=-0.0075200 mz=-0.2481420 residual=3.05e-10 wall=63.2s
+AD step=88 e=-0.675476687489 |g|=3.573e-01 mx=0.0022488 mz=-0.2477771 residual=2.17e-10 wall=63.9s
+AD step=89 e=-0.691579000013 |g|=3.382e-01 mx=0.0124760 mz=-0.2455664 residual=7.64e-11 wall=65.9s
+AD step=90 e=-0.711163191883 |g|=2.704e-01 mx=0.0170243 mz=-0.2515034 residual=1.08e-10 wall=66.5s
+AD step=91 e=-0.725674637264 |g|=2.127e-01 mx=0.0254779 mz=-0.2532299 residual=6.88e-11 wall=67.1s
+AD step=92 e=-0.739609732229 |g|=1.496e-01 mx=0.0078987 mz=-0.2627690 residual=5.88e-10 wall=67.7s
+AD step=93 e=-0.744356905676 |g|=9.442e-02 mx=0.0009247 mz=-0.2604182 residual=4.90e-10 wall=68.2s
+AD step=94 e=-0.747139932988 |g|=7.000e-02 mx=0.0018143 mz=-0.2533203 residual=7.98e-11 wall=68.8s
+AD step=95 e=-0.748123579455 |g|=3.567e-02 mx=-0.0034169 mz=-0.2512941 residual=1.43e-11 wall=69.4s
+AD step=96 e=-0.748564412656 |g|=2.771e-02 mx=-0.0030491 mz=-0.2504000 residual=9.06e-11 wall=70.0s
+AD step=97 e=-0.749069624404 |g|=2.250e-02 mx=-0.0013487 mz=-0.2487698 residual=1.11e-11 wall=70.6s
+AD step=98 e=-0.749291027657 |g|=2.856e-02 mx=0.0019597 mz=-0.2489753 residual=1.48e-10 wall=71.1s
+AD step=99 e=-0.749472293268 |g|=1.259e-02 mx=0.0006727 mz=-0.2489777 residual=2.18e-10 wall=71.7s
+AD step=100 e=-0.749574801812 |g|=1.097e-02 mx=0.0002946 mz=-0.2493972 residual=2.70e-10 wall=72.3s
+AD step=101 e=-0.749675736185 |g|=1.074e-02 mx=-0.0000670 mz=-0.2498635 residual=1.07e-10 wall=72.9s
+AD step=102 e=-0.749766366623 |g|=8.687e-03 mx=-0.0001855 mz=-0.2495675 residual=7.27e-10 wall=73.5s
+AD step=103 e=-0.749783801363 |g|=6.133e-03 mx=-0.0002806 mz=-0.2500844 residual=9.42e-11 wall=75.6s
+AD step=104 e=-0.749793487035 |g|=2.760e-03 mx=0.0000354 mz=-0.2499769 residual=9.51e-11 wall=76.1s
+AD step=105 e=-0.749799502496 |g|=2.882e-03 mx=0.0003397 mz=-0.2499455 residual=7.34e-11 wall=76.7s
+AD step=106 e=-0.749806762491 |g|=3.842e-03 mx=0.0005547 mz=-0.2499478 residual=3.01e-11 wall=77.3s
+AD step=107 e=-0.749809260376 |g|=1.098e-02 mx=0.0016560 mz=-0.2499316 residual=1.31e-10 wall=77.8s
+AD step=108 e=-0.749821065511 |g|=3.833e-03 mx=0.0010315 mz=-0.2499381 residual=1.05e-10 wall=78.4s
+AD step=109 e=-0.749825572006 |g|=2.697e-03 mx=0.0007306 mz=-0.2499419 residual=4.94e-11 wall=78.9s
+AD step=110 e=-0.749830500334 |g|=3.540e-03 mx=0.0004891 mz=-0.2499163 residual=8.56e-10 wall=79.6s
+AD step=111 e=-0.749838148991 |g|=4.090e-03 mx=0.0002211 mz=-0.2498470 residual=7.94e-11 wall=80.2s
+AD step=112 e=-0.749854950893 |g|=5.313e-03 mx=-0.0000369 mz=-0.2498390 residual=1.41e-10 wall=80.7s
+AD step=113 e=-0.749860262800 |g|=1.127e-02 mx=-0.0003861 mz=-0.2501921 residual=1.88e-10 wall=81.3s
+AD step=114 e=-0.749889283647 |g|=4.010e-03 mx=-0.0000878 mz=-0.2500915 residual=3.77e-10 wall=81.9s
+AD step=115 e=-0.749902968541 |g|=3.506e-03 mx=0.0002694 mz=-0.2501514 residual=2.16e-10 wall=83.8s
+AD step=116 e=-0.749921577167 |g|=4.572e-03 mx=0.0006133 mz=-0.2502279 residual=5.13e-10 wall=84.3s
+AD step=117 e=-0.749941001871 |g|=6.010e-03 mx=0.0006231 mz=-0.2500667 residual=7.14e-10 wall=84.9s
+AD step=118 e=-0.749945217015 |g|=9.449e-03 mx=0.0007752 mz=-0.2498404 residual=5.31e-10 wall=85.4s
+AD step=119 e=-0.749955367835 |g|=1.710e-03 mx=0.0000428 mz=-0.2498566 residual=7.66e-10 wall=85.9s
+AD step=120 e=-0.749956205274 |g|=1.471e-03 mx=0.0000117 mz=-0.2498537 residual=3.51e-10 wall=86.5s
+AD step=121 e=-0.749958517531 |g|=1.686e-03 mx=-0.0001125 mz=-0.2498702 residual=3.21e-10 wall=87.1s
+AD step=122 e=-0.749961870384 |g|=2.142e-03 mx=0.0000756 mz=-0.2500111 residual=2.69e-10 wall=87.6s
+AD step=123 e=-0.749964867669 |g|=1.650e-03 mx=-0.0001279 mz=-0.2500271 residual=1.29e-10 wall=88.2s
+AD step=124 e=-0.749967566195 |g|=1.309e-03 mx=0.0000862 mz=-0.2500924 residual=2.13e-10 wall=88.8s
+AD step=125 e=-0.749970851750 |g|=1.750e-03 mx=0.0003145 mz=-0.2500527 residual=1.89e-10 wall=89.4s
+AD step=126 e=-0.749972105553 |g|=2.070e-03 mx=0.0002502 mz=-0.2499726 residual=4.81e-10 wall=89.9s
+AD step=127 e=-0.749973487722 |g|=9.781e-04 mx=0.0002226 mz=-0.2499521 residual=5.59e-10 wall=90.6s
+AD step=128 e=-0.749974328365 |g|=8.608e-04 mx=0.0001871 mz=-0.2499272 residual=5.26e-10 wall=91.2s
+AD step=129 e=-0.749975277849 |g|=1.929e-03 mx=0.0000367 mz=-0.2499538 residual=9.47e-10 wall=93.4s
+AD step=130 e=-0.749976577771 |g|=1.361e-03 mx=0.0000227 mz=-0.2499739 residual=3.63e-10 wall=93.9s
+AD step=131 e=-0.749978441941 |g|=1.431e-03 mx=0.0000393 mz=-0.2500314 residual=4.60e-10 wall=94.5s
+AD step=132 e=-0.749982446914 |g|=2.257e-03 mx=-0.0000440 mz=-0.2501231 residual=9.03e-10 wall=95.0s
+AD step=133 e=-0.749986670506 |g|=2.008e-03 mx=0.0001040 mz=-0.2500992 residual=3.20e-10 wall=95.6s
+AD step=134 e=-0.749989854411 |g|=1.587e-03 mx=0.0002486 mz=-0.2500945 residual=6.69e-10 wall=96.1s
+AD step=135 e=-0.749991536016 |g|=3.079e-03 mx=-0.0002959 mz=-0.2499237 residual=3.66e-10 wall=96.6s
+AD step=136 e=-0.749993507403 |g|=1.015e-03 mx=-0.0000026 mz=-0.2499285 residual=6.25e-10 wall=97.2s
+AD step=137 e=-0.749994208507 |g|=9.093e-04 mx=0.0000409 mz=-0.2499282 residual=3.55e-10 wall=97.8s
+AD step=138 e=-0.749995152794 |g|=1.300e-03 mx=0.0001374 mz=-0.2499491 residual=2.14e-10 wall=98.3s
+AD step=139 e=-0.749995473738 |g|=8.957e-04 mx=0.0000470 mz=-0.2499952 residual=9.21e-10 wall=99.1s
+AD step=140 e=-0.749995686012 |g|=4.502e-04 mx=0.0000580 mz=-0.2500068 residual=8.95e-10 wall=100.0s
+AD step=141 e=-0.749995844773 |g|=4.028e-04 mx=0.0000737 mz=-0.2500225 residual=8.52e-10 wall=100.5s
+AD step=142 e=-0.749995980818 |g|=3.982e-04 mx=0.0000863 mz=-0.2500212 residual=8.25e-10 wall=102.4s
+AD step=143 e=-0.749996240865 |g|=4.315e-04 mx=0.0000918 mz=-0.2500226 residual=6.92e-10 wall=103.7s
+AD step=144 e=-0.749996290414 |g|=6.834e-04 mx=0.0000556 mz=-0.2499934 residual=8.80e-10 wall=104.6s
+AD step=145 e=-0.749996418032 |g|=2.219e-04 mx=0.0000767 mz=-0.2500048 residual=8.48e-10 wall=106.3s
+AD step=146 e=-0.749996458921 |g|=1.931e-04 mx=0.0000721 mz=-0.2500039 residual=2.74e-10 wall=106.9s
+AD step=147 e=-0.749996514751 |g|=2.372e-04 mx=0.0000757 mz=-0.2500025 residual=8.54e-10 wall=107.5s
+AD step=148 e=-0.749996549956 |g|=4.984e-04 mx=0.0000307 mz=-0.2499964 residual=9.91e-10 wall=108.6s
+AD step=149 e=-0.749996610328 |g|=2.975e-04 mx=0.0000487 mz=-0.2499927 residual=5.45e-10 wall=109.5s
+AD step=150 e=-0.749996689962 |g|=3.021e-04 mx=0.0000693 mz=-0.2499886 residual=8.15e-10 wall=110.1s
+AD step=151 e=-0.749996808946 |g|=4.147e-04 mx=0.0000805 mz=-0.2499817 residual=3.62e-10 wall=110.7s
+AD step=152 e=-0.749996992599 |g|=5.803e-04 mx=0.0000906 mz=-0.2499886 residual=8.26e-10 wall=111.3s
+AD step=153 e=-0.749997196347 |g|=5.933e-04 mx=0.0000715 mz=-0.2499880 residual=9.69e-10 wall=113.1s
+AD step=154 e=-0.749997380739 |g|=3.963e-04 mx=0.0000327 mz=-0.2499930 residual=5.37e-10 wall=116.8s
+AD step=155 e=-0.749997690985 |g|=5.253e-04 mx=-0.0000162 mz=-0.2500140 residual=9.46e-10 wall=117.4s
+AD step=156 e=-0.749997888575 |g|=6.183e-04 mx=-0.0000633 mz=-0.2500056 residual=8.29e-10 wall=118.5s
+AD step=157 e=-0.749998229885 |g|=4.633e-04 mx=0.0000050 mz=-0.2500122 residual=7.54e-10 wall=119.3s
+AD step=158 e=-0.749998353867 |g|=1.061e-03 mx=-0.0000468 mz=-0.2500037 residual=8.54e-10 wall=123.1s
+AD step=159 e=-0.749998523541 |g|=3.665e-04 mx=0.0000331 mz=-0.2499989 residual=8.25e-10 wall=123.8s
+AD step=160 e=-0.749998580662 |g|=3.046e-04 mx=0.0000704 mz=-0.2499968 residual=8.52e-10 wall=124.6s
+AD step=161 e=-0.749998641457 |g|=3.087e-04 mx=0.0000817 mz=-0.2499948 residual=5.13e-10 wall=125.3s
+AD step=162 e=-0.749998726377 |g|=3.130e-04 mx=0.0000561 mz=-0.2499949 residual=7.46e-10 wall=125.9s
+AD step=163 e=-0.749998739158 |g|=3.512e-04 mx=0.0000502 mz=-0.2499950 residual=5.54e-10 wall=127.0s
+AD step=164 e=-0.749998764227 |g|=1.332e-04 mx=0.0000376 mz=-0.2499972 residual=9.70e-10 wall=127.7s
+AD step=165 e=-0.749998774867 |g|=1.168e-04 mx=0.0000340 mz=-0.2499996 residual=6.07e-10 wall=128.6s
+AD step=166 e=-0.749998795124 |g|=1.346e-04 mx=0.0000380 mz=-0.2500032 residual=6.64e-10 wall=130.7s
+AD step=167 e=-0.749998822671 |g|=1.404e-04 mx=0.0000478 mz=-0.2500036 residual=9.84e-10 wall=131.7s
+AD step=168 e=-0.749998862763 |g|=3.755e-04 mx=0.0000550 mz=-0.2499919 residual=9.05e-10 wall=132.3s
+AD step=169 e=-0.749998922542 |g|=2.215e-04 mx=0.0000694 mz=-0.2499952 residual=8.45e-10 wall=132.9s
+AD step=170 e=-0.749998981247 |g|=3.809e-04 mx=0.0000924 mz=-0.2499960 residual=5.51e-10 wall=133.5s
+AD step=171 e=-0.749999051274 |g|=2.474e-04 mx=0.0000523 mz=-0.2499915 residual=6.15e-10 wall=134.1s
+AD step=172 e=-0.749999104066 |g|=1.941e-04 mx=0.0000406 mz=-0.2499914 residual=5.99e-10 wall=134.8s
+AD step=173 e=-0.749999134484 |g|=3.548e-04 mx=-0.0000205 mz=-0.2500016 residual=8.11e-10 wall=135.4s
+AD step=174 e=-0.749999160764 |g|=1.329e-04 mx=0.0000384 mz=-0.2499996 residual=7.46e-10 wall=136.1s
+AD step=175 e=-0.749999166047 |g|=6.495e-05 mx=0.0000478 mz=-0.2500002 residual=3.78e-10 wall=136.8s
+AD step=176 e=-0.749999170145 |g|=6.497e-05 mx=0.0000530 mz=-0.2500004 residual=8.08e-10 wall=137.6s
+AD step=177 e=-0.749999179250 |g|=9.954e-05 mx=0.0000662 mz=-0.2499992 residual=7.53e-10 wall=138.2s
+AD step=178 e=-0.749999187594 |g|=1.196e-04 mx=0.0000573 mz=-0.2499966 residual=4.38e-10 wall=138.8s
+AD step=179 e=-0.749999193753 |g|=9.802e-05 mx=0.0000561 mz=-0.2499993 residual=6.28e-10 wall=139.7s
+AD step=180 e=-0.749999196578 |g|=8.456e-05 mx=0.0000548 mz=-0.2499991 residual=5.67e-10 wall=141.5s
+AD step=181 e=-0.749999198629 |g|=4.842e-05 mx=0.0000424 mz=-0.2499982 residual=4.89e-10 wall=142.2s
+AD step=182 e=-0.749999200370 |g|=5.222e-05 mx=0.0000369 mz=-0.2499983 residual=6.56e-10 wall=143.0s
+AD step=183 e=-0.749999205983 |g|=8.291e-05 mx=0.0000278 mz=-0.2499986 residual=5.66e-10 wall=143.5s
+AD step=184 e=-0.749999213913 |g|=1.134e-04 mx=0.0000316 mz=-0.2499996 residual=6.66e-10 wall=144.2s
+AD step=185 e=-0.749999219268 |g|=1.886e-04 mx=0.0000179 mz=-0.2499991 residual=8.40e-10 wall=144.8s
+AD step=186 e=-0.749999229357 |g|=7.424e-05 mx=0.0000440 mz=-0.2500002 residual=6.97e-10 wall=145.4s
+AD step=187 e=-0.749999236109 |g|=8.594e-05 mx=0.0000653 mz=-0.2500004 residual=9.56e-10 wall=146.0s
+AD step=188 e=-0.749999243633 |g|=1.272e-04 mx=0.0000798 mz=-0.2500002 residual=7.74e-10 wall=146.7s
+AD step=189 e=-0.749999260343 |g|=1.758e-04 mx=0.0000922 mz=-0.2499999 residual=5.56e-10 wall=147.3s
+AD step=190 e=-0.749999282508 |g|=2.503e-04 mx=0.0001046 mz=-0.2499948 residual=9.04e-10 wall=148.0s
+AD step=191 e=-0.749999307114 |g|=3.102e-04 mx=0.0001013 mz=-0.2499939 residual=5.68e-10 wall=148.7s
+AD step=192 e=-0.749999328368 |g|=1.359e-04 mx=0.0000680 mz=-0.2499967 residual=3.94e-10 wall=149.4s
+AD step=193 e=-0.749999337980 |g|=6.394e-05 mx=0.0000403 mz=-0.2499980 residual=8.09e-10 wall=151.9s
+AD step=194 e=-0.749999340941 |g|=5.511e-05 mx=0.0000393 mz=-0.2499987 residual=3.32e-10 wall=153.6s
+AD step=195 e=-0.749999345224 |g|=6.794e-05 mx=0.0000340 mz=-0.2499985 residual=8.33e-10 wall=156.4s
+AD step=196 e=-0.749999347948 |g|=1.091e-04 mx=0.0000600 mz=-0.2500013 residual=9.29e-10 wall=159.7s
+AD step=197 e=-0.749999349965 |g|=6.981e-05 mx=0.0000545 mz=-0.2500004 residual=8.29e-10 wall=164.7s
+AD step=198 e=-0.749999353244 |g|=5.229e-05 mx=0.0000455 mz=-0.2499988 residual=4.16e-10 wall=167.7s
+AD step=199 e=-0.749999356202 |g|=7.973e-05 mx=0.0000414 mz=-0.2499979 residual=7.95e-10 wall=168.8s
+AD step=200 e=-0.749999364530 |g|=1.291e-04 mx=0.0000362 mz=-0.2499971 residual=4.81e-10 wall=169.6s
+audit chi=4 seed=2026 status=converged
+audit chi=4 seed=1 status=converged
+audit chi=4 seed=2 status=converged
+audit chi=8 seed=2026 status=converged
+FINAL status=budget accepted=false reasons=["optimizer_not_stationary", "energy_benchmark", "mx_benchmark", "mz_benchmark", "conserved_sector"]
+	Command being timed: "env OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 /home/huanyushi/.juliaup/bin/julia --startup-file=no -O1 --project=julia-env tracks/peps/solutions/anyon-correlator/automatic-differentiate/run.jl session --out=tracks/peps/solutions/anyon-correlator/automatic-differentiate/results/local-zero-session --hx=0 --hz=0 --chi=4 --chi-check=8 --seed=19 --maxsteps=200 --budget=300"
+	User time (seconds): 877.45
+	System time (seconds): 5.71
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:44.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2983276
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 408
+	Minor (reclaiming a frame) page faults: 2467834
+	Voluntary context switches: 1037
+	Involuntary context switches: 2114
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

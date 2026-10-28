@@ -1,0 +1,6 @@
+Test Summary:               | Pass  Total   Time
+test_input_state_provenance |    3      3  22.2s
+Test Summary:                            | Pass  Total  Time
+test_incremental_output_and_no_overwrite |    7      7  0.3s
+Test Summary:                    | Pass  Total  Time
+test_plot_zero_and_invalid_modes |    1      1  0.1s
