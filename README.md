@@ -32,6 +32,7 @@ X、Z 为 Pauli matrices。物理自旋在无限平方晶格的边上，d=2；�
 | [simple-update/](simple-update/README.md) | SU 类方法总说明：旧 merged L 形 SU、split path/loop 对照、一般 D 的 loop 方法 |
 | [ad/](ad/README.md) | AD 总说明：旧 merged tied-tensor 零场优化，以及新 split V/P/λ 的弱场优化 |
 | `tests/` | 保留算法的测试、历史张量读取检查及结果汇总脚本测试 |
+| [benchmarks/filtered-toric-code/](benchmarks/filtered-toric-code/README.md) | 独立的解析过滤态 Fig.7(a) 复现、简短运行入口与代码阅读说明；与磁场 Hamiltonian 研究分开记录 |
 | [docs/REORGANIZATION.md](docs/REORGANIZATION.md) | 本次移动、删除、备份和检查的说明 |
 
 每套实现的 `results/` 保存本地计算数据，`figures/` 保存该实验的图，`frozen_states/` 保存可随代码携带的最终张量 JSON。项目根目录的 `RESULTS.csv` 只汇总主要结果，注明算法、初态、D/χ、状态和详细数据位置，不用它替代原始计算数据。

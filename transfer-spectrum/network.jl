@@ -14,29 +14,29 @@ function mode_array(a,m,axis)
     order=[axis;[i for i in 1:ndims(a) if i!=axis]]; dims=size(a)[order]
     permutedims(reshape(m*reshape(permutedims(a,order),dims[1],:),size(m,1),dims[2:end]...),invperm(order))
 end
-function build_transfer(st;direction=:down)
-    direction==:down || throw(ArgumentError("only the confirmed downward transfer is defined"))
-    a=dense_arrays(st); A=zeros(4,2,2,2,2)
-    for p in 0:1,q in 0:1,n in 1:2,e in 1:2,s in 1:2,w in 1:2,b in 1:2,c in 1:2
-        A[p+2q+1,n,e,s,w]+=a.V[c,b,s,w]*a.P[p+1,b,e]*a.P[q+1,c,n]*a.lambda[b]*a.lambda[e]*a.lambda[c]*a.lambda[n]
-    end
+"Ordinary down-row MPO from an already blocked physical,n,e,s,w tensor."
+function build_transfer_from_tensor(A::Array{Float64,5},charges;input_hash=bytes2hex(sha256(reinterpret(UInt8,vec(A)))))
+    D=length(charges);d=D^2;ne=count(==(0),charges)
+    charges==vcat(zeros(Int,ne),ones(Int,D-ne)) && 0<ne<D || throw(ArgumentError("invalid virtual charge order"))
+    size(A)[2:5]==(D,D,D,D) || throw(DimensionMismatch("blocked tensor shape"))
     @tensor raw[n,N,e,E,s,S,w,W] := A[p,n,e,s,w]*conj(A[p,N,E,S,W])
-    Q_raw=reshape(raw,4,4,4,4)
-    v=virtual_space(); W=fuse(v⊗conj(v)); F=unitary(Float64,W,v⊗conj(v))
-    f=reshape(convert(Array,F),4,4); Q=copy(Q_raw)
+    Q_raw=reshape(raw,d,d,d,d)
+    v=Z2Space(0=>ne,1=>D-ne); W=fuse(v⊗conj(v)); F=unitary(Float64,W,v⊗conj(v))
+    f=reshape(convert(Array,F),d,d); Q=copy(Q_raw)
     for i in 1:4; Q=mode_array(Q,f,i); end
-    z=TensorMap([1.0 0;0 -1],v←v)
+    signs=Matrix(Diagonal(Float64.(1 .-2charges)))
+    z=TensorMap(signs,v←v)
     ket=F*(z⊗id(Float64,conj(v)))*F'
-    zb=TensorMap([1.0 0;0 -1],conj(v)←conj(v))
+    zb=TensorMap(signs,conj(v)←conj(v))
     bra=F*(id(Float64,v)⊗zb)*F'
     scale=norm(Q); scale>0 || error("zero double layer")
     # Ordinary MPO: left,down <- up,right. No seam or twist is inserted.
     local_mpo=TensorMap(permutedims(Q/scale,(4,3,1,2)),W⊗W←W⊗W;tol=1e-12)
-    h=bytes2hex(sha256(reinterpret(UInt8,[vec(a.V);vec(a.P);a.lambda])))
-    TransferNetwork(A,Q_raw,Q,InfiniteMPO([local_mpo]),F,ket,bra,1,scale,h)
+    TransferNetwork(A,Q_raw,Q,InfiniteMPO([local_mpo]),F,ket,bra,1,scale,input_hash)
 end
 "Tiny periodic-row algebra check, never the infinite-plane production spectrum."
 function closed_row(net,width)
+    size(net.Q,1)==4 || throw(ArgumentError("closed-row algebra checks require D=2"))
     width in (2,3) || throw(ArgumentError("algebra checks only support widths 2,3"))
     q=net.Q/net.normalization; d=4^width; t=zeros(d,d)
     tuples=collect(Iterators.product(ntuple(_->1:4,width)...))[:]
