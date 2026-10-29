@@ -26,6 +26,8 @@ e = E/N = −(mean⟨Aₛ⟩+mean⟨Bₚ⟩)/2 − hₓmₓ − h_zm_z
 
 解析过滤态的 Fig.7(a) 算法 benchmark 独立记录在 [benchmarks/filtered-toric-code](benchmarks/filtered-toric-code/README.md)。它与本计划的磁场基态及任意子研究共用谱求解器，采用独立的参数、运行数据和实施计划。
 
+完整 Fig.7(a–h) 的定性复现单独放在 [benchmarks/filtered-toric-code-fig7](benchmarks/filtered-toric-code-fig7/README.md)，按 topological、charge condensed、flux condensed 三种相分别构造边界，输出八张子图及总图；计算预算与进展在其 PLAN、REPORT 中记录。
+
 **状态：零场模型与局域观测量检查已完成；后续 transfer/sector 的解析检查仍待开展。**
 
 解析基态采用 parity V 和 X-basis copy P：
