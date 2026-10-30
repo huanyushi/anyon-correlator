@@ -1,5 +1,5 @@
 module ToricTransferSpectrum
-include("../simple-update/one-site-z2-su/core.jl")
+include("../simple-update/one-site-c4-z2/core.jl")
 using .OneSiteZ2SU
 include("numerics.jl")
 export build_transfer

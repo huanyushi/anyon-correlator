@@ -22,5 +22,3 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 ```bash
 OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project=julia-env research/su-stagnation/dynamics/reproduce.jl
 ```
-
-文件移动和备份说明见 [REORGANIZATION.md](../../docs/REORGANIZATION.md)。

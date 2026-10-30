@@ -1,4 +1,0 @@
-START seed=5 start_step=700 additional_steps=0 dt=0.05; native virtual Z2, one V/P/lambda; budget=600.0 seconds
-MEASURE step=700 chi=8 e=-0.500000000000 stab_error=1.000e+00 CTM=7.133e-11 converged=true
-MEASURE step=700 chi=16 e=-0.500000000000 stab_error=1.000e+00 CTM=4.633e-02 converged=false
-SUPERVISOR status=budget

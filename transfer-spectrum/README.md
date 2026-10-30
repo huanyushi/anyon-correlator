@@ -48,6 +48,6 @@ python3 transfer-spectrum/plot.py --input=新谱目录/spectrum.csv --out=新图
 
 ## 当前磁场结果与已有检查
 
-D=4冻结张量的χ=8、64动量、2048模主谱及χ=12三个共同动量比较均已完成，实际约30.4分钟，结果和图见 [REPORT.md](REPORT.md)。e、m、ε主导模在已比较动量上稳定，但平凡sector及高支仍有χ依赖。输入来自[one-site/C₄/Z₂ AD](../ad/one-site-c4-z2/README.md)的受扰动解析初态优化，不来自已停止的随机路线。旧谱和一次性检查数据已由本轮重算替代，独立 `benchmarks/` 数据与原AD态保留。
+D=4冻结张量的χ=8、64动量、2048模主谱及χ=12三个共同动量比较均已完成，实际约30.4分钟，结果和图见 [REPORT.md](REPORT.md)。e、m、ε主导模在已比较动量上稳定，但平凡sector及高支仍有χ依赖。输入来自[one-site/C₄/Z₂ AD](../ad/one-site-c4-z2/README.md)的受扰动解析初态优化，不来自已停止的随机路线。
 
 实现检查集中在 `tests.jl`（张量合并、虚拟对称性、sector、输入记录）与 `plot_tests.py`（已保存数据的绘图）；不作为每次正式计算的前置长任务。运行方式分别为 `julia --project=julia-env transfer-spectrum/tests.jl` 和 `python3 -m unittest discover -s transfer-spectrum -p plot_tests.py`。物理可靠性主要通过所关心谱支的χ比较判断，而不是增加测试文件数量。

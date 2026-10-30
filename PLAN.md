@@ -26,7 +26,7 @@ e = E/N = −(mean⟨Aₛ⟩+mean⟨Bₚ⟩)/2 − hₓmₓ − h_zm_z
 
 解析过滤态的 Fig.7(a) 算法 benchmark 独立记录在 [benchmarks/filtered-toric-code](benchmarks/filtered-toric-code/README.md)。它与本计划的磁场基态及任意子研究共用谱求解器，采用独立的参数、运行数据和实施计划。
 
-完整 Fig.7(a–h) 的定性复现单独放在 [benchmarks/filtered-toric-code-fig7](benchmarks/filtered-toric-code-fig7/README.md)，按 topological、charge condensed、flux condensed 三种相分别构造边界，输出八张子图及总图；计算预算与进展在其 PLAN、REPORT 中记录。
+完整 Fig.7(a–h) 的定性复现单独放在 [benchmarks/filtered-toric-code-fig7](benchmarks/filtered-toric-code-fig7/README.md)，按 topological、charge condensed、flux condensed 三种相分别构造边界，输出八张子图及总图；算法与运行方式见其 README，结果与精度见其 REPORT。
 
 **状态：零场模型与局域观测量检查已完成；后续 transfer/sector 的解析检查仍待开展。**
 
@@ -74,7 +74,9 @@ T[pE,pN,n,e,s,w] = (−1)^(pE·e+pN·n) δ(n⊕e⊕s⊕w,0)/2
 
 独立随机初态的多个 seed 均未达到 $10^{-4}$/spin 能量目标，最佳 seed=23 为 $e\approx-0.76707219$，梯度约0.214，最后线搜索失败。各 seed 的原始优化与接续记录统一汇总在[报告](ad/one-site-c4-z2/REPORT.md)，不再安排随机路线诊断、复核或长时间重算。
 
-后续解析路线以快速获得满足物理精度目标的基态近似为重点。收缩精度应依据能量与局域观测量的稳定性选择；CTMRG 奇异值残差不是能量误差。先围绕已知弱场点展开，再考虑相邻磁场点的变化。具体计算预算另行确定，此次整理不授权新计算。
+后续解析路线以快速获得满足物理精度目标的基态近似为重点。收缩精度应依据能量与局域观测量的稳定性选择；CTMRG 奇异值残差不是能量误差。先围绕已知弱场点展开，再考虑相邻磁场点的变化。具体计算预算另行确定。
+
+此前原生 Z₂ SU 的零场随机 seed=5、6 各700轮均未通过物理验收；seed=6 得到 $e=-0.5$、$\langle A\rangle\approx0$、$\langle B\rangle\approx1$，χ=8/16 环境收敛但开放 star 残差为 $\sqrt2$。代码现位于 `simple-update/one-site-c4-z2/`，结果与完整逐轮数据见 [SU报告](simple-update/one-site-c4-z2/REPORT.md)，不据此重新启动随机 SU。
 
 对当前 D=2 解析 composite tensor，虚拟表示取 Z=diag(1,−1)，满足 Z⊗Z⊗Z⊗Z·T=T。按上述 X-basis copy，单腿关系为 ZₑT=X_pE T、ZₙT=X_pN T。这些关系先用于解析张量检查，再确定有限场张量应保持的关系。
 

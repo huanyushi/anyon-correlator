@@ -2,7 +2,7 @@
 
 本项目先用精确可解的 Toric Code 检查 PEPS 算法，再计算磁场中的基态，随后施加虚拟 Z₂ 对称约束，构造 transfer matrix，按对称性求解不同 sector 的 spectrum，最终研究任意子关联函数与关联长度。
 
-**当前进展：零场 loop/cluster update 已从随机态成功；三个弱场点已有 loop 和 AD 结果。显式虚拟 Z₂ 约束后的完整验证、跨相变路径和任意子转移矩阵不同 sector 的谱仍未完成。** 后续求基态以 loop/cluster update 为主，精度不足或无法收敛时再使用 AD。
+**当前进展：零场 loop/cluster update 已从随机态得到基态；三个弱场点已有 loop 和 AD 结果。one-site/C₄/Z₂ AD 已得到弱场候选态及其四sector转移谱，部分谱支仍有χ依赖。** 后续对称基态计算从解析零场态出发；完整跨相变路径和任意子关联函数尚未完成。
 
 ## 模型与主要结果
 
@@ -22,6 +22,8 @@ X、Z 为 Pauli matrices。物理自旋在无限平方晶格的 edge 上，d=2�
 
 有限场 loop 的 D=2 Z 磁化误差约 1.16%，未达到 1% 标准；D=3 X 单轴尚有局部拟合和较大 χ 的问题；D=4 双分量计算未通过。详见 [零场总结](M2_REPORT.md)、[有限场总结](M3_REPORT.md) 和 [主要结果表](RESULTS.csv)。
 
+严格零场的 [one-site/C₄/Z₂ SU](simple-update/one-site-c4-z2/README.md) 共享一组顶点张量 V、含边自旋的张量 P 与连接权重 λ，采用原生虚拟 Z₂ 分块。seed=5、6各完成700轮，均停在 $e=-0.5$，分别只有 star、plaquette 期望值接近1；seed=6的χ=8/16环境均收敛，仍未通过物理验收。这条SU路线没有提供合格的正式谱输入，当前不追加随机寻优；两种受困机制及完整逐轮数据见 [SU报告](simple-update/one-site-c4-z2/REPORT.md)。下述AD候选态的谱是另一条独立路线的结果。
+
 ## SU 与 AD 分别放在哪里
 
 施加 one-site 平移、C₄ 和虚拟 Z₂ 的 AD 位于 [ad/one-site-c4-z2/](ad/one-site-c4-z2/README.md)，从两种初态得到的结果需分开理解：
@@ -31,7 +33,7 @@ X、Z 为 Pauli matrices。物理自旋在无限平方晶格的 edge 上，d=2�
 | 零场解析态加小扰动 | $e=-1.002515869800994$，与低场级数相差约 $8.16\times10^{-6}$/spin；梯度约 $4.14\times10^{-6}$。χ=8 测量重复一致，较大χ旧高精度环境检查未通过 | 作为后续对称 AD 的主线 |
 | 独立随机态，多 seed | 最佳 seed=23 能量约 $-0.76707219$，梯度约0.214，最后线搜索失败，未达到 $10^{-4}$/spin 目标 | 已停止，不再追加随机寻优 |
 
-各 seed 的汇总和数据位置见[AD报告](ad/one-site-c4-z2/REPORT.md)。随机路线未成功不改变解析来源候选态的结果，也不重新标记历史接受状态。固定该解析来源D=4张量的四sector谱已重算完成：χ=8、64动量、每sector8模（2048点），另完成χ=12三个共同动量比较，总用时约30.4分钟。e、m、ε主导模在已比较动量上稳定，平凡sector与高支仍有χ依赖；图与结果见[谱报告](transfer-spectrum/REPORT.md)。本轮未重跑AD，旧谱已由新计算替代。
+各 seed 的汇总和数据位置见[AD报告](ad/one-site-c4-z2/REPORT.md)。固定解析来源D=4候选张量的四sector谱已完成：χ=8、64动量、每sector8模（2048点），另完成χ=12三个共同动量比较，总用时约30.4分钟。e、m、ε主导模在已比较动量上稳定，平凡sector与高支仍有χ依赖；图与结果见[谱报告](transfer-spectrum/REPORT.md)。
 
 两种算法用文件夹区分，里面也记录了不同实现方式：
 
@@ -39,17 +41,17 @@ X、Z 为 Pauli matrices。物理自旋在无限平方晶格的 edge 上，d=2�
 |---|---|
 | [model/](model/README.md) | Hamiltonian、解析零场张量、ED、低场级数参考 |
 | [simple-update/](simple-update/README.md) | SU 类方法总说明：旧 merged L 形 SU、split path/loop 对照、一般 D 的 loop 方法 |
+| [simple-update/one-site-c4-z2/](simple-update/one-site-c4-z2/README.md) | one-site/C₄/原生虚拟 Z₂ 的零场 SU；两条失败轨迹、完整逐轮数据与结果报告 |
 | [ad/](ad/README.md) | AD 总说明：旧 merged tied-tensor 零场优化，以及新 split V/P/λ 的弱场优化 |
 | `tests/` | 保留算法的测试、历史张量读取检查及结果汇总脚本测试 |
 | [benchmarks/filtered-toric-code/](benchmarks/filtered-toric-code/README.md) | 独立的解析过滤态 Fig.7(a) 复现、简短运行入口与代码阅读说明；与磁场 Hamiltonian 研究分开记录 |
 | [benchmarks/filtered-toric-code-fig7/](benchmarks/filtered-toric-code-fig7/README.md) | 完整 Fig.7(a–h) 的三相谱计算与总图；保留原(a)实现，新增不同物理相的边界及 sector 构造 |
-| [docs/REORGANIZATION.md](docs/REORGANIZATION.md) | 本次移动、删除、备份和检查的说明 |
 
 每套实现的 `results/` 保存本地计算数据，`figures/` 保存该实验的图，`frozen_states/` 保存可随代码携带的最终张量 JSON。项目根目录的 `RESULTS.csv` 只汇总主要结果，注明算法、初态、D/χ、状态和详细数据位置，不用它替代原始计算数据。
 
 ## 如何运行
 
-命令均从独立仓库根目录运行。`julia-env/Project.toml` 和 `Manifest.toml` 保存迁移时的依赖环境（Julia 1.12.6），同一 WSL 用户可以复用已有 Julia 软件包缓存，不需要更新软件包或安装 quantum.harness skills。以下新计算请选择未使用的输出目录，避免覆盖已有结果。
+命令均从仓库根目录运行。`julia-env/Project.toml` 和 `Manifest.toml` 固定 Julia 1.12.6 的依赖环境，使用 `--project=julia-env`，不需升级软件包。新计算请选择未使用的输出目录，避免覆盖已有结果。
 
 ```bash
 # 零场：loop/cluster update，另带解析零场对照
@@ -67,8 +69,6 @@ python3 scripts/summarize_results.py
 
 Split AD 的弱场命令见 [ad/split/README.md](ad/split/README.md)，one-site/C₄/Z₂ 的解析初态入口见[对应说明](ad/one-site-c4-z2/README.md)。首次 Julia 编译显著慢于后续调用；运行前需估计实际时间和内存。
 
-迁移说明见 [docs/MIGRATION.md](docs/MIGRATION.md)。README、研究报告和计划中的运行命令均使用独立仓库路径；历史运行目录中的程序副本、日志、参数和哈希保留原样。
+Python 数据汇总脚本需要 Python 3.11 或更新版本；`transfer-spectrum/plot.py` 使用标准库生成 SVG。其他绘图脚本按实际导入需要 NumPy、Matplotlib，运行前请确认所用 `python3` 环境具备对应依赖。
 
-Python 数据汇总脚本需要 Python 3.11 或更新版本；`transfer-spectrum/plot.py` 使用标准库生成 SVG。其他绘图脚本按实际导入需要 NumPy、Matplotlib，运行前请确认所用 `python3` 环境具备对应依赖。原 quantum.harness 的 Python 虚拟环境未随项目迁移。
-
-整体后续安排见 [PLAN.md](PLAN.md)。本项目源自 challenge #50，但当前计划不再受当时的限时提交流程约束。
+整体后续安排见 [PLAN.md](PLAN.md)。
