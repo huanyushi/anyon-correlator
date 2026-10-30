@@ -1,0 +1,24 @@
+Test Summary:                                    | Pass  Total   Time
+independent Pauli action and field normalization |   10     10  11.1s
+Test Summary:                                  | Pass  Total  Time
+safeguarded L-BFGS on an independent quadratic |    6      6  0.4s
+Test Summary:                                                | Pass  Total  Time
+a passed derivative probe cannot authorize a different setup |    6      6  0.3s
+Test Summary:                                    | Pass  Total  Time
+exact-state contraction verdict checks all sites |    4      4  0.5s
+Test Summary:                                   | Pass  Total  Time
+final acceptance rejects false physical success |   10     10  1.5s
+Test Summary:                                         | Pass  Total   Time
+uniform sharing differentiates the same split network |    2      2  43.2s
+Test Summary:                                              | Pass  Total   Time
+split-network blocking preserves the weighted wavefunction |   16     16  15.8s
+Test Summary:                                                | Pass  Total  Time
+a finite vector from a failed adjoint solve must be rejected |    5      5  0.3s
+Test Summary:                                 | Pass  Total  Time
+norm dominance is not minimum measured energy |    3      3  0.1s
+Test Summary:                                             | Pass  Total  Time
+generic perturbations actually break the virtual symmetry |    8      8  0.6s
+Test Summary:                                           | Pass  Total  Time
+derivative validation binds the method and finite graph |    3      3  0.1s
+Test Summary:                                  | Pass  Total  Time
+unrolled AD rejects undefined iteration graphs |    2      2  0.2s

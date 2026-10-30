@@ -1,0 +1,21 @@
+AD 求导失败，停止使用此梯度：AD adjoint did not converge; returned vector is rejected:
+┌ Warning: gradient fixed-point iteration reached maximal number of iterations:
+└ @ Main.anonymous /home/huanyushi/code/anyon-correlator/ad/split/failure_control_test.jl:11
+
+audit chi=4 seed=2026 status=converged
+audit chi=4 seed=1 status=converged
+audit chi=4 seed=2 status=converged
+audit chi=8 seed=2026 status=converged
+FINAL status=gradient_failed accepted=false reasons=["optimizer_not_stationary"]
+Test Summary:                                         | Pass  Total     Time
+correct observables do not excuse a failed derivative |    7      7  2m28.3s
+AD 求导失败，停止使用此梯度：deliberate adjoint failure
+FINAL status=gradient_failed accepted=false reasons=["audit_failed"]
+Test Summary:                                                           | Pass  Total  Time
+an inconclusive final audit still preserves an explicit failure summary |    4      4  0.8s
+Test Summary:                                             | Pass  Total  Time
+retained loop states preserve binary and portable numbers |   93     93  0.5s
+Test Summary:                                  | Pass  Total  Time
+retained split-SU zero-field state still loads |    3      3  0.0s
+Test Summary:                                             | Pass  Total  Time
+AD portable parameters refer to unchanged accepted states |    9      9  0.1s

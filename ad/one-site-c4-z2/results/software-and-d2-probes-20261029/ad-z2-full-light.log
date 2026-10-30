@@ -1,0 +1,8 @@
+Test Summary:                                          | Pass  Total  Time
+closed-network gauge equivalence and exact stabilizers |   18     18  8.0s
+Test Summary:                           | Pass  Total   Time
+charge and C4 parameterization at D=2,4 |   26     26  13.1s
+Test Summary:                              | Pass  Total  Time
+portable AD provenance and exact embedding |   10     10  1.9s
+Test Summary:               | Pass  Total  Time
+shared-parameter chain rule |    1      1  0.2s

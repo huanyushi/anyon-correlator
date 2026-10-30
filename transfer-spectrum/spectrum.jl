@@ -1,3 +1,17 @@
+struct SectorLabel
+    g::Int
+    q::Int
+    name::String
+    function SectorLabel(g::Int,q::Int)
+        g in (0,1) && q in (0,1) || throw(ArgumentError("g and q must be 0 or 1"))
+        new(g,q,(("1","e"),("m","epsilon"))[g+1][q+1])
+    end
+end
+function sector_backgrounds(pair,label)
+    return (left=pair.r0,right=label.g==0 ? pair.r0 : pair.r1,
+        leftenv=pair.env0,rightenv=label.g==0 ? pair.env0 : pair.env1,sector=Z2Irrep(label.q))
+end
+
 # Compatibility boundary: MPSKit 0.13.12, quasiparticleexcitation.jl lines
 # 193-265 (statmech :LM and the public real-momentum Multiline wrapper),
 # 282-294 and 374-389 (the SAME normalized effective action for residuals).
@@ -95,6 +109,7 @@ function solve_sector(net,pair,label;momenta,num=1,options=(;))
     pair.diagnostics.converged || error("unconverged boundary pair")
     bg=sector_backgrounds(pair,label);points=SectorPoint[]
     tol=get(options,:tol,1e-10);resolution=get(options,:resolution,1e-12)
+    residual_tol=get(options,:residual_tol,tol)
     deadline=get(options,:deadline,Inf)
     for k in momenta
         if time()>=deadline
@@ -105,7 +120,7 @@ function solve_sector(net,pair,label;momenta,num=1,options=(;))
             push!(points,SectorPoint(label.g,label.q,k,1,nothing,nothing,nothing,nothing,nothing,nothing,0,"empty_sector",nothing))
         end
         for (branch,(r,res,state)) in enumerate(zip(result.ratios,result.residuals,result.states))
-            status=mode_status(r,res,result.variational_dim;zero_proven=result.zero_proven,tol,resolution)
+            status=mode_status(r,res,result.variational_dim;zero_proven=result.zero_proven,tol=residual_tol,resolution)
             resolved=status=="converged" && abs(r)>resolution
             push!(points,SectorPoint(label.g,label.q,k,branch,real(r),imag(r),abs(r),resolved ? mode_phase(label.g,r) : nothing,
                 resolved ? -log(abs(r)) : nothing,res,result.variational_dim,status,state))

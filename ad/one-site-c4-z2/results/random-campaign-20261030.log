@@ -1,0 +1,97 @@
+CAMPAIGN attempt=1 seed=19 continuation=true budget=3600.0
+CAMPAIGN RESULT {"attempt":1,"seed":19,"continuation":true,"status":"contraction_failed","accepted":false,"energy":null,"improvement":0.0,"updates":0,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt01-seed19/final.json"}
+CAMPAIGN attempt=2 seed=23 continuation=false budget=2700.0
+step=0 energy=-0.40913789561926944 gradnorm=0.5732205091170027
+step=1 energy=-0.5284146057591818 gradnorm=0.539492525333327
+step=2 energy=-0.5983960716178228 gradnorm=0.12105543645806306
+step=3 energy=-0.6012199123386035 gradnorm=0.060276173149710933
+step=4 energy=-0.6019986232574767 gradnorm=0.04119978516061499
+step=5 energy=-0.6040176318621511 gradnorm=0.06106064725749351
+step=6 energy=-0.6067942703466941 gradnorm=0.12209936604293685
+step=7 energy=-0.6092327414591439 gradnorm=0.18402065016565566
+step=8 energy=-0.6122552501607921 gradnorm=0.21841333339313115
+step=9 energy=-0.6183693152135882 gradnorm=0.268850869525019
+step=10 energy=-0.6263652297855161 gradnorm=0.08864988506517976
+step=11 energy=-0.6267908840671472 gradnorm=0.09248000867843136
+step=12 energy=-0.6294042063764421 gradnorm=0.10358203266288248
+step=13 energy=-0.634609246009902 gradnorm=0.12568217143531493
+CAMPAIGN RESULT {"attempt":2,"seed":23,"continuation":false,"status":"budget","accepted":false,"energy":-0.634609246009902,"improvement":0.22547135039063254,"updates":13,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt02-seed23/final.json"}
+CAMPAIGN attempt=3 seed=23 continuation=true budget=2700.0
+step=0 energy=-0.634609246009902 gradnorm=0.12568217143531493
+step=1 energy=-0.6366435477035278 gradnorm=0.18029849816131716
+step=2 energy=-0.6397040514280723 gradnorm=0.11892060804320671
+step=3 energy=-0.6504243613429608 gradnorm=0.1438765096660629
+step=4 energy=-0.6646667470079468 gradnorm=0.24344304502628952
+step=5 energy=-0.6764128008630306 gradnorm=0.26502343848558596
+step=6 energy=-0.6884888663150271 gradnorm=0.2723758816097572
+step=7 energy=-0.6960748698106481 gradnorm=0.283601257974908
+step=8 energy=-0.7007710841460669 gradnorm=0.28818629837149196
+step=9 energy=-0.7014462368799109 gradnorm=0.288514162901565
+CAMPAIGN RESULT {"attempt":3,"seed":23,"continuation":true,"status":"budget","accepted":false,"energy":-0.7014462368799109,"improvement":0.06683699087000894,"updates":9,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt03-seed23/final.json"}
+CAMPAIGN attempt=4 seed=41 continuation=false budget=2700.0
+CAMPAIGN RESULT {"attempt":4,"seed":41,"continuation":false,"status":"contraction_failed","accepted":false,"energy":null,"improvement":0.0,"updates":0,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt04-seed41/final.json"}
+CAMPAIGN attempt=5 seed=23 continuation=true budget=2700.0
+step=0 energy=-0.7014462368799109 gradnorm=0.288514162901565
+step=1 energy=-0.7381486215431836 gradnorm=0.23180560742752057
+step=2 energy=-0.7530819310161722 gradnorm=0.3644894281456875
+step=3 energy=-0.7623762346392887 gradnorm=0.2216626291174345
+step=4 energy=-0.7651936311871838 gradnorm=0.2185662235428598
+step=5 energy=-0.7669593448806743 gradnorm=0.21560374393814957
+step=6 energy=-0.7669864963106053 gradnorm=0.21556220952884905
+CAMPAIGN RESULT {"attempt":5,"seed":23,"continuation":true,"status":"budget","accepted":false,"energy":-0.7669864963106053,"improvement":0.06554025943069441,"updates":6,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt05-seed23/final.json"}
+CAMPAIGN attempt=6 seed=67 continuation=false budget=2700.0
+step=0 energy=-0.18056330100731177 gradnorm=1.0270290938125977
+step=1 energy=-0.26366286214267787 gradnorm=0.7071830445201068
+step=2 energy=-0.32772337133787255 gradnorm=0.5848209356031575
+step=3 energy=-0.34205951840013565 gradnorm=0.567057566094719
+step=4 energy=-0.34550080582445386 gradnorm=0.5637781671844847
+step=5 energy=-0.34716880597143707 gradnorm=0.5623813618070533
+step=6 energy=-0.34797751801069693 gradnorm=0.5618107664090513
+step=7 energy=-0.34837154094556394 gradnorm=0.5615561769114998
+step=8 energy=-0.3485645015774736 gradnorm=0.5614432993670408
+step=9 energy=-0.34858824370009 gradnorm=0.5614303316840541
+step=10 energy=-0.3485999802484502 gradnorm=0.5614242710175628
+CAMPAIGN RESULT {"attempt":6,"seed":67,"continuation":false,"status":"budget","accepted":false,"energy":-0.3485999802484502,"improvement":0.1680366792411384,"updates":10,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt06-seed67/final.json"}
+CAMPAIGN attempt=7 seed=89 continuation=false budget=2700.0
+CAMPAIGN RESULT {"attempt":7,"seed":89,"continuation":false,"status":"contraction_failed","accepted":false,"energy":null,"improvement":0.0,"updates":0,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt07-seed89/final.json"}
+CAMPAIGN attempt=8 seed=113 continuation=false budget=2700.0
+step=0 energy=-0.4997476237963103 gradnorm=0.10813734239542717
+step=1 energy=-0.5025394669149847 gradnorm=0.038823721065570076
+step=2 energy=-0.5028468948645565 gradnorm=0.021793972795334116
+step=3 energy=-0.5032476775759095 gradnorm=0.02202487299969704
+step=4 energy=-0.5046040137591697 gradnorm=0.011735684728402524
+step=5 energy=-0.504961757358156 gradnorm=0.014042525734982807
+step=6 energy=-0.5053971857662963 gradnorm=0.01717383558824397
+step=7 energy=-0.5059564238078421 gradnorm=0.021368927959901394
+step=8 energy=-0.5067135817943335 gradnorm=0.027351799811805216
+step=9 energy=-0.5078124696018982 gradnorm=0.0370197059129029
+step=10 energy=-0.5097380861493035 gradnorm=0.052360782713202984
+step=11 energy=-0.5097494573512995 gradnorm=0.05232778415634331
+step=12 energy=-0.509751770684079 gradnorm=0.052324633916344995
+CAMPAIGN RESULT {"attempt":8,"seed":113,"continuation":false,"status":"budget","accepted":false,"energy":-0.509751770684079,"improvement":0.010004146887768628,"updates":12,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt08-seed113/final.json"}
+CAMPAIGN attempt=9 seed=137 continuation=false budget=2700.0
+step=0 energy=-0.16475446266361926 gradnorm=0.5053684760190623
+step=1 energy=-0.19318894335710812 gradnorm=0.24586926484385258
+step=2 energy=-0.2411175303707283 gradnorm=0.45812219774988433
+step=3 energy=-0.3380788697091307 gradnorm=0.5662980909486489
+step=4 energy=-0.43358042683197945 gradnorm=0.45065749769034974
+step=5 energy=-0.4930418798605349 gradnorm=0.18297705103325837
+step=6 energy=-0.5018782134428117 gradnorm=0.04703839656657135
+step=7 energy=-0.5025074555564917 gradnorm=0.0002373088872969045
+step=8 energy=-0.5025074757685773 gradnorm=8.677855037603563e-5
+step=9 energy=-0.5025074796616982 gradnorm=9.579002388327458e-5
+step=10 energy=-0.5025075518369017 gradnorm=0.0003396912995076813
+step=11 energy=-0.5025076828884979 gradnorm=0.0006445345123829386
+step=12 energy=-0.5025080740425882 gradnorm=0.0012235214335846911
+step=13 energy=-0.5025089523824979 gradnorm=0.0020526698433832257
+step=14 energy=-0.5025107244590743 gradnorm=0.0031434957111940907
+step=15 energy=-0.5025136697449857 gradnorm=0.00399661457978721
+step=16 energy=-0.5025192455466827 gradnorm=0.004233730815336282
+step=17 energy=-0.5025303225837888 gradnorm=0.002746466369030249
+step=18 energy=-0.502543166176361 gradnorm=0.0010505253405064426
+step=19 energy=-0.5025511057739408 gradnorm=0.0006200076379769754
+step=20 energy=-0.5025565927500161 gradnorm=0.0025680544037016994
+step=21 energy=-0.5025627424827382 gradnorm=0.0037802110502664064
+step=22 energy=-0.5025710650153463 gradnorm=0.0037095090355443025
+step=23 energy=-0.502583613028699 gradnorm=0.004316011342707941
+CAMPAIGN RESULT {"attempt":9,"seed":137,"continuation":false,"status":"budget","accepted":false,"energy":-0.502583613028699,"improvement":0.33782915036507977,"updates":23,"path":"ad/one-site-z2/results/random-campaign-20261030/attempt09-seed137/final.json"}

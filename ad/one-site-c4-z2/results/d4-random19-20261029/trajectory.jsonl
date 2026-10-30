@@ -1,0 +1,11 @@
+{"step":0,"energy":0.01305471499525041,"gradnorm":0.22075901444276796,"seconds":640.6983830928802}
+{"step":1,"energy":-0.03953361676545758,"gradnorm":0.35012945379487825,"seconds":712.2911360263824}
+{"step":1,"attempt":1,"event":"contraction_rejected","message":"dominant norm has insufficient independent initializations; [(seed = 1, normcell = 0.00011781225201690716, energy = -0.14149128491081342)]"}
+{"step":2,"energy":-0.0681234467052224,"gradnorm":1.0375191744117223,"seconds":887.9753651618958}
+{"step":2,"attempt":1,"event":"contraction_rejected","message":"dominant norm has insufficient independent initializations; [(seed = 1, normcell = 0.00030150639169192363, energy = -0.3976824658680394), (seed = 17, normcell = 0.00030150531245574415, energy = -0.3976822472232898)]"}
+{"step":2,"attempt":2,"event":"contraction_rejected","message":"dominant norm has insufficient independent initializations; [(seed = 1, normcell = 0.00011826374038271446, energy = -0.14274627705796158)]"}
+{"step":3,"energy":-0.09707179845300651,"gradnorm":1.7308702369827371,"seconds":1293.899649143219}
+{"step":4,"energy":-0.4759748072965721,"gradnorm":2.631853585509828,"seconds":1378.2231621742249}
+{"step":5,"energy":-0.5719348425902003,"gradnorm":0.39119809999190136,"seconds":1427.1896531581879}
+{"step":6,"energy":-0.5789339770539053,"gradnorm":0.30734432000877243,"seconds":1489.9410870075226}
+{"step":6,"attempt":1,"event":"contraction_rejected","message":"no positive finite norm candidate"}

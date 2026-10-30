@@ -45,7 +45,7 @@ function main(args=ARGS)
     tol=parse(Float64,opts["tol"]);stol=parse(Float64,opts["spectrum-tol"])
     deadline=START+parse(Float64,opts["budget"]);mkpath(out)
     root=normpath(joinpath(@__DIR__,"../.."))
-    sources=vcat(["transfer-spectrum/$f.jl" for f in ("numerics","network","boundary","sectors","spectrum")],
+    sources=vcat(["transfer-spectrum/$f.jl" for f in ("numerics","network","boundary","spectrum")],
         ["benchmarks/filtered-toric-code/tensor.jl"],
         ["benchmarks/filtered-toric-code-fig7/$f" for f in ("run.jl","topological.jl","charge_condensed.jl","flux_condensed.jl","plot.py")],
         ["julia-env/Project.toml","julia-env/Manifest.toml"])

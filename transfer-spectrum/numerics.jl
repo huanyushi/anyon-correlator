@@ -5,5 +5,4 @@ include("network.jl")
 export BoundaryPair, solve_boundaries
 include("boundary.jl")
 export SectorLabel, sector_backgrounds, SectorPoint, solve_sector
-include("sectors.jl")
 include("spectrum.jl")

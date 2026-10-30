@@ -1,0 +1,27 @@
+{
+  "status": "worker_failed",
+  "accepted": false,
+  "command": [
+    "julia",
+    "--startup-file=no",
+    "-O1",
+    "--project=/home/huanyushi/code/anyon-correlator/julia-env",
+    "/home/huanyushi/code/anyon-correlator/ad/one-site-z2/run.jl",
+    "--D=4",
+    "--chi=8",
+    "--hx=0",
+    "--hz=0.1",
+    "--init=exact",
+    "--noise=0.03",
+    "--seed=71",
+    "--steps=80",
+    "--budget=1800",
+    "--probe=ad/one-site-z2/results/d4-gradient-probe-20261029/summary.json",
+    "--out=ad/one-site-z2/results/d4-exact-noise-20261029"
+  ],
+  "budget": 1800.0,
+  "seconds": 1527.0273005400086,
+  "exit": -9,
+  "timed_out": false,
+  "last_checkpoint": "step0018.json"
+}

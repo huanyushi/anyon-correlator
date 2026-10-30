@@ -1,0 +1,20 @@
+{
+  "command": [
+    "julia",
+    "--startup-file=no",
+    "-O1",
+    "--heap-size-hint=2G",
+    "--project=/home/huanyushi/code/anyon-correlator/julia-env",
+    "/home/huanyushi/code/anyon-correlator/ad/one-site-z2/campaign.jl",
+    "--campaign=true",
+    "--budget=21600",
+    "--out=ad/one-site-z2/results/random-campaign-20261030",
+    "--probe=ad/one-site-z2/results/d4-gradient-probe-20261029/summary.json",
+    "--resume=ad/one-site-z2/results/d4-random19-cont1-20261029/step0003.json"
+  ],
+  "budget": 21600.0,
+  "seconds": 16676.72905561101,
+  "exit": 0,
+  "timed_out": false,
+  "last_checkpoint": null
+}

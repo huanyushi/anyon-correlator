@@ -24,7 +24,10 @@ class PlotChecks(unittest.TestCase):
                 writer.writeheader()
                 writer.writerows(rows)
             paths = render(source, root / "figures")
-            self.assertEqual(len(paths), 2)
+            self.assertEqual(len(paths), 3)
+            self.assertEqual(paths[2].name, "figure7.svg")
+            self.assertIn("k/π", paths[2].read_text())
+            self.assertIn("ε", paths[2].read_text())
             for path in paths:
                 tree = ET.parse(path)
                 modes = [el for el in tree.iter() if "data-status" in el.attrib]

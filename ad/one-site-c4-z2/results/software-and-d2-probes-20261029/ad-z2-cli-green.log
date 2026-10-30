@@ -1,0 +1,14 @@
+Test Summary:                                          | Pass  Total  Time
+closed-network gauge equivalence and exact stabilizers |   18     18  8.0s
+Test Summary:                           | Pass  Total   Time
+charge and C4 parameterization at D=2,4 |   26     26  13.7s
+Test Summary:                              | Pass  Total  Time
+portable AD provenance and exact embedding |   10     10  1.9s
+Test Summary:               | Pass  Total  Time
+shared-parameter chain rule |    1      1  0.3s
+step=0 energy=2.7399975484401478 gradnorm=2.340938934889224
+step=1 energy=2.2918097614623028 gradnorm=2.140938934889224
+Test Summary:                            | Pass  Total  Time
+budget preserves the last complete state |    6      6  1.3s
+Test Summary:                                          | Pass  Total   Time
+production gradient evidence and continuation identity |   10     10  34.9s

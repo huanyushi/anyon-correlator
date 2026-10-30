@@ -1,6 +1,15 @@
 const JSON=OneSiteZ2SU.JSON
 const POINT_FIELDS=Tuple(filter(!=(:state),collect(fieldnames(SectorPoint))))
 function load_production_state(path;reference=false)
+    data=JSON.parsefile(path)
+    if get(data,"format",nothing)==OneSiteZ2AD.STATE_FORMAT
+        x,b,md=OneSiteZ2AD.load_state(path)
+        valid=get(md,"accepted",false)===true && get(md,"status",nothing)=="stationary" &&
+            get(md,"origin",nothing) in ("symmetric_random","exact_zero_initialization","perturbed_exact_zero_initialization") &&
+            all(k->haskey(md,k) && md[k] isa Real && isfinite(md[k]),("hx","hz"))
+        valid || reference || throw(ArgumentError("production spectrum requires an accepted numerical AD state"))
+        return merge(OneSiteZ2AD.tensors(x,b),(;charges=b.charges)),md
+    end
     st,md=load_state(path)
     valid=get(md,"origin",nothing)=="numerical_random_optimization" && get(md,"accepted",false)===true
     valid || reference || throw(ArgumentError("production spectrum requires an accepted numerical state"))

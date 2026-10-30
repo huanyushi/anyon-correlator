@@ -1,0 +1,21 @@
+{"step":0,"energy":-0.634609246009902,"gradnorm":0.12568217143531493,"seconds":95.13506388664246}
+{"step":1,"energy":-0.6366435477035278,"gradnorm":0.18029849816131716,"seconds":293.12490701675415}
+{"step":2,"energy":-0.6397040514280723,"gradnorm":0.11892060804320671,"seconds":438.5129039287567}
+{"step":3,"energy":-0.6504243613429608,"gradnorm":0.1438765096660629,"seconds":638.7120440006256}
+{"step":4,"energy":-0.6646667470079468,"gradnorm":0.24344304502628952,"seconds":768.2464580535889}
+{"step":5,"energy":-0.6764128008630306,"gradnorm":0.26502343848558596,"seconds":877.9884369373322}
+{"step":6,"energy":-0.6884888663150271,"gradnorm":0.2723758816097572,"seconds":1086.3874008655548}
+{"step":6,"attempt":1,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":7,"energy":-0.6960748698106481,"gradnorm":0.283601257974908,"seconds":1393.2710049152374}
+{"step":7,"attempt":1,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":7,"attempt":2,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":8,"energy":-0.7007710841460669,"gradnorm":0.28818629837149196,"seconds":1804.2233018875122}
+{"step":8,"attempt":1,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":8,"attempt":2,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":8,"attempt":3,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":8,"attempt":4,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":8,"attempt":5,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":9,"energy":-0.7014462368799109,"gradnorm":0.288514162901565,"seconds":2464.2975568771362}
+{"step":9,"attempt":1,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":9,"attempt":2,"event":"contraction_rejected","message":"no positive finite norm candidate"}
+{"step":9,"attempt":3,"event":"contraction_rejected","message":"no positive finite norm candidate"}

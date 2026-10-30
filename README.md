@@ -11,11 +11,11 @@ H = −Σₛ Aₛ − Σₚ Bₚ − hₓΣᵢXᵢ − h_zΣᵢZᵢ
 Aₛ = ∏star X，Bₚ = ∏plaquette Z，Jₑ = Jₘ = 1
 ```
 
-X、Z 为 Pauli matrices。物理自旋在无限平方晶格的边上，d=2；数值采用 2×2 顶点重复单元，包含 8 个边自旋。所有能量按边自旋归一化。零场严格值 E/N=−1，所有稳定子 ⟨Aₛ⟩=⟨Bₚ⟩=1。8-spin 周期小系统的 ED 仅用于模型检查，不代替无限平面计算。
+X、Z 为 Pauli matrices。物理自旋在无限平方晶格的 edge 上，d=2；现有部分计算使用含8个自旋的2×2顶点重复单元，one-site 约束实现则共享同一组张量，具体表示见相应算法说明。所有能量按 edge 自旋归一化。零场严格值 E/N=−1，所有 stabilizer 满足 ⟨Aₛ⟩=⟨Bₚ⟩=1。8-spin 周期小系统的 ED 仅用于模型检查，不代替无限平面计算。
 
 | 计算 | 已得到的结果 | 适用范围 |
 |---|---|---|
-| 零场 loop/cluster update，D=2 | E/N≈−0.999999999913；最大稳定子误差约 4.42×10⁻¹⁰ | 随机 seed=1，χ=8/16 一致 |
+| 零场 loop/cluster update，D=2 | E/N≈−0.999999999913；最大 stabilizer 误差约 4.42×10⁻¹⁰ | 随机 seed=1，χ=8/16 一致 |
 | 有限场 loop，(0.1,0)，D=2 | 能量误差约 1.76×10⁻⁶/spin，磁化误差约 0.143% | 达到既定弱场精度 |
 | 有限场 loop，(0,0.1) 和 (0.1,0.1)，D=3 | 能量误差约 4.2–5.9×10⁻⁶/spin，Z 磁化误差约 0.77% | 来自 D=2 的增大 D 延续；双分量态另有 VUMPS 测量支持 |
 | 有限场 split AD，三个弱场点，D=2 | 能量误差≤10⁻⁵/spin，非零磁化误差≤1% | 解析零场或近基态起点，采用 unrolled AD；随机全局寻优尚未通过 |
@@ -23,6 +23,15 @@ X、Z 为 Pauli matrices。物理自旋在无限平方晶格的边上，d=2；�
 有限场 loop 的 D=2 Z 磁化误差约 1.16%，未达到 1% 标准；D=3 X 单轴尚有局部拟合和较大 χ 的问题；D=4 双分量计算未通过。详见 [零场总结](M2_REPORT.md)、[有限场总结](M3_REPORT.md) 和 [主要结果表](RESULTS.csv)。
 
 ## SU 与 AD 分别放在哪里
+
+施加 one-site 平移、C₄ 和虚拟 Z₂ 的 AD 位于 [ad/one-site-c4-z2/](ad/one-site-c4-z2/README.md)，从两种初态得到的结果需分开理解：
+
+| $(h_x,h_z)=(0,0.1)$、D=4 的初态来源 | 结果 | 后续安排 |
+|---|---|---|
+| 零场解析态加小扰动 | $e=-1.002515869800994$，与低场级数相差约 $8.16\times10^{-6}$/spin；梯度约 $4.14\times10^{-6}$。χ=8 测量重复一致，较大χ旧高精度环境检查未通过 | 作为后续对称 AD 的主线 |
+| 独立随机态，多 seed | 最佳 seed=23 能量约 $-0.76707219$，梯度约0.214，最后线搜索失败，未达到 $10^{-4}$/spin 目标 | 已停止，不再追加随机寻优 |
+
+各 seed 的汇总和数据位置见[AD报告](ad/one-site-c4-z2/REPORT.md)。随机路线未成功不改变解析来源候选态的结果，也不重新标记历史接受状态。固定该解析来源D=4张量的四sector谱已重算完成：χ=8、64动量、每sector8模（2048点），另完成χ=12三个共同动量比较，总用时约30.4分钟。e、m、ε主导模在已比较动量上稳定，平凡sector与高支仍有χ依赖；图与结果见[谱报告](transfer-spectrum/REPORT.md)。本轮未重跑AD，旧谱已由新计算替代。
 
 两种算法用文件夹区分，里面也记录了不同实现方式：
 
@@ -56,7 +65,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 julia --startup-file=no -O1 --project
 python3 scripts/summarize_results.py
 ```
 
-AD 的弱场重算命令见 [ad/split/README.md](ad/split/README.md)。首次 Julia 编译显著慢于后续调用；重算前仍需估计墙时和内存。
+Split AD 的弱场命令见 [ad/split/README.md](ad/split/README.md)，one-site/C₄/Z₂ 的解析初态入口见[对应说明](ad/one-site-c4-z2/README.md)。首次 Julia 编译显著慢于后续调用；运行前需估计实际时间和内存。
 
 迁移说明见 [docs/MIGRATION.md](docs/MIGRATION.md)。README、研究报告和计划中的运行命令均使用独立仓库路径；历史运行目录中的程序副本、日志、参数和哈希保留原样。
 

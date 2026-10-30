@@ -14,6 +14,7 @@ for (name, file) in [
     (:BoundaryChecks, "simple-update/loop/vumps_tests.jl"),
     (:SplitADChecks, "ad/split/tests.jl"),
     (:GradientChecks, "ad/split/gradient_tests.jl"),
+    (:OneSiteZ2ADChecks, "ad/one-site-c4-z2/tests.jl"),
     (:AdapterChecks, "ad/split/boundary_adapter_test.jl"),
     (:FailureChecks, "ad/split/failure_control_test.jl"),
     (:SavedStateChecks, "tests/state_loading_tests.jl"),

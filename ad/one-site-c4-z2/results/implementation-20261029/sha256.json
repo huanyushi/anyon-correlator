@@ -1,0 +1,19 @@
+{
+  "ad/one-site-z2/parameters.jl": "d86689101af8bdb4320ee3c3641f7d1e9dd328a2f0a3bf12a556af210af0d56a",
+  "ad/one-site-z2/core.jl": "9faeda876c19faa0a9e104b9e5159ee7bcfd428d9c01287577c5b365603edaba",
+  "ad/one-site-z2/runner.jl": "8fd3a6069798c22f6ec062ca7f729244db44f48866e5bb17db9fef6522342b84",
+  "ad/one-site-z2/run.jl": "93e7565149f67df16b735e337c8089dbd3b777a99e2cefa435bc13ff3ea8f94f",
+  "ad/one-site-z2/tests.jl": "bb1a1d9ca50c49679d09f66f1cc28d09c7129388d22cb7894708dbe0a9323fe8",
+  "ad/one-site-z2/gradient_check.jl": "9d4cd62eeae931cbe0b319dbbf4f26bc9aa4433228d34c4e4e82c29c73275950",
+  "ad/one-site-z2/objective.jl": "e0a16c7b44380a85e19b5267e903b7238c51d903895fb7c8533e9760be03edba",
+  "ad/one-site-z2/optimize.jl": "88ac4d93043881e62567180233d3643919feba380a7c3ece7b6410a013e6fe01",
+  "ad/one-site-z2/state_io.jl": "911fbba958d5d74cc38ea6cdc90bc74029ace3c8e40881b10edbdd2205bbc583",
+  "ad/one-site-z2/supervise.py": "032b2674a14d1203d9a409ba1b3622feda8f949b9c3fa8dc1faca7eb1f26177b",
+  "ad/one-site-z2/supervisor_tests.py": "7216fad531ca546a7abff909e6aeb2070eb785ce59f9c407763794beb7babda5",
+  "ad/split/network.jl": "1ee3f9900cb4cd6d3ef22bc522b20dcfc3b9f8c06abc472a2d95b78e4ed68287",
+  "ad/split/objective.jl": "d5e570bb2eb4523a0cbd21dda8af97457d42afc70972d4e47862bf9f432b44f5",
+  "ad/split/optimize.jl": "322799f00630e511e8d188ca2e80042386a2933f327d715a16d329a1460254a5",
+  "model/reference.jl": "f071551530daf051391beaffa475b3e9900337b84d787550e9d48a4cd6d7881d",
+  "julia-env/Project.toml": "c007ad0c8a92d5965e0866d04a75f0724882835f1704cc68336e670216e66efb",
+  "julia-env/Manifest.toml": "3c2d89af7df02d97c7f912c0ae4bd05a986b5be7e5e47165e49fdf60bc5f92a1"
+}

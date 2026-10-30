@@ -1,0 +1,16 @@
+{
+  "accepted": false,
+  "blocks": 40,
+  "residual_min": 4.180905690442432e-10,
+  "residual_max": 1.4905109282903797e-09,
+  "observable_spreads": {
+    "energy": 4.440892098500626e-16,
+    "mx": 9.838909457481542e-16,
+    "mz": 2.220446049250313e-16,
+    "astar": 6.661338147750939e-16,
+    "bplaq": 9.992007221626409e-16
+  },
+  "finding": "residual plateau dominated by edge singular-value changes; QR SVD retains plateau; Jacobi LAPACK failed",
+  "source_sha256": "e1a55c8b647001249fac29281c22e1bcd45223c50b06df43684018f49906fa08",
+  "note": "default log predates added SVD selection and projector spectrum logging; QR and Jacobi logs use saved script"
+}

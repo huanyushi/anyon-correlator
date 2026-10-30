@@ -33,6 +33,7 @@ def render(source, out):
     for quantity, title, filename in (
         ("rho", "Normalized transfer eigenvalue magnitude |r(k)|", "rho.svg"),
         ("quasi_energy", "Transfer spectrum -log|r(k)| (not Hamiltonian energy)", "epsilon.svg"),
+        ("quasi_energy", "Sector-resolved transfer spectrum −log|λ(k)/λ₀|", "figure7.svg"),
     ):
         values = [_number(r.get(quantity)) for r in rows if r["status"] == "converged"]
         maximum = max([v for v in values if v is not None] + [1.0]) * 1.1
@@ -44,9 +45,11 @@ def render(source, out):
                '<rect width="780" height="450" fill="white"/>',
                f'<text x="35" y="25" font-size="16">{html.escape(title)}</text>',
                '<path d="M75 100V355H695" fill="none" stroke="black"/>',
-               '<text x="70" y="378">−π</text><text x="380" y="378">0</text><text x="685" y="378">π</text>',
-               '<text x="375" y="400">momentum k</text>',
-               '<text x="35" y="420" font-size="12">Blue/red: g=0/1; +/circle: q=0/1. Dotted ring: below resolution. Failed/empty modes omitted.</text>']
+               '<text x="70" y="378">−1</text><text x="380" y="378">0</text><text x="685" y="378">1</text>',
+               '<text x="345" y="400">Momentum (k/π)</text>',
+               '<text x="75" y="52" fill="#2563eb">+ 1 (0,0)   ○ e (0,1)</text>',
+               '<text x="390" y="52" fill="#dc2626">+ m (1,0)   ○ ε (1,1)</text>',
+               '<text x="35" y="420" font-size="12">Labels: (g,q). Dotted ring: below resolution. Failed/empty modes omitted.</text>']
         for tick in range(5):
             v = maximum * tick / 4
             y = ypos(v)

@@ -1,0 +1,26 @@
+{
+  "status": "budget",
+  "accepted": false,
+  "command": [
+    "julia",
+    "--startup-file=no",
+    "-O1",
+    "--heap-size-hint=4G",
+    "--project=/home/huanyushi/code/anyon-correlator/julia-env",
+    "/home/huanyushi/code/anyon-correlator/ad/one-site-z2/run.jl",
+    "--D=4",
+    "--chi=8",
+    "--hx=0",
+    "--hz=0.1",
+    "--resume=ad/one-site-z2/results/d4-exact-noise-20261029/step0018.json",
+    "--steps=120",
+    "--budget=3600",
+    "--probe=ad/one-site-z2/results/d4-gradient-probe-20261029/summary.json",
+    "--out=ad/one-site-z2/results/d4-exact-noise-cont1-20261029"
+  ],
+  "budget": 3600.0,
+  "seconds": 3600.518471571995,
+  "exit": -15,
+  "timed_out": true,
+  "last_checkpoint": "step0007.json"
+}

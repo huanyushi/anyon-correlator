@@ -29,7 +29,7 @@ function main(args=ARGS)
     mkpath(out)
     # Save only this driver's actual sources and the fixed package environment.
     root=normpath(joinpath(@__DIR__,"../.."))
-    sources=vcat(["transfer-spectrum/$f.jl" for f in ("numerics","network","boundary","sectors","spectrum")],
+    sources=vcat(["transfer-spectrum/$f.jl" for f in ("numerics","network","boundary","spectrum")],
         ["benchmarks/filtered-toric-code/$f" for f in ("run.jl","tensor.jl","plot.py")],
         ["julia-env/Project.toml","julia-env/Manifest.toml"])
     for file in sources

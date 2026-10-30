@@ -1,0 +1,139 @@
+contract D=2 chi=8 parameters=10
+energy=-0.9907474427751629 residual=4.084425032638395e-12
+
+[484540] signal 15: Terminated
+in expression starting at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/gradient_check.jl:13
+lookup_type_setvalue at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jltypes.c:1067 [inlined]
+lookup_typevalue at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jltypes.c:1139
+lookup_arg_type_tuple at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:3072 [inlined]
+jl_lookup_generic_ at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4141 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4210
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_f__apply_iterate at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/builtins.c:868
+argtypes_to_type at ./../usr/share/julia/Compiler/src/typeutils.jl:55
+abstract_call_known at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2795
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2903
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2896 [inlined]
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3056
+abstract_eval_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3074 [inlined]
+abstract_eval_statement_expr at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3403
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3849 [inlined]
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3806 [inlined]
+typeinf_local at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4356
+jfptr_typeinf_local_82127.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4514
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1256
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1439 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1448
+jfptr_typeinf_ext_toplevel_80206.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_type_infer at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:466
+jl_compile_method_internal at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:3516
+_jl_invoke at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4006 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4214
+_callable_pullback_generator at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:93
+jfptr__callable_pullback_generator_22824 at /home/huanyushi/.julia/compiled/v1.12/Zygote/4kbLI_Ns3Fn.so (unknown line)
+jl_call_staged at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/method.c:662
+ijl_code_for_staged at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/method.c:735
+call_get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:103 [inlined]
+get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:88
+jfptr_get_staged_6039.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+tojlinvoke85090.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+j_get_staged_77205.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+retrieve_code_info at ./../usr/share/julia/Compiler/src/utilities.jl:121
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:602
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:607 [inlined]
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1250
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1439 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1448
+jfptr_typeinf_ext_toplevel_80206.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_type_infer at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:466
+jl_compile_method_internal at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:3516
+_jl_invoke at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4006 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gf.c:4214
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+unknown function (ip: 0x716ce916ee87) at (unknown file)
+simultaneous_projectors at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/simultaneous.jl:100 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+ad_pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:280
+#35 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/diffable_threads.jl:29 [inlined]
+#Generator##0 at ./generator.jl:37 [inlined]
+iterate at ./generator.jl:48 [inlined]
+collect at ./array.jl:790
+unknown function (ip: 0x716ce92f68d2) at (unknown file)
+map at ./abstractarray.jl:3526
+#tmap#64 at /home/huanyushi/.julia/packages/OhMyThreads/wX0Fh/src/implementation.jl:453 [inlined]
+tmap at /home/huanyushi/.julia/packages/OhMyThreads/wX0Fh/src/implementation.jl:420 [inlined]
+dtmap_pullback at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/diffable_threads.jl:28
+dtmap!!_pullback at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/diffable_threads.jl:46
+unknown function (ip: 0x716ce92eb1f2) at (unknown file)
+ZBack at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:228
+unknown function (ip: 0x716ce92e9cd2) at (unknown file)
+simultaneous_projectors at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/simultaneous.jl:87 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x716ce92d2052) at (unknown file)
+ctmrg_iteration at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/simultaneous.jl:51 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x716ce937efe2) at (unknown file)
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+ad_pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:280
+with_logger_pullback at /home/huanyushi/.julia/packages/ChainRules/3Zo8T/src/rulesets/Base/CoreLogging.jl:12 [inlined]
+ZBack at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:228 [inlined]
+#withlevel#27 at /home/huanyushi/.julia/packages/LoggingExtras/VLO3o/src/verbosity.jl:99 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+unknown function (ip: 0x716ce9375fd5) at (unknown file)
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+leading_boundary at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/ctmrg.jl:115 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+#379 at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/lib/lib.jl:214 [inlined]
+#381 at /home/huanyushi/.julia/packages/ZygoteRules/CkVIK/src/adjoint.jl:72
+unknown function (ip: 0x716ce93703bc) at (unknown file)
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:106
+ad_pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:280
+#70 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/hook_pullback.jl:34 [inlined]
+ZBack at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:228 [inlined]
+kw_zpullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/chainrules.jl:254
+unknown function (ip: 0x716ce936da2e) at (unknown file)
+#61 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:133 [inlined]
+Pullback at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface2.jl:0
+#pullback##0 at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface.jl:100
+unknown function (ip: 0x716d6be5404c) at (unknown file)
+withgradient at /home/huanyushi/.julia/packages/Zygote/XLIVf/src/compiler/interface.jl:222
+#59 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:131 [inlined]
+#checked_gradient_call##0 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:16 [inlined]
+with_logstate at ./logging/logging.jl:542
+unknown function (ip: 0x716cee53e4ee) at (unknown file)
+with_logger at ./logging/logging.jl:653
+checked_gradient_call at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:15 [inlined]
+#energy_gradient#56 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:130
+energy_gradient at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:126 [inlined]
+#energy_gradient#21 at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/objective.jl:3
+energy_gradient at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/objective.jl:2
+unknown function (ip: 0x716cee53a1fc) at (unknown file)
+top-level scope at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/gradient_check.jl:14
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1024
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:975
+ijl_toplevel_eval at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1047
+ijl_toplevel_eval_in at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1092
+eval at ./boot.jl:489
+include_string at ./loading.jl:2874
+_include at ./loading.jl:2934
+include at ./Base.jl:306
+exec_options at ./client.jl:317
+_start at ./client.jl:550
+jfptr__start_63319.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+true_main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:971
+jl_repl_entrypoint at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:1139
+main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/cli/loader_exe.c:58
+unknown function (ip: 0x716d8142a600) at /usr/lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /usr/lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+unknown function (ip: (nil)) at (unknown file)
+Allocations: 2634478747 (Pool: 2634471350; Big: 7397); GC: 192

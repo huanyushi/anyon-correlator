@@ -1,0 +1,28 @@
+{
+  "lightweight_assertions": 71,
+  "legacy_assertions": 75,
+  "full_suite": {
+    "budget_seconds": 600,
+    "exit": 137,
+    "last_suite": "FailureChecks",
+    "completed": false
+  },
+  "D2_gradient": {
+    "D": 2,
+    "chi": 8,
+    "hx": 0.0,
+    "hz": 0.1,
+    "origin": "perturbed_exact_zero_initialization",
+    "seed": 71,
+    "amplitude": 0.03,
+    "unroll_steps": [
+      20,
+      40
+    ],
+    "max_direction_error": 5.273196435062744e-09,
+    "gradient_delta": 6.941020293391996e-11,
+    "passed": true,
+    "budget_seconds": 1800
+  },
+  "note": "Logs copied verbatim. This directory is evidence, not a production gradient authorization file."
+}

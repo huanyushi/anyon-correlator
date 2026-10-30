@@ -1,0 +1,91 @@
+step=0 energy=-1.0025158505675305 gradnorm=0.00014781697118106476
+step=1 energy=-1.0025158617182217 gradnorm=0.00033680853722447245
+step=2 energy=-1.002515862632996 gradnorm=0.00039514982180501165
+step=3 energy=-1.0025158677591837 gradnorm=9.896197903000744e-5
+step=4 energy=-1.0025158684777007 gradnorm=6.978252034553649e-5
+step=5 energy=-1.002515869507714 gradnorm=3.40058242475676e-5
+step=6 energy=-1.0025158697204255 gradnorm=1.757701606853684e-5
+step=7 energy=-1.002515869800994 gradnorm=4.139802325656542e-6
+
+[521757] signal 15: Terminated
+in expression starting at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/run.jl:7
+zgemm_itcopy_HASWELL at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/bin/../lib/julia/libopenblas64_.so (unknown line)
+zgemm_nn at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/bin/../lib/julia/libopenblas64_.so (unknown line)
+zgemm_64_ at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/bin/../lib/julia/libopenblas64_.so (unknown line)
+gemm! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/blas.jl:1642
+gemm_wrapper! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/matmul.jl:806
+_syrk_herk_gemm_wrapper! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/matmul.jl:533 [inlined]
+generic_matmatmul_wrapper! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/matmul.jl:507
+_mul! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/matmul.jl:328 [inlined]
+mul! at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/LinearAlgebra/src/matmul.jl:297 [inlined]
+mul! at /home/huanyushi/.julia/packages/TensorKit/nhfGA/src/tensors/linalg.jl:348
+mul! at /home/huanyushi/.julia/packages/TensorKit/nhfGA/src/tensors/linalg.jl:333 [inlined]
+blas_contract! at /home/huanyushi/.julia/packages/TensorKit/nhfGA/src/tensors/tensoroperations.jl:430
+contract! at /home/huanyushi/.julia/packages/TensorKit/nhfGA/src/tensors/tensoroperations.jl:340
+tensorcontract! at /home/huanyushi/.julia/packages/TensorKit/nhfGA/src/tensors/tensoroperations.jl:141
+tensorcontract! at /home/huanyushi/.julia/packages/TensorOperations/I8bVl/src/interface.jl:166 [inlined]
+tensorcontract! at /home/huanyushi/.julia/packages/TensorOperations/I8bVl/src/interface.jl:155 [inlined]
+enlarge_southeast_corner at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/contractions/ctmrg/enlarge_corner.jl:177
+TensorMap at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/sparse_environments.jl:75 [inlined]
+#ctmrg_iteration##0 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/simultaneous.jl:47
+map! at ./abstractarray.jl:3365
+unknown function (ip: 0x79044ed2f48d) at (unknown file)
+#tmap!#82 at /home/huanyushi/.julia/packages/OhMyThreads/wX0Fh/src/implementation.jl:552 [inlined]
+tmap! at /home/huanyushi/.julia/packages/OhMyThreads/wX0Fh/src/implementation.jl:542
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_f__apply_iterate at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/builtins.c:868
+#dtmap!!#27 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/diffable_threads.jl:11
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_f__apply_iterate at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/builtins.c:868
+dtmap!! at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/utility/diffable_threads.jl:11
+ctmrg_iteration at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/simultaneous.jl:45
+#leading_boundary##2 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/ctmrg.jl:125
+#30 at /home/huanyushi/.julia/packages/LoggingExtras/VLO3o/src/verbosity.jl:103 [inlined]
+with_logstate at ./logging/logging.jl:542
+with_logger at ./logging/logging.jl:653 [inlined]
+#withlevel#27 at /home/huanyushi/.julia/packages/LoggingExtras/VLO3o/src/verbosity.jl:99
+withlevel at /home/huanyushi/.julia/packages/LoggingExtras/VLO3o/src/verbosity.jl:98 [inlined]
+withlevel at /home/huanyushi/.julia/packages/LoggingExtras/VLO3o/src/verbosity.jl:98 [inlined]
+leading_boundary at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/ctmrg.jl:115 [inlined]
+#leading_boundary#467 at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/ctmrg.jl:148
+leading_boundary at /home/huanyushi/.julia/packages/PEPSKit/rBPLa/src/algorithms/ctmrg/ctmrg.jl:147
+unknown function (ip: 0x79044f1f24b4) at (unknown file)
+#contract#29 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:32
+contract at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:26 [inlined]
+#dominant_contract#40 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:65
+dominant_contract at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:48 [inlined]
+#dominant_audit#53 at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:93
+dominant_audit at /home/huanyushi/code/anyon-correlator/ad/split/objective.jl:88
+unknown function (ip: 0x7903e0c23393) at (unknown file)
+#run##2 at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/runner.jl:59
+#finalize_run#39 at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/runner.jl:6
+finalize_run at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/runner.jl:1
+unknown function (ip: 0x7903e0c18627) at (unknown file)
+run at /home/huanyushi/code/anyon-correlator/ad/one-site-z2/runner.jl:51
+unknown function (ip: 0x79047b39db12) at (unknown file)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+do_call at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:123
+eval_value at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:243
+eval_stmt_value at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:194 [inlined]
+eval_body at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:707
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/interpreter.c:898
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1035
+jl_toplevel_eval_flex at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:975
+ijl_toplevel_eval at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1047
+ijl_toplevel_eval_in at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/toplevel.c:1092
+eval at ./boot.jl:489
+include_string at ./loading.jl:2874
+_include at ./loading.jl:2934
+include at ./Base.jl:306
+exec_options at ./client.jl:317
+_start at ./client.jl:550
+jfptr__start_63319.1 at /home/huanyushi/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+true_main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:971
+jl_repl_entrypoint at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/jlapi.c:1139
+main at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/cli/loader_exe.c:58
+unknown function (ip: 0x790490a2a600) at /usr/lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /usr/lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+unknown function (ip: (nil)) at (unknown file)
+Allocations: 3184550360 (Pool: 3184507344; Big: 43016); GC: 12026
